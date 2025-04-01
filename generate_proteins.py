@@ -3,19 +3,19 @@ import requests
 import pandas as pd
 
 # Initialize API keys 
-OPENAI_API_KEY = ""
+# OPENAI_API_KEY = ""
 PERPLEXITY_API_KEY = ""
-#ANTHROPIC_API_KEY = ""
+# ANTHROPIC_API_KEY = ""
 
 # Define LLM APIs
 LLM_APIS = {
-    "ChatGPT": ("https://api.openai.com/v1/chat/completions", OPENAI_API_KEY),
-    "Perplexity": ("https://api.perplexity.ai/v1/completions", PERPLEXITY_API_KEY)
-    #"Anthropic": ("https://api.anthropic.com/v1/messages", ANTHROPIC_API_KEY)
+    # "ChatGPT": ("https://api.openai.com/v1/chat/completions", OPENAI_API_KEY),
+    "Perplexity": ("https://api.perplexity.ai/chat/completions", PERPLEXITY_API_KEY),
+    # "Anthropic": ("https://api.anthropic.com/v1/messages", ANTHROPIC_API_KEY)
 }
 
 # Define list of protein complexes (do in batches?)
-complexes = [""]
+complexes = ["ATP4A-ATP4B complex, Transmembrane channel-like (TMC) 2 complex"]
 
 # Define prompting techniques
 prompt_techniques = {
@@ -37,9 +37,9 @@ def call_api(llm_name, prompt):
     if llm_name == "ChatGPT":
         data = {"model": "gpt-4", "messages": [{"role": "user", "content": prompt}]}
     elif llm_name == "Perplexity":
-        data = {"model": "llama", "prompt": prompt}
-    elif llm_name == "Anthropic":
-        data = {"model": "claude-2", "messages": [{"role": "user", "content": prompt}]}
+        data = {"model": "sonar-pro", "messages": [{"role": "user", "content": prompt}]}
+    # elif llm_name == "Anthropic":
+    #     data = {"model": "claude-2", "messages": [{"role": "user", "content": prompt}]}
     
     response = requests.post(url, json=data, headers=headers)
     return response.json().get("choices", [{}])[0].get("message", {}).get("content", "")
