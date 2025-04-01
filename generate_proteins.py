@@ -15,7 +15,7 @@ LLM_APIS = {
 }
 
 # Define list of protein complexes (do in batches?)
-complexes = ["ATP4A-ATP4B complex, Transmembrane channel-like (TMC) 2 complex"]
+complexes = ["ATP4A-ATP4B complex", "Transmembrane channel-like (TMC) 2 complex"]
 
 # Define prompting techniques
 prompt_techniques = {
