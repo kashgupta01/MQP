@@ -1,0 +1,15 @@
+Complex,Technique,LLM,Complex Function,Organism,Proteins
+ATP4A-ATP4B complex,zero-shot,ChatGPT,"The ATP4A-ATP4B complex is involved in the final stages of stomach acid production, acting as a hydrogen/potassium ATPase. This complex plays a crucial role in creating the very acidic environment in the stomach that is needed for effective digestion.",Human,The ATP4A-ATP4B complex consists of ATP4A (gastric proton pump) and ATP4B (beta subunit).
+ATP4A-ATP4B complex,few-shot,ChatGPT,"The ATP4A-ATP4B complex is part of the greater ATP4 or H+/K+ ATPase complex. It functions as a proton pump which is responsible for the secretion of gastric acid in the stomach.'
+'","Human'
+'","ATP4A, ATP4B'"
+ATP4A-ATP4B complex,contextual,ChatGPT,"The ATP4A-ATP4B complex forms the gastric H+/K+ ATPase, a proton pump expressed in parietal cells of the stomach. It is responsible for the final step in the production of gastric acid, which is essential for digestion.' 
+'","Human'
+'","ATP4A, ATP4B'"
+Transmembrane channel-like (TMC) 2 complex,zero-shot,ChatGPT,"The TMC2 complex functions as a critical component in the process of mechanotransduction where it is involved in the conversion of physical stimuli into biochemical signals. This protein complex is essential for the perception of sound, balance, and spatial orientation in vertebrates.",Human,The TMC2 complex consists of the protein TMC2.
+Transmembrane channel-like (TMC) 2 complex,few-shot,ChatGPT,"TMC2 Complex plays a crucial role in hair cell mechanotransduction where it converts mechanical stimuli, such as sound and balance signals, into electrochemical signals. Specifically, TMC2 is thought to be an essential component of mechanosensitive ion channels in sensory cells.'
+'","Human'
+'",TMC2'
+Transmembrane channel-like (TMC) 2 complex,contextual,ChatGPT,"TMC2 acts as a component of the mechanotransduction complex within inner ear hair cells, involved in the conversion of mechanical stimuli into electrochemical activity.'
+'","Human, Mouse'
+'",TMC2'
