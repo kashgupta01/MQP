@@ -15,15 +15,22 @@ LLM_APIS = {
 }
 
 # Define list of protein complexes (do in batches?)
-complexes = ["ATP4A-ATP4B complex, Transmembrane channel-like (TMC) 2 complex"]
+complexes = ["ATP4A-ATP4B complex", "Transmembrane channel-like (TMC) 2 complex"]
 
 # Define prompting techniques
 prompt_techniques = {
-    "zero-shot": "For each of the following protein {complex}, give the organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster) and the protein complex function. Additionally, include a list of proteins the {complex} consists of. Put in tabular format.",
+    "zero-shot": "For each of the following protein {complex}, provide the function of the protein complex by labelling it as 'Function'. Give the organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster) by labelling it as 'Organism'. Additionally, include a list of proteins the {complex} consists of and label the list 'Proteins'.",
     
-    "few-shot": "For each of the following protein complexes, give the organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster) and the protein complex function. Additionally, include a list of proteins the complex consists of and their interactions with one another. Here are some examples of the output:", 
+    "few-shot": "For each of the following protein {complex}, provide the function of the protein complex and Gthe organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster). Additionally, include a list of proteins the {complex} consists of. Here are some examples of the output:
+    'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible for gastric acid secretion in the stomach.' 
+    'Organism: Mouse'
+    'Proteins: ATP4A, ATP4B'"
+    , 
             
-    "contextual": "You are an expert in the field of biology and molecular machines. For each of the following protein {complex}, give the organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster). Additionally, include a list of proteins the {complex} consists of."
+    "contextual": "You are an expert in the field of biology and molecular machines. For each of the following protein {complex}, provide the function of the protein complex and Gthe organism it belongs to (human, mouse/rat, C.elegans, or Drosophila melanogaster). Additionally, include a list of proteins the {complex} consists of.
+    'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible for gastric acid secretion in the stomach.' 
+    'Organism: Mouse'
+    'Proteins: ATP4A, ATP4B'"
 }
 
 # Initialize results list
