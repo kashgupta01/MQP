@@ -23,7 +23,7 @@ prompt_techniques = {
     'Proteins: ATP4A, ATP4B"""
 }
 
-# 1. Create JSONL file
+# make jsonl file
 with open("batch_input.jsonl", "w") as f:
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
@@ -39,19 +39,19 @@ with open("batch_input.jsonl", "w") as f:
             }
             f.write(json.dumps(json_line) + "\n")
 
-# 2. Upload input file
+# upload input file
 upload = openai.files.create(file=open("batch_input.jsonl", "rb"), purpose="batch")
 
-# 3. Create batch job
+# create batch task
 batch = openai.batches.create(
     input_file_id=upload.id,
     endpoint="/v1/chat/completions",
     completion_window="24h"
 )
 
-# 4. Save batch ID
+# save batch id
 with open("batch_job_id.txt", "w") as f:
     f.write(batch.id)
 
-print("✅ Batch submitted. ID:", batch.id)
-print("⏳ Status:", batch.status)
+print("Batch submitted. ID:", batch.id)
+print("Status:", batch.status)
