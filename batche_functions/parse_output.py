@@ -14,21 +14,21 @@ with open("batch_output.jsonl", "r") as f:
         else:
             complex_name, technique = custom_id, "unknown"
 
-        llm_name = "ChatGPT"  # assuming batch used GPT-4
+        llm_name = "ChatGPT"  # just for now since only testing with chatGPT
 
-        # Try to get the content
+        # try to get the content
         try:
             content = obj["response"]["body"]["choices"][0]["message"]["content"]
         except Exception as e:
-            print(f"[{i}] ❌ Error extracting content for {custom_id}: {e}")
+            print(f"[{i}] Error extracting content for {custom_id}: {e}")
             content = ""
 
-        # Clean the string
+        # clean the string
         content = content.strip().replace("’", "'")
         content = re.sub(r"^'+", "", content)  # remove starting quotes
         content = re.sub(r"\n'+", "\n", content)
 
-        # Try regex parse
+        # try regex parse
         match = re.search(
             r"Complex Function:\s*(.*?)\s*Organism:\s*(.*?)\s*Proteins:\s*(.*)",
             content,
@@ -56,11 +56,11 @@ with open("batch_output.jsonl", "r") as f:
                 content.strip()
             ])
 
-# Create and save the DataFrame
+# create & save the dataframe
 df = pd.DataFrame(data, columns=["Complex", "Technique", "LLM", "Complex Function", "Organism", "Proteins"])
 
 if df.empty:
-    print("❌ Still no results parsed. Double check your batch_output.jsonl format.")
+    print("Still no results parsed. Double check your batch_output.jsonl format.")
 else:
     df.to_csv("protein_complexes_results_from_batch.csv", index=False)
-    print("✅ Results saved to protein_complexes_results_from_batch.csv")
+    print("Results saved to protein_complexes_results_from_batch.csv")

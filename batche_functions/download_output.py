@@ -11,6 +11,6 @@ if batch.status == "completed":
 
     with open("batch_output.jsonl", "wb") as f:
         f.write(content)
-    print("✅ Output saved to batch_output.jsonl")
+    print("Output saved to batch_output.jsonl")
 else:
-    print("⏳ Batch not ready yet. Status:", batch.status)
+    print("Batch not ready yet. Status:", batch.status)
