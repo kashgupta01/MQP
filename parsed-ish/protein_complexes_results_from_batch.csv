@@ -1,0 +1,44 @@
+Complex,Technique,LLM,Complex Function,Organism,Proteins
+Kinetochore Mis12 complex,zero-shot,ChatGPT,"The Kinetochore Mis12 complex plays a pivotal role in the correct alignment and segregation of chromosomes during cell division. It is responsible for the connection between centromeres of chromosomes and the dynamic ends of microtubules, acting as a core component of the outer kinetochore. It is essential for high-fidelity chromosome segregation and cell cycle progression.","The Kinetochore Mis12 complex is found in many organisms, including humans, mouse/rat, C.elegans, and Drosophila melanogaster.","The Kinetochore Mis12 complex is composed of several proteins, including Mis12, Dsn1, Nsl1, and Nnf1 in humans. The complex may contain additional proteins or have slight variance in composition depending upon the specific organism."
+Kinetochore Mis12 complex,few-shot,ChatGPT,Kinetochore Mis12 complex is crucial for correct chromosome segregation. It is a part of the larger kinetochore structure that connects chromosomes to the microtubules of the mitotic spindle during mitosis and meiosis. This complex is required for the assembly of other protein complexes in the kinetochore.,Human,"Mis12, Nnf1, Nsl1, and Dsn1."
+Kinetochore Mis12 complex,contextual,ChatGPT,The Kinetochore Mis12 complex is crucial for the proper attachment of chromosomes to the spindle during chromosome segregation during cell division. It forms a structural platform for other proteins at the kinetochore and plays a significant role in chromosome alignment and checkpoint signaling.,"The Kinetochore Mis12 complex is found in various organisms including humans, mouse/rat, C.elegans, and Drosophila melanogaster.","The Mis12 complex typically consists of four different proteins, namely Mis12 (also known as DSN1), DSN1 (also known as NSL1), PMF1 (also known as NNF1), and NDC80."
+Nuclear mitotic cohesin complex,zero-shot,ChatGPT,"The Nuclear mitotic cohesin complex is crucial for sister chromatid cohesion during cell division, DNA repair, and gene expression regulation.","This protein complex is found in many organisms, including human, mouse/rat, C.elegans, and Drosophila melanogaster.","The Nuclear mitotic cohesin complex is formed by multiple proteins, which include, among others, SMC1, SMC3, RAD21/Cohesin and SA1/SA2/STAG1/STAG2."
+Nuclear mitotic cohesin complex,few-shot,ChatGPT,"The Nuclear mitotic cohesin complex plays a crucial role in sister chromatid cohesion during mitosis and meiosis, DNA repair, and gene regulation. Its dysfunction can lead to serious diseases, including cancers and developmental disorders.",Humans,"SMC1, SMC3, RAD21, STAG1/2."
+Nuclear mitotic cohesin complex,contextual,ChatGPT,"The Nuclear Mitotic Apparatus Protein (NuMA) complex, also known as the Nuclear Mitotic Cohesin complex, is primarily responsible for facilitating the alignment and separation of sister chromatids during mitosis. It is also utilized in the DNA repair mechanism.'",Human',"NuMA1, SMC1, SMC3, SCC1/RAD21, SA1/STAG1, SA2/STAG2.'"
+GPI-anchor transamidase complex,zero-shot,ChatGPT,"This complex is responsible for attaching glycosylphosphatidylinositols (GPI) to proteins via an amide bond, a process integral to protein trafficking and cell wall integrity in yeast.
+   Proteins: Gaa1, Gpi8, Pbn1, Gpi16, Gpi17
+
+2) Protein Complex: PIG-K/GAA1 complex","Human
+   Complex Function: This complex mediates the attachment of proteins to the GPI-anchor, which plays key roles in various biological processes including protein sorting, immune response, and cell adhesion.","PIG-K, GAA1
+
+3) Protein Complex: GPI-anchor transamidase complex 
+   Organism: Mouse/Rat
+   Complex Function: This complex catalyzes the attachment of proteins to a GPI-anchor, playing a crucial role in maintaining cellular processes such as protein transport and signal transduction.
+   Proteins: PIG-T, PIG-U, PIG-K, PIG-S, GPAA1
+
+4) Protein Complex: GPI transamidase complex
+   Organism: Drosophila melanogaster
+   Complex Function: This complex facilitates the attachment of proteins to the GPI-anchor, which is essential for sorting and localizing proteins to the cell surface.
+   Proteins: Gpi8, Gaa1, Gpi16, Gpi17
+
+5) Protein Complex: GPI-anchor transamidase complex
+   Organism: C.elegans
+   Complex Function: The complex enables the linking of proteins to the GPI-anchor, contributing fundamentally to correct protein localisation and proper functioning of the organism.
+   Proteins: GPI-anchored proteins (exact proteins in the complex unspecified due to scarcity of research in this specific organism)."
+GPI-anchor transamidase complex,few-shot,ChatGPT,"This complex mediates the post-translational addition of a GPI (glycosylphosphatidylinositol) anchor to certain proteins. GPI anchoring is a common posttranslational modification that serves to anchor the modified protein in the outer leaflet of the cell membrane. By anchoring proteins to the cell membrane, it helps to organize these proteins and enhance their functionality. This process is also essential for the proper trafficking of certain proteins to specific cell compartments. The failure of this complex can lead to a variety of diseases, such as paroxysmal nocturnal hemoglobinuria.",Human,"The GPI-anchor transamidase complex consists of five proteins: PIGK (also known as GPI8), PIGS, PIGT, PIGU, and GPAA1.
+
+Complex: GPI-anchor transamidase complex
+Complex Function: This complex mediates the addition of a glycosylphosphatidylinositol (GPI) anchor to proteins. This process allows these proteins to be anchored to the cell membrane, contributing to cell signaling and other cellular functions.
+Organism: Mouse/Rat
+Proteins: The mouse GPI-anchor transamidase complex is composed of these proteins: PIGK/GPI8, PIGS, PIGT, PIGU, and GPAA1.
+
+Complex: GPI-anchor transamidase complex
+Complex Function: This complex is crucial for the post-translational modification of proteins via the addition of a GPI anchor. These modifications allow the proteins to be anchored to the cellular membrane, influencing cellular functions like cell signaling.
+Organism: C.elegans
+Proteins: In C.elegans, this complex comprises this set of proteins: PIGK/GPI8, PIGS, PIGT, PIGU, and GPAA1.
+
+Complex: GPI-anchor transamidase complex
+Complex Function: The complex is responsible for the addition of a GPI anchor to proteins, thus tethering them to the cell membrane. This modification can affect protein structure and function and influence cell behavior.
+Organism: Drosophila melanogaster
+Proteins: The Drosophila GPI-anchor transamidase complex consists of these proteins: PIGK/GPI8, PIGS, PIGT, PIGU, and GPAA1."
+GPI-anchor transamidase complex,contextual,ChatGPT,"The GPI-anchor transamidase complex is responsible for catalyzing the addition of a glycosylphosphatidylinositol (GPI) anchor to certain proteins, a modification that allows these proteins to be anchored to the cell membrane. This process is crucial for many cellular processes, including cell-cell communication, protein transport, and antigen presentation. This protein complex can also remove GPI anchors from proteins.","Human, Mouse/Rat, C.elegans, Drosophila melanogaster","The GPI-anchor transamidase complex consists of several subunits, including PIG-K, PIG-S, PIG-T, GPAA1, and PIG-U."
