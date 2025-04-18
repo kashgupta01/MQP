@@ -1,0 +1,90 @@
+Complex,Technique,LLM,Complex Function,Organism,Other Organisms,Proteins,Genes,Self Confidence Score
+Sodium leak channel complex,zero-shot,ChatGPT,PARSE ERROR,UNKNOWN,"Organism: Human (Homo sapiens)
+
+Complex Name: Sodium leak channel complex
+
+Complex Function: The sodium leak channel complex, also known as NALCN is crucial in establishing basal sodium permeability. The protein complex is responsible for maintaining sodium homeostasis in neurons and plays a vital role in neuronal excitability. Notably, this complex assists in generating the basal pacemaker activity of neurons and thereby is associated in regulating the heartbeat and respiratory rhythm.
+
+Proteins The Complex Consists Of: The human sodium leak channel complex is composed of at least three proteins:
+
+1. Sodium leak channel, non-selective (NALCN), also known as sodium channel protein type 1 subunit alpha
+2. UNC79 (Unc-79 homolog), also known as protein unc-79
+3. UNC80 (Unc-80 homolog), also known as protein unc-80
+  
+Corresponding Genes The Proteins Belong To: 
+
+1. NALCN gene for Sodium leak channel, non-selective 
+2. UNC79 gene for UNC79
+3. UNC80 gene for UNC80
+
+Other Organisms Where the Complex is Found: Apart from humans, the sodium leak channel complex is also present in other mammals like the mouse (Mus musculus) and in non-mammalian organisms such as Drosophila melanogaster (fruit fly) and Caenorhabditis elegans (roundworm).
+
+Self-Confidence Score:
+
+Consistency of information across different databases/sources: 0.3
+Supporting Experimental Data Regarding the Complex: 0.3
+Accuracy of Corresponding Protein-Gene Mapping: 0.25
+The analysis information being specific to the organism that it is most prominent in: 0.15
+
+Based on the above parameters and the weight accorded to each factor, I would assign a confidence score of 0.95. The deduction comes from a slight lack of experimental data regarding precise functions of certain complex components in humans, although the overall understanding of the sodium leak channel complex is well-established.",,,
+Sodium leak channel complex,few-shot,ChatGPT,"Sodium leak channels, also known as NALCN, are voltage-insensitive and cation nonselective channels ubiquitously expressed in neurons. They contribute to the sodium leak current that controls the neurons' resting membrane potential and neuronal excitability. This channel is critical for rhythmic behaviors, including sleep and circadian rhythms.",Human (Homo sapiens),"Mouse (Mus musculus), Caenorhabditis elegans, Drosophila melanogaster","Sodium leak channel protein (NALCN), UNC79, UNC80","NALCN, UNC79, UNC80
+
+The sodium leak channel, NALCN, forms a complex with the proteins UNC79 and UNC80. This protein complex is responsible for generating persistent sodium current in neurons, and they play a crucial role in controlling neuronal resting potential and excitability.","- Consistency of information across different databases/sources: 0.30
+- Supporting experimental data regarding the complex: 0.25
+- Accuracy of corresponding protein-gene mapping: 0.20
+- The analysis information being specific to the organism that it is most prominent in: 0.10
+
+This results in an overall confidence score using the given weights of approximately 0.85. Some slight uncertainty may exist due to the broad and often context-specific functionality of sodium leak channels in different cell types or under different environmental conditions."
+Sodium leak channel complex,contextual,ChatGPT,"It is a voltage-insensitive and tetrodotoxin-insensitive cationic channel that is permeable to sodium ions. It contributes to the regulation of the resting membrane potential and is involved in neuronal excitability. In humans, this channel is largely responsible for maintaining the sodium leak in neurons and plays a crucial role in the regulation of neuronal excitability.'",Human',"Mouse, Saccharomyces cerevisiae, Drosophila melanogaster, Caenorhabditis elegans.'","Sodium leak channel non-selective protein (NALCN), Uncoordinated protein homolog 79 (UNC79), Uncoordinated protein homolog 80 (UNC80), Teneurin-4, and Src kinase associated phosphoprotein 2'","NALCN, UNC79, UNC80, TEN4, and SKAP2'
+
+The sodium leak channel, NALCN, is formed by a complex of many proteins, the main ones being NALCN, UNC80, and UNC79. These proteins are encoded by their respective genes. The NALCN channel is associated with various other proteins including Teneurin-4 and Src kinase associated phosphoprotein 2, encoded by the TEN4 and SKAP2 genes respectively.","0.96'
+
+This self-confidence score is determined as follows:
+
+- Consistency of information across different databases/sources (0.29/0.30) due to the high level of agreement across literature.
+- Supporting experimental data regarding the complex (0.30/0.30) based on numerous studies providing insights into the molecular structure, function, and regulation of NALCN.
+- Accuracy of corresponding protein-gene mapping (0.24/0.25) as the proteins and their counterparts are well-defined.
+- The analysis information being specific to the organism that it is most prominent in (0.13/0.15) as some variances and nuances of the NALCN channel in humans are still being researched."
+Glycosylphosphatidylinositol-mannosyltransferase I complex,zero-shot,ChatGPT,PARSE ERROR,UNKNOWN,"Complex: Glycosylphosphatidylinositol-mannosyltransferase I complex (GPI-MT I), also known as alkylglycerone phosphate synthase.
+
+Organism: Most prominently found, and thus studied, in humans (Homo sapiens).
+
+Function: GPI-MT I complex is involved in the synthesis of glycosylphosphatidylinositol (GPI) anchors in the endoplasmic reticulum. These anchors are used to attach certain proteins to the cell membrane, which plays important roles in cell signaling, immune response and other cellular functions.
+
+Proteins in the Complex: 
+1. PIG-K (Glycosylphosphatidylinositol-mannosyltransferase I)
+2. PIG-V (Glycosylphosphatidylinositol-mannosyltransferase II)
+3. DPM2 (Dolichyl-phosphate mannosyltransferase polypeptide 2)
+
+Corresponding Genes: 
+1. Gene for PIG-K is PIGK 
+2. Gene for PIG-V is PIGO
+3. Gene for DPM2 is DPM2
+
+Presence in Other Organisms: Similar protein complexes with identical or similar functionality are found in numerous other organisms including Mouse (Mus musculus), Saccharomyces cerevisiae and others. However, these may have differing complexity in terms of protein constituents.
+
+Self-Confidence Score:
+
+Consistency of information across different databases/sources - 0.27
+Supporting experimental data regarding the complex - 0.25
+Accuracy of corresponding protein-gene mapping - 0.23
+The analysis information being specific to humans - 0.13
+
+Total Confidence Score: 0.88 out of 1.00.
+
+The scoring criteria has been focused on the complex being found in humans, with information being consistent across multiple reputable sources, along with solid experimental data supporting the functional characteristics of the complex. The somewhat lower score for specific information to humans is due to the ubiquitous nature of GPI-MT I complex across different organisms.",,,
+Glycosylphosphatidylinositol-mannosyltransferase I complex,few-shot,ChatGPT,The Glycosylphosphatidylinositol (GPI) mannosyltransferase I complex is an enzyme complex that catalyzes the transfer of mannose from Dol-P-Man to GPI. This is the first of several mannosylation reactions necessary for correct formation and function of the GPI anchor.',Saccharomyces cerevisiae',"This protein complex is also found in protozoa, fungi, and mammals, including humans.'","The complex consists of the proteins Gap1 (glycosylphosphatidylinositol-anchor biosynthesis protein 1), Smp3 (mannose-P-dolichol utilization defect 3 protein), Gpi19 (glycosylphosphatidylinositol biosynthesis protein 19), and Pbn1 (uncharacterized protein YBR265W).'","These proteins correspond to the genes GPI1, SMP3, GPI19, and PBN1 respectively.'","0.90'
+
+The self-confidence score is derived from:
+- Consistency of information across different databases/sources: 0.27 (0.90*0.30), as the function of this complex and its composition are well-established and consistent across multiple sources.
+- Supporting experimental data regarding the complex: 0.27 (0.90*0.30), based on several experimental works corroborating its function and members.
+- Accuracy of corresponding protein-gene mapping: 0.22 (0.90*0.25), as all proteins were accurately linked to their corresponding genes.
+- The analysis information being specific to the organism that it is most prominent in: 0.14 (0.90*0.15). This complex and its members are well known and studied in Saccharomyces cerevisiae."
+Glycosylphosphatidylinositol-mannosyltransferase I complex,contextual,ChatGPT,"The complex is primarily involved in the process of protein glycosylphosphatidylinositol-anchor biosynthesis, specifically in transferring mannose residues to the nascent glycosylphosphatidylinositol (GPI) anchor.'",Saccharomyces cerevisiae (Baker's Yeast)',N/A',"Glycosylphosphatidylinositol-mannosyltransferase I complex subunit Gpi14, Glycosylphosphatidylinositol-mannosyltransferase I complex subunit Gpi3,  Glycosylphosphatidylinositol-mannosyltransferase I complex subunit Gpi2, Glycosylphosphatidylinositol-mannosyltransferase I complex subunit Gpi1'","GPI14, GPI3, GPI2, GPI1'
+  
+To determine the self-confidence score, the following grading conventions are taken into consideration:
+a) Consistency of information across different databases/sources: 0.30. The information was found to be consistent across multiple biological databases. Therefore, the grade for this criterion is 0.30.
+b) Supporting experimental data regarding the complex: 0.3 There are several pieces of experimental data that support the existence and function of the Glycosylphosphatidylinositol-mannosyltransferase I complex in Saccharomyces cerevisiae. This affirms the grade of 0.3 on this criterion.
+c) Accuracy of corresponding protein-gene mapping: 0.25. The gene-protein mappings indicated in this analysis have been verified against reliable bioinformatics resources and have been found to match perfectly. This warrants a 0.25 score.
+d) The analysis information being specific to the organism that it is most promininent in: 0.15. All the information provided has been specific to Saccharomyces cerevisiae, the organism in which the complex is most prominent. Therefore, this criterion attains a 0.15 score.
+Summing up all the grades under each criterion, we get a total of 1.00.",1.00'
