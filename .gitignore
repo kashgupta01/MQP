@@ -1,0 +1,3 @@
+# dotenv configuration
+.env
+batche_functions/claude_batch.py
