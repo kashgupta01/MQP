@@ -4,7 +4,7 @@ import re
 
 data = []
 
-with open("batch_output_4.jsonl", "r") as f:
+with open("batch_output_6.jsonl", "r") as f:
     for i, line in enumerate(f, start=1):
         obj = json.loads(line)
         
@@ -63,7 +63,7 @@ with open("batch_output_4.jsonl", "r") as f:
 df = pd.DataFrame(data, columns=["Complex", "Technique", "LLM", "Complex Function", "Organism", "Other Organisms", "Proteins", "Genes", "Self Confidence Score"])
 
 if df.empty:
-    print("Still no results parsed. Double check your batch_output_4.jsonl format.")
+    print("Still no results parsed. Double check your batch_output_6.jsonl format.")
 else:
-    df.to_csv("protein_complexes_results_from_batch_4.csv", index=False)
-    print("Results saved to protein_complexes_results_from_batch_4.csv")
+    df.to_csv("protein_complexes_results_from_batch_6.csv", index=False)
+    print("Results saved to protein_complexes_results_from_batch_6.csv")

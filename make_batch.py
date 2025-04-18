@@ -8,8 +8,69 @@ load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 complexes = [
+    "ATP4A-ATP4B complex",
+    "Cytochrome bc1 Complex (Complex III)",
+    "Synaptonemal Complex",
+    "GNA12-GPR55-RGS2 complex",
+    "Melanocortin receptor 3",
+    "ATP1A1-TSHR complex",
+    "ADRA1B-CXCR4 complex",
+    "Bdkrb2-Tbxa2r complex",
+    "Drd3-Ednrb complex",
+    "Egflam-Gpr179 complex",
+    "Ceacam1-4L-Syk-Tlr4 complex",
+    "KDR-NRP1-VEGF165 complex",
+    "NRP1-VEGF121 complex",
+    "KDR-VEGF165 complex",
+    "FLT4-VEGFC complex",
+    "ITGA3-ITGB1 complex",
+    " Golgi-associated retrograde protein complex ",
+    " Transmembrane channel-like (TMC) 2 complex ",
+    "13 subunit eukaryotic initiation factor 3 (eIF3) complex",
+    "Tip60 chromatin-remodeling complex ",
+    "COP9 Signalosome ",
+    "20S proteosome ",
+    "HCN1-HCN4 complex",
+    "GRIN1-P2RY4 complex ",
+    " LY96-TLR4 complex ",
+    "RAD6-RAD18 ubiquitin ligase complex",
+    "PHO85-PHO80 CDK-cyclin complex",
+    "DNA polymerase (Pol) episolon (ε)",
+    "Golgi transport complex",
+    "GPI-anchor transamidase complex",
+    "Glycosylphosphatidylinositol-mannosyltransferase I complex",
+    "Dsl1 tethering complex",
+    "AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
+    "PAN1 actin cytoskeleton-regulatory complex",
+    "AMPK complex",
+    "Augmin complex",
+    "Myb-MuvB transcriptional activation complex",
+    "CORVET tethering complex",
     "Sodium leak channel complex",
-    "Glycosylphosphatidylinositol-mannosyltransferase I complex"
+    "ATG1 protein kinase complex",
+    "NXF1-NXT1 mRNA nuclear export factor complex",
+    "MON1-CCZ1 guanyl-nucleotide exchange factor complex",
+    "HipHop-HOAP telomere-capping complex",
+    "ZFP-1(AF10)/DOT-1 complex",
+    "ced-3-ced-4-mac-1 complex",
+    "Nuclear mitotic cohesin complex",
+    "Atk-1/Akt-2/Sgk-1 protein kinase complex",
+    "RB1-E2F1-TFDP1 transcription repressor complex",
+    "PETISCO, pid-1 variant",
+    "PETISCO, tost-1 variant",
+    "Ndc80 complex",
+    "Kinetochore Mis12 complex",
+    "THO complex",
+    "Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2",
+    "Ste12/Dig1/Dig2 transcription regulation complex",
+    "TRAPP II complex ",
+    "CCM complex ",
+    "mu-Calpain complex ",
+    "GINS complex ",
+    "CMG helicase complex ",
+    "20S mitochondrial small ribosomal subunit ",
+    "Cardiac troponin complex "
+
 ]
  
 prompt_techniques = {
@@ -114,9 +175,14 @@ prompt_techniques = {
     
 }
 
+# models = [
+#     "gpt-4.1-mini-2025-04-14",
+#     "gpt-4o-mini-2024-07-18",
+#     "o4-mini-2025-04-16"
+#     ]
 
 # make jsonl file
-with open("batch_input.jsonl", "w") as f:
+with open("batch_input_7.jsonl", "w") as f:
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
             prompt = template.format(complex=complex_name).replace("    ", "")
@@ -125,15 +191,14 @@ with open("batch_input.jsonl", "w") as f:
                 "method": "POST",
                 "url": "/v1/chat/completions",
                 "body": {
-                    "model": "gpt-4",
+                    "model": "gpt-4o-mini-2024-07-18",
                     "messages": [{"role": "user", "content": prompt}]
                 }
             }
             f.write(json.dumps(json_line) + "\n")
 
-
 # upload input file
-upload = openai.files.create(file=open("batch_input.jsonl", "rb"), purpose="batch")
+upload = openai.files.create(file=open("batch_input_7.jsonl", "rb"), purpose="batch")
 
 # create batch task
 batch = openai.batches.create(
