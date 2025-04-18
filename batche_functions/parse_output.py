@@ -4,7 +4,7 @@ import re
 
 data = []
 
-with open("batch_output.jsonl", "r") as f:
+with open("batch_output_2-5.jsonl", "r") as f:
     for i, line in enumerate(f, start=1):
         obj = json.loads(line)
         
@@ -30,20 +30,21 @@ with open("batch_output.jsonl", "r") as f:
 
         # try regex parse
         match = re.search(
-            r"Complex Function:\s*(.*?)\s*Organism:\s*(.*?)\s*Proteins:\s*(.*)",
+            r"Complex Function:\s*(.*?)\s*Organism:\s*(.*?)\s*Proteins:\s*(.*?)\s*Genes:\s*(.*)",
             content,
             re.DOTALL
         )
 
         if match:
-            complex_function, organism, proteins = match.groups()
+            complex_function, organism, proteins, genes = match.groups()
             data.append([
                 complex_name.strip(),
                 technique.strip(),
                 llm_name,
                 complex_function.strip(),
                 organism.strip(),
-                proteins.strip()
+                proteins.strip(),
+                genes.strip(),
             ])
         else:
             print(f"[{i}] ⚠️ No match for {custom_id}. Raw content:\n{content[:300]}\n---")
@@ -57,10 +58,10 @@ with open("batch_output.jsonl", "r") as f:
             ])
 
 # create & save the dataframe
-df = pd.DataFrame(data, columns=["Complex", "Technique", "LLM", "Complex Function", "Organism", "Proteins"])
+df = pd.DataFrame(data, columns=["Complex", "Technique", "LLM", "Complex Function", "Organism", "Proteins", "Genes"])
 
 if df.empty:
-    print("Still no results parsed. Double check your batch_output.jsonl format.")
+    print("Still no results parsed. Double check your batch_output_2-5.jsonl format.")
 else:
-    df.to_csv("protein_complexes_results_from_batch.csv", index=False)
-    print("Results saved to protein_complexes_results_from_batch.csv")
+    df.to_csv("protein_complexes_results_from_batch_2-5.csv", index=False)
+    print("Results saved to protein_complexes_results_from_batch_2-5.csv")
