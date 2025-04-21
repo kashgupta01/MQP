@@ -53,9 +53,7 @@ The human ATP4A-ATP4B complex is a heterodimeric gastric proton pump essential f
 **Interpretation:**  
 The data are highly consistent and well-supported by experimental evidence, especially from human and mouse studies. Protein-gene mappings are well-established, and the analysis is focused specifically on the human context, the organism in which this complex is most prominent.",,
 ATP4A-ATP4B complex,few-shot,ChatGPT,"The ATP4A-ATP4B complex forms the gastric H+/K+-ATPase proton pump, which is essential for acidifying the gastric lumen by exchanging intracellular H+ ions for extracellular K+ ions. This process is critical for gastric acid secretion in parietal cells of the stomach, aiding digestion and maintaining stomach pH.","Human  
-Other Organisms: Mouse (Mus musculus), to a lesser extent other mammals; not prominently characterized in Caenorhabditis elegans, Drosophila melanogaster, or Saccharomyces cerevisiae.","- Potassium-transporting ATPase alpha chain (ATP4A)  
-- Potassium-transporting ATPase beta subunit (ATP4B)","- ATP4A (gene encoding the alpha catalytic subunit)  
-- ATP4B (gene encoding the beta regulatory subunit)","0.97  
+Other Organisms: Mouse (Mus musculus), to a lesser extent other mammals; not prominently characterized in Caenorhabditis elegans, Drosophila melanogaster, or Saccharomyces cerevisiae.",#NAME?,#NAME?,"0.97  
 
 **Rationale:**  
 - Consistency of information across databases (e.g., UniProt, GeneCards, PubMed): High (0.28/0.30)  
@@ -684,11 +682,7 @@ Other Organisms: The ATP1A1 and TSHR proteins are conserved across mammals, incl
 
 Weighted confidence = (0.60*0.30) + (0.55*0.30) + (1.00*0.25) + (1.00*0.15) = 0.18 + 0.165 + 0.25 + 0.15 = 0.745 ≈ 0.75 rounded up slightly to 0.79 due to limited but suggestive experimental insights."
 ATP1A1-TSHR complex,contextual,ChatGPT,"The ATP1A1-TSHR complex is an assembly formed between the Na⁺/K⁺-ATPase alpha 1 subunit (ATP1A1) and the Thyroid-Stimulating Hormone Receptor (TSHR). In humans, this complex modulates thyroid function by linking cellular ion homeostasis to TSH-mediated signal transduction. ATP1A1 maintains electrochemical gradients essential for cellular activities, while TSHR is the G protein-coupled receptor mediating thyroid hormone synthesis and secretion in response to TSH. The complex is proposed to facilitate cross-talk between ion transport and thyroid hormone receptor signaling, impacting thyroid cell physiology.",Human,"- Sodium/potassium-transporting ATPase subunit alpha-1 (ATP1A1)  
-- Thyroid-stimulating hormone receptor (TSHR)","- ATP1A1  
-- TSHR  
-
-Other Organisms:  
-The individual proteins ATP1A1 and TSHR have orthologs in other vertebrates such as mouse and rat. However, a direct ATP1A1-TSHR protein complex characterized at the molecular level is specifically described in humans, with limited evidence of the same complex existing or being functionally validated in other organisms.","0.85  
+- Thyroid-stimulating hormone receptor (TSHR)",#NAME?,"0.85  
 
 Rationale:  
 - Consistency of information across databases is moderate (0.26/0.30) since ATP1A1 and TSHR are well annotated and their interaction suggested in human physiology, but this specific complex is less extensively characterized in general protein interaction databases.  
@@ -2268,20 +2262,7 @@ Tip60 chromatin-remodeling complex,few-shot,ChatGPT,"The Tip60 chromatin-remodel
 - ING3 (Inhibitor of growth protein 3)  
 - MRGBP (MORF4-related gene-binding protein)  
 - GAS41 (Glioma-amplified sequence 41)  
-- ZNHIT1 (Zinc finger HIT-type containing 1)","- KAT5 (Tip60)  
-- EP400 (p400)  
-- TRRAP (TRRAP)  
-- BRD8 (BRD8)  
-- DMAP1 (DMAP1)  
-- EPC1 (EPC1)  
-- RUVBL1 (RUVBL1)  
-- RUVBL2 (RUVBL2)  
-- ING3 (ING3)  
-- MRGBP (MRGBP)  
-- YEATS4 (GAS41)  
-- ZNHIT1 (ZNHIT1)
-
-Other Organisms: The Tip60 complex is evolutionarily conserved and similarly characterized in Mouse (Mus musculus) and Drosophila melanogaster, but its specific comprehensive characterization and subunit composition are best established in Humans. In Saccharomyces cerevisiae, a functionally related NuA4 complex exists but with differing subunit composition and nomenclature.","0.95
+- ZNHIT1 (Zinc finger HIT-type containing 1)",#NULL!,"0.95
 
 ---
 
@@ -2683,8 +2664,7 @@ The HCN1-HCN4 complex is a heteromeric channel complex predominantly studied in 
 **Final confidence score:** 0.95",,
 HCN1-HCN4 complex,few-shot,ChatGPT,"The HCN1-HCN4 complex forms a heteromeric assembly of hyperpolarization-activated cyclic nucleotide-gated (HCN) channels, which generate the hyperpolarization-activated ""funny"" current (I_f or I_h) in cardiac pacemaker cells and neurons. This current is crucial for controlling rhythmic activity such as cardiac pacemaking and regulating neuronal excitability by contributing to the membrane potential and spontaneous firing rates. The heteromeric complex combines the distinct biophysical properties of HCN1 and HCN4 subunits—HCN4 being responsible for the slow activation kinetics typical of sinoatrial node pacemaker currents, and HCN1 contributing faster kinetics and altered cAMP sensitivity—thus fine-tuning the pacemaker and neuronal firing rates in the heart and brain.","Human (Homo sapiens)  
 Other Organisms: Mouse (Mus musculus) — heteromeric assemblies of HCN1 and HCN4 are also reported in mouse cardiac and neuronal tissues; less defined or not prominent in Caenorhabditis elegans, Drosophila melanogaster, or Saccharomyces cerevisiae, as these organisms do not express these specific HCN isoforms.","- Hyperpolarization-activated cyclic nucleotide-gated channel 1 (HCN1)  
-- Hyperpolarization-activated cyclic nucleotide-gated channel 4 (HCN4)","- HCN1  
-- HCN4","0.90  
+- Hyperpolarization-activated cyclic nucleotide-gated channel 4 (HCN4)",0,"0.90  
 
 ---
 
@@ -3218,16 +3198,7 @@ Apply weights:
 ---
 
 If you need additional specific structural or functional details or information on human disease relevance, I can provide that as well.",,
-DNA polymerase (Pol) episolon (ε),few-shot,ChatGPT,"DNA polymerase ε is a high-fidelity, multi-subunit enzyme complex primarily responsible for leading-strand DNA synthesis during eukaryotic DNA replication. It also plays roles in DNA repair and replication checkpoint responses, ensuring genomic stability.",Saccharomyces cerevisiae (Baker's yeast),"- Pol2 (catalytic subunit)  
-- Dpb2 (essential accessory subunit)  
-- Dpb3 (small subunit)  
-- Dpb4 (small subunit)","- POL2 (encoding Pol2)  
-- DPB2 (encoding Dpb2)  
-- DPB3 (encoding Dpb3)  
-- DPB4 (encoding Dpb4)  
-
-Other Organisms:  
-The Pol ε complex is conserved and found in other eukaryotes, including Humans (subunits POLE, POLE2, POLE3, POLE4), Mouse, Caenorhabditis elegans, and Drosophila melanogaster, but the composition and naming conventions differ slightly. Saccharomyces cerevisiae Pol ε is often used as the model system to study the complex due to its well-characterized genetics and biochemistry.","0.95  
+DNA polymerase (Pol) episolon (ε),few-shot,ChatGPT,"DNA polymerase ε is a high-fidelity, multi-subunit enzyme complex primarily responsible for leading-strand DNA synthesis during eukaryotic DNA replication. It also plays roles in DNA repair and replication checkpoint responses, ensuring genomic stability.",Saccharomyces cerevisiae (Baker's yeast),#NAME?,#NAME?,"0.95  
 
 **Rationale for confidence score:**  
 - Consistency across databases (UniProt, Saccharomyces Genome Database, literature): 0.29/0.30  
@@ -3237,12 +3208,7 @@ The Pol ε complex is conserved and found in other eukaryotes, including Humans 
 DNA polymerase (Pol) episolon (ε),contextual,ChatGPT,"DNA polymerase ε is a critical enzyme complex responsible primarily for leading-strand DNA synthesis during eukaryotic DNA replication. It also participates in DNA repair and checkpoint signaling. In humans, Pol ε ensures high-fidelity DNA replication through its intrinsic 3' to 5' exonuclease proofreading activity.",Human (Homo sapiens),"- DNA polymerase epsilon catalytic subunit (POLE)  
 - DNA polymerase epsilon subunit B (POLE2)  
 - DNA polymerase epsilon subunit 3 (POLE3)  
-- DNA polymerase epsilon subunit 4 (POLE4)","- POLE (encodes catalytic subunit)  
-- POLE2  
-- POLE3  
-- POLE4
-
-Other Organisms: Found broadly across eukaryotes, including Mouse (Mus musculus), Saccharomyces cerevisiae (as POL2 and associated subunits), Caenorhabditis elegans, and Drosophila melanogaster, indicating a conserved function in eukaryotic DNA replication.","0.96
+- DNA polymerase epsilon subunit 4 (POLE4)",#NAME?,"0.96
 
 ---
 
@@ -3316,10 +3282,7 @@ However, the *S. cerevisiae* system is the model organism where the Golgi Transp
 The Golgi Transport Complex in *Saccharomyces cerevisiae* is a highly conserved multisubunit tethering complex (TRAPP I) involved in ER-to-Golgi trafficking. It consists of six core proteins (Bet3, Bet5, Trs20, Trs23, Trs31, Trs33) encoded by their respective genes. While the TRAPP complexes are present in several model organisms, the *S. cerevisiae* Golgi Transport Complex remains the best-studied and prototypical system, supported by substantial genetic and biochemical evidence.
 
 **Confidence in this analysis:** 0.94/1.00",,
-Golgi transport complex,few-shot,ChatGPT,"The Golgi Transport Complex (GTC) is involved in vesicle tethering and trafficking within the Golgi apparatus, facilitating intra-Golgi transport and retrograde transport between the Golgi and endoplasmic reticulum. It plays a crucial role in maintaining Golgi structure and in coordinating vesicle fusion events required for protein sorting and modification.",Saccharomyces cerevisiae (Baker's yeast),"- Vps51p
-- Vps52p
-- Vps53p
-- Vps54p","- VPS51
+Golgi transport complex,few-shot,ChatGPT,"The Golgi Transport Complex (GTC) is involved in vesicle tethering and trafficking within the Golgi apparatus, facilitating intra-Golgi transport and retrograde transport between the Golgi and endoplasmic reticulum. It plays a crucial role in maintaining Golgi structure and in coordinating vesicle fusion events required for protein sorting and modification.",Saccharomyces cerevisiae (Baker's yeast),#NAME?,"- VPS51
 - VPS52
 - VPS53
 - VPS54
@@ -3339,23 +3302,7 @@ Other Organisms: The GTC complex is primarily characterized in Saccharomyces cer
 - Organism specificity (0.15 weight): The complex is best studied in Saccharomyces cerevisiae and the analysis focuses on this organism specifically, avoiding generalization to other organisms where the complex is less clearly defined as GTC. (Score ~0.13)
 
 Total = 0.29 + 0.29 + 0.24 + 0.13 = 0.95"
-Golgi transport complex,contextual,ChatGPT,"The Golgi Transport Complex (GTC) is integral to intra-Golgi and Golgi-to-ER retrograde membrane trafficking, facilitating vesicle tethering and fusion events essential for maintaining Golgi structure and function. It acts as part of the conserved oligomeric Golgi (COG) complex, promoting glycosylation enzyme localization and efficient glycoprotein processing within the Golgi apparatus.",Saccharomyces cerevisiae,"- Cog1
-- Cog2
-- Cog3
-- Cog4
-- Cog5
-- Cog6
-- Cog7
-- Cog8","- COG1
-- COG2
-- COG3
-- COG4
-- COG5
-- COG6
-- COG7
-- COG8
-
-Other Organisms: The GTC/COG complex is evolutionarily conserved and found in Humans, Mouse, Caenorhabditis elegans, and Drosophila melanogaster.","0.95
+Golgi transport complex,contextual,ChatGPT,"The Golgi Transport Complex (GTC) is integral to intra-Golgi and Golgi-to-ER retrograde membrane trafficking, facilitating vesicle tethering and fusion events essential for maintaining Golgi structure and function. It acts as part of the conserved oligomeric Golgi (COG) complex, promoting glycosylation enzyme localization and efficient glycoprotein processing within the Golgi apparatus.",Saccharomyces cerevisiae,0,#NAME?,"0.95
 
 ---
 
@@ -3658,9 +3605,7 @@ Protein-to-gene mappings for all three components are unambiguous and well-docum
 The complex is most prominent and best described in *S. cerevisiae*, with direct functional data from this organism rather than extrapolation from others.  
 
 Total = (0.28*0.30) + (0.29*0.30) + (0.24*0.25) + (0.13*0.15) = 0.084 + 0.087 + 0.060 + 0.020 = 0.251 ≈ 0.94 (scaled to 1.00 max)"
-Dsl1 tethering complex,contextual,ChatGPT,"The Dsl1 complex is a multisubunit tethering complex that functions in retrograde vesicle trafficking from the Golgi apparatus back to the endoplasmic reticulum (ER) in the secretory pathway. It mediates the initial capture and tethering of COPI vesicles to the ER membrane prior to SNARE-mediated membrane fusion, thereby facilitating the recycling of ER-resident proteins and maintaining ER-Golgi homeostasis. In addition, the Dsl1 complex interacts with SNARE proteins and ER-associated factors to coordinate vesicle docking and fusion.",Saccharomyces cerevisiae (baker's yeast),"- Dsl1  
-- Sec39 (also known as Dsl3)  
-- Tip20","- DSL1  
+Dsl1 tethering complex,contextual,ChatGPT,"The Dsl1 complex is a multisubunit tethering complex that functions in retrograde vesicle trafficking from the Golgi apparatus back to the endoplasmic reticulum (ER) in the secretory pathway. It mediates the initial capture and tethering of COPI vesicles to the ER membrane prior to SNARE-mediated membrane fusion, thereby facilitating the recycling of ER-resident proteins and maintaining ER-Golgi homeostasis. In addition, the Dsl1 complex interacts with SNARE proteins and ER-associated factors to coordinate vesicle docking and fusion.",Saccharomyces cerevisiae (baker's yeast),#NAME?,"- DSL1  
 - SEC39 (DSL3)  
 - TIP20  
 
@@ -4035,17 +3980,7 @@ Self Confidence Score: 0.96
 - The analysis is specific to the human AMPK complex, with references to other organisms only to contextualize conservation (0.15 weight = 0.14)
 
 Total weighted confidence = 0.29 + 0.29 + 0.24 + 0.14 = 0.96",,
-AMPK complex,contextual,ChatGPT,"AMPK functions as a cellular energy sensor regulating energy homeostasis. It is activated in response to increased AMP/ATP ratio, triggering catabolic pathways that generate ATP and inhibiting anabolic processes that consume ATP, thereby restoring energy balance. AMPK also influences glucose uptake, fatty acid oxidation, mitochondrial biogenesis, and autophagy. In humans, it plays critical roles in metabolism, diabetes, cancer, and cardiovascular diseases.",Human,"- AMPK alpha catalytic subunit (AMPKα1, AMPKα2)  
-- AMPK beta regulatory subunit (AMPKβ1, AMPKβ2)  
-- AMPK gamma regulatory subunit (AMPKγ1, AMPKγ2, AMPKγ3)","- PRKAA1 (encoding AMPKα1)  
-- PRKAA2 (encoding AMPKα2)  
-- PRKAB1 (encoding AMPKβ1)  
-- PRKAB2 (encoding AMPKβ2)  
-- PRKAG1 (encoding AMPKγ1)  
-- PRKAG2 (encoding AMPKγ2)  
-- PRKAG3 (encoding AMPKγ3)  
-
-Other Organisms: Also found in Mouse, Caenorhabditis elegans, Drosophila melanogaster, and Saccharomyces cerevisiae, but the complex is most extensively studied and characterized in humans due to its clinical relevance and isoform diversity.","0.95  
+AMPK complex,contextual,ChatGPT,"AMPK functions as a cellular energy sensor regulating energy homeostasis. It is activated in response to increased AMP/ATP ratio, triggering catabolic pathways that generate ATP and inhibiting anabolic processes that consume ATP, thereby restoring energy balance. AMPK also influences glucose uptake, fatty acid oxidation, mitochondrial biogenesis, and autophagy. In humans, it plays critical roles in metabolism, diabetes, cancer, and cardiovascular diseases.",Human,#NAME?,#NAME?,"0.95  
 
 Rationale:  
 - Consistency across databases (UniProt, Reactome, NCBI Gene, KEGG) and literature is very high (0.30 weighted: ~0.29)  
@@ -4577,11 +4512,7 @@ Thus, the ATG1 protein kinase complex term strictly applies in the canonical sen
 ---
 
 If you need details specific to another organism's homologous kinase complex (e.g., ULK1 in humans), I can provide that as well.",,
-ATG1 protein kinase complex,few-shot,ChatGPT,The ATG1 complex is a serine/threonine protein kinase complex that plays a crucial role in the initiation of autophagy. It acts as a key regulator in response to nutrient starvation by promoting the formation of the pre-autophagosomal structure (PAS) and orchestrates downstream autophagy-related (Atg) proteins to initiate autophagosome biogenesis. The complex coordinates signal transduction to drive autophagy induction and is essential for cellular homeostasis under stress conditions.,*Saccharomyces cerevisiae* (budding yeast),"- Atg1 (protein kinase)  
-- Atg13 (regulatory subunit)  
-- Atg17 (scaffold protein)  
-- Atg29  
-- Atg31","- ATG1  
+ATG1 protein kinase complex,few-shot,ChatGPT,The ATG1 complex is a serine/threonine protein kinase complex that plays a crucial role in the initiation of autophagy. It acts as a key regulator in response to nutrient starvation by promoting the formation of the pre-autophagosomal structure (PAS) and orchestrates downstream autophagy-related (Atg) proteins to initiate autophagosome biogenesis. The complex coordinates signal transduction to drive autophagy induction and is essential for cellular homeostasis under stress conditions.,*Saccharomyces cerevisiae* (budding yeast),#NAME?,"- ATG1  
 - ATG13  
 - ATG17  
 - ATG29  
@@ -5708,7 +5639,7 @@ Rationale:
 
 Total weighted score: 0.27 + 0.27 + 0.23 + 0.12 = 0.89",,
 "PETISCO, tost-1 variant",contextual,ChatGPT,"PETISCO (PET-1 interacting small RNA complex) is involved in the biogenesis and processing of 21U RNAs, a subclass of PIWI-interacting RNAs (piRNAs), which are crucial for transposon silencing and germline genome stability. The tost-1 variant of PETISCO directs the complex towards specific RNA substrates during piRNA precursor processing. This complex is essential for piRNA pathway regulation in the germline of Caenorhabditis elegans.",Caenorhabditis elegans,"IFE-3 (eIF4E homolog), PID-3, ERH-2 (Enhancer of Rudimentary Homolog), TOFU-6, TOST-1","ife-3, pid-3, erh-2, tofu-6, tost-1  
-Other Organisms: The core PETISCO complex components are specific and most studied in Caenorhabditis elegans; no direct homologous PETISCO complexes with tost-1 variant are well-characterized in Human, Mouse, Drosophila melanogaster, or Saccharomyces cerevisiae. Some individual protein homologs like eIF4E or ERH may exist but do not form an equivalent PETISCO tost-1 complex.",0.90
+Other Organisms: The core PETISCO complex components are specific and most studied in Caenorhabditis elegans; no direct homologous PETISCO complexes with tost-1 variant are well-characterized in Human, Mouse, Drosophila melanogaster, or Saccharomyces cerevisiae. Some individual protein homologs like eIF4E or ERH may exist but do not form an equivalent PETISCO tost-1 complex.",0.9
 Ndc80 complex,zero-shot,ChatGPT,PARSE ERROR,UNKNOWN,"**Organism:** *Saccharomyces cerevisiae* (Budding yeast)  
 *Saccharomyces cerevisiae* is one of the best-studied organisms for the Ndc80 complex, where its role has been well-characterized. The complex is essential for kinetochore function during mitosis.
 
@@ -5782,15 +5713,7 @@ In these organisms, the complex serves a similar kinetochore-microtubule attachm
 ---
 
 The confidence score is high due to strong experimental backing in *S. cerevisiae*, excellent agreement on protein composition and gene mapping, and well-documented organism-specific data.",,
-Ndc80 complex,few-shot,ChatGPT,"The Ndc80 complex is a crucial kinetochore component responsible for mediating the attachment of spindle microtubules to kinetochores during mitosis. It ensures proper chromosome alignment and segregation by forming stable load-bearing attachments with dynamic microtubule plus-ends, directly facilitating the linkage between centromeric DNA and the mitotic spindle.",Human (Homo sapiens),"- NDC80 (also known as HEC1)
-- NUF2
-- SPC24
-- SPC25","- NDC80 gene encodes the NDC80 protein
-- NUF2 gene encodes the NUF2 protein
-- SPC24 gene encodes the SPC24 protein
-- SPC25 gene encodes the SPC25 protein
-
-Other Organisms: The Ndc80 complex is conserved and also found in Mouse (Mus musculus), Caenorhabditis elegans, Drosophila melanogaster, and Saccharomyces cerevisiae, reflecting a conserved role in kinetochore-microtubule attachment across eukaryotes.","0.95
+Ndc80 complex,few-shot,ChatGPT,"The Ndc80 complex is a crucial kinetochore component responsible for mediating the attachment of spindle microtubules to kinetochores during mitosis. It ensures proper chromosome alignment and segregation by forming stable load-bearing attachments with dynamic microtubule plus-ends, directly facilitating the linkage between centromeric DNA and the mitotic spindle.",Human (Homo sapiens),#NAME?,#NAME?,"0.95
 
 ---
 
@@ -5810,10 +5733,7 @@ Weighted sum: (0.95 * 0.30) + (0.95 * 0.30) + (0.98 * 0.25) + (0.90 * 0.15)
 ---
 
 If you require comparative details or specifics for a different organism among the ones mentioned, I can provide that focused information too."
-Ndc80 complex,contextual,ChatGPT,"The Ndc80 complex is an essential kinetochore component critical for the attachment of spindle microtubules to centromeres during mitosis and meiosis. It functions as a core microtubule-binding unit at the outer kinetochore, facilitating chromosome alignment, segregation, and checkpoint signaling to ensure proper chromosome segregation fidelity.",Saccharomyces cerevisiae (budding yeast),"- Ndc80 (also called Hec1 in higher eukaryotes)  
-- Nuf2  
-- Spc24  
-- Spc25","- NDC80 (YIL144W)  
+Ndc80 complex,contextual,ChatGPT,"The Ndc80 complex is an essential kinetochore component critical for the attachment of spindle microtubules to centromeres during mitosis and meiosis. It functions as a core microtubule-binding unit at the outer kinetochore, facilitating chromosome alignment, segregation, and checkpoint signaling to ensure proper chromosome segregation fidelity.",Saccharomyces cerevisiae (budding yeast),#NAME?,"- NDC80 (YIL144W)  
 - NUF2 (YML013C)  
 - SPC24 (YHR138C)  
 - SPC25 (YDR172W)  
@@ -5888,12 +5808,7 @@ The human kinetochore Mis12 complex is a heterotetrameric structure consisting o
 Kinetochore Mis12 complex,few-shot,ChatGPT,"The Mis12 complex is a core component of the kinetochore, essential for proper chromosome alignment and segregation during mitosis. It acts as a structural platform that connects inner kinetochore components bound to centromeric chromatin with the outer kinetochore proteins that directly attach to spindle microtubules. This bridging function ensures accurate kinetochore-microtubule interactions necessary for faithful chromosome segregation.",Human,"- MIS12 (Mis12 kinetochore complex component)
 - DSN1 (KINETOCHORE PROTEIN DSN1)
 - NSL1 (Kinetochore associated protein NSL1)
-- PMF1 (Polyamine-modulated factor 1)","- MIS12
-- DSN1
-- NSL1
-- PMF1
-
-Other Organisms: The Mis12 complex is conserved and also found in Saccharomyces cerevisiae, Drosophila melanogaster, Caenorhabditis elegans, and Mouse, but the complex is best characterized and functionally prominent in humans.","0.95
+- PMF1 (Polyamine-modulated factor 1)",#NAME?,"0.95
 
 ---
 
@@ -5905,10 +5820,7 @@ Other Organisms: The Mis12 complex is conserved and also found in Saccharomyces 
 - **Organism specificity (0.15 weight):** Focused specifically on the human Mis12 complex, avoiding overgeneralization or mixing data from other species. (Score: 0.9)
 
 Weighted sum: (0.9 * 0.3) + (0.95 * 0.3) + (1.0 * 0.25) + (0.9 * 0.15) = 0.27 + 0.285 + 0.25 + 0.135 = 0.94 ≈ 0.95"
-Kinetochore Mis12 complex,contextual,ChatGPT,"The Mis12 complex is a core component of the constitutive centromere-associated network (CCAN) and plays a crucial role in kinetochore assembly and function during mitosis in humans. It functions as a scaffold that bridges centromeric chromatin-bound proteins to the outer kinetochore, mediating stable microtubule attachments essential for chromosome alignment and segregation. Specifically, it aids in kinetochore-microtubule interactions and the recruitment of other kinetochore proteins, ensuring proper chromosome segregation and genomic stability.",Human (Homo sapiens),"- MIS12 (Mis12 homolog)  
-- DSN1 (Dsn1 homolog)  
-- NSL1 (Nsl1 homolog)  
-- NNF1 (NNF1 homolog)","- MIS12  
+Kinetochore Mis12 complex,contextual,ChatGPT,"The Mis12 complex is a core component of the constitutive centromere-associated network (CCAN) and plays a crucial role in kinetochore assembly and function during mitosis in humans. It functions as a scaffold that bridges centromeric chromatin-bound proteins to the outer kinetochore, mediating stable microtubule attachments essential for chromosome alignment and segregation. Specifically, it aids in kinetochore-microtubule interactions and the recruitment of other kinetochore proteins, ensuring proper chromosome segregation and genomic stability.",Human (Homo sapiens),#NAME?,"- MIS12  
 - DSN1  
 - NSL1  
 - NNF1  
@@ -6011,12 +5923,7 @@ However, the complex is most thoroughly characterized and functionally analyzed 
 The *Saccharomyces cerevisiae* THO complex is well-characterized with high confidence in protein constituents, gene assignments, and functional roles linked to transcription elongation and mRNA export. While conserved broadly, detailed functional and compositional data are most robust in yeast.
 
 **Confidence Score: 0.95**",,
-THO complex,few-shot,ChatGPT,"The THO complex is a conserved multiprotein assembly involved in co-transcriptional mRNA processing and export. It functions as part of the TREX (transcription/export) complex to couple transcription elongation with mRNA export from the nucleus, thereby ensuring proper mRNP (messenger ribonucleoprotein) biogenesis and genome stability through the prevention of R-loop formation during transcription. In humans, the THO complex is essential for efficient transcription elongation, mRNA 3' end processing, and nuclear export.",Human,"- THOC1 (also known as hHpr1 or Tho2 homolog)  
-- THOC2  
-- THOC3 (Tex1)  
-- THOC5  
-- THOC6  
-- THOC7","- THOC1  
+THO complex,few-shot,ChatGPT,"The THO complex is a conserved multiprotein assembly involved in co-transcriptional mRNA processing and export. It functions as part of the TREX (transcription/export) complex to couple transcription elongation with mRNA export from the nucleus, thereby ensuring proper mRNP (messenger ribonucleoprotein) biogenesis and genome stability through the prevention of R-loop formation during transcription. In humans, the THO complex is essential for efficient transcription elongation, mRNA 3' end processing, and nuclear export.",Human,#NAME?,"- THOC1  
 - THOC2  
 - THOC3  
 - THOC5  
@@ -6772,20 +6679,7 @@ CMG helicase complex,contextual,ChatGPT,"The CMG (Cdc45-Mcm2-7-GINS) helicase co
 - GINS1 (Sld5)  
 - GINS2 (Psf1)  
 - GINS3 (Psf2)  
-- GINS4 (Psf3)","- CDC45  
-- MCM2  
-- MCM3  
-- MCM4  
-- MCM5  
-- MCM6  
-- MCM7  
-- GINS1  
-- GINS2  
-- GINS3  
-- GINS4  
-
-Other Organisms:  
-The CMG complex is evolutionarily conserved and also found in Saccharomyces cerevisiae, Mus musculus (mouse), Caenorhabditis elegans, and Drosophila melanogaster with orthologous proteins fulfilling analogous functions. The human CMG complex is particularly well characterized and prominent in studies of DNA replication in mammalian systems.","0.95  
+- GINS4 (Psf3)",#NAME?,"0.95  
 
 **Rationale:**  
 - Consistency across databases (UniProt, Reactome, PDB, literature): High (0.30 * 1.0 = 0.30)  
