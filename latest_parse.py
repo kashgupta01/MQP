@@ -32,14 +32,14 @@ def extract_to_csv_with_quotes(
 
     # Order of columns in the output
     COLS: List[str] = [
-        "technique",
-        "complex name",
-        "organism",
-        "complex function",
-        "proteins",
-        "genes",
-        "other organisms",
-        "confidence score",
+        "Technique",
+        "Complex Name",
+        "Organism",
+        "Other Organisms",
+        "Complex Function",
+        "Proteins",
+        "Genes",
+        "Confidence Score",
     ]
 
     # Common “spellings” for each field we have to recognise.
@@ -78,9 +78,9 @@ def extract_to_csv_with_quotes(
                 header_pat[
                     re.compile(
                         rf"""^[\'"]?      # optional opening quote
-                             \s*(?:\*{{0,3}}\s*)?  # up to 3 asterisks
+                             \s*(?:\*{{0,5}}\s*)?  # up to 3 asterisks
                              ({v})                # the field name
-                             \s*(?:\*{{0,3}})?    # trailing asterisks
+                             \s*(?:\*{{0,5}})?    # trailing asterisks
                              [\'"]?               # optional closing quote
                              \s*:?\s*$            # optional colon
                         """,
@@ -110,7 +110,7 @@ def extract_to_csv_with_quotes(
 
             # ---------------- technique
             custom_id = rec.get("custom_id", "")
-            technique = custom_id.split("|", 1)[1] if "|" in custom_id else ""
+            technique = custom_id.split("|", 1)[1] 
 
             # ---------------- message content to parse
             content = (
