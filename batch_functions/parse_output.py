@@ -1,69 +1,56 @@
 import json
 import pandas as pd
-import re
 
-data = []
+# your target columns/fields
+fields = [
+    "Complex Name",
+    "Organism",
+    "Complex Function",
+    "Proteins",
+    "Genes",
+    "Other Organisms",
+    "Confidence Score"
+]
 
-with open("batch_output_6.jsonl", "r") as f:
-    for i, line in enumerate(f, start=1):
+def extract_fields(text):
+    # ignore everything after the divider
+    text = text.split('---', 1)[0]
+
+    data = {}
+    for i, field in enumerate(fields):
+        prefix = field + ":"
+        start = text.find(prefix)
+        if start == -1:
+            data[field] = ""
+            continue
+
+        # skip past "FieldName:"
+        value_start = start + len(prefix)
+
+        # find where the next field begins (or end‐of‐text)
+        if i + 1 < len(fields):
+            next_prefix = fields[i+1] + ":"
+            end = text.find(next_prefix, value_start)
+            if end == -1:
+                end = len(text)
+        else:
+            end = len(text)
+
+        # extract and clean up whitespace/newlines
+        raw = text[value_start:end].strip()
+        data[field] = " ".join(raw.split())
+
+    return data
+
+# now read your .jsonl, pull out the `content`, parse, and build rows
+rows = []
+with open("test2.jsonl", encoding="utf8") as f:
+    for line in f:
         obj = json.loads(line)
-        
-        custom_id = obj.get("custom_id", "")
-        if "|" in custom_id:
-            complex_name, technique = custom_id.split("|", 1)
-        else:
-            complex_name, technique = custom_id, "unknown"
+        content = obj["response"]["body"]["choices"][0]["message"]["content"]
+        rec = extract_fields(content)
+        rows.append(rec)
 
-        llm_name = "ChatGPT"  # just for now since only testing with chatGPT
-
-        # try to get the content
-        try:
-            content = obj["response"]["body"]["choices"][0]["message"]["content"]
-        except Exception as e:
-            print(f"[{i}] Error extracting content for {custom_id}: {e}")
-            content = ""
-
-        # clean the string
-        content = content.strip().replace("’", "'")
-        content = re.sub(r"^'+", "", content)  # remove starting quotes
-        content = re.sub(r"\n'+", "\n", content)
-
-        # try regex parse
-        match = re.search(
-            r"Complex Function:\s*(.*?)\s*Organism:\s*(.*?)\s*Other Organisms:\s*(.*?)\s*Proteins:\s*(.*?)\s*Genes:\s*(.*?)\s*Self Confidence Score:\s*(.*)",
-            content,
-            re.DOTALL
-        )
-
-        if match:
-            complex_function, organism, other_organisms, proteins, genes, self_confidence_score = match.groups()
-            data.append([
-                complex_name.strip(),
-                technique.strip(),
-                llm_name,
-                complex_function.strip(),
-                organism.strip(),
-                other_organisms.strip(),
-                proteins.strip(),
-                genes.strip(),
-                self_confidence_score.strip(),
-            ])
-        else:
-            print(f"[{i}] ⚠️ No match for {custom_id}. Raw content:\n{content[:300]}\n---")
-            data.append([
-                complex_name.strip(),
-                technique.strip(),
-                llm_name,
-                "PARSE ERROR",
-                "UNKNOWN",
-                content.strip()
-            ])
-
-# create & save the dataframe
-df = pd.DataFrame(data, columns=["Complex", "Technique", "LLM", "Complex Function", "Organism", "Other Organisms", "Proteins", "Genes", "Self Confidence Score"])
-
-if df.empty:
-    print("Still no results parsed. Double check your batch_output_6.jsonl format.")
-else:
-    df.to_csv("protein_complexes_results_from_batch_6.csv", index=False)
-    print("Results saved to protein_complexes_results_from_batch_6.csv")
+# dump to CSV
+df = pd.DataFrame(rows, columns=fields)
+df.to_csv("test2.csv", index=False)
