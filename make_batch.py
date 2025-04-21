@@ -33,7 +33,15 @@ prompt_techniques = {
     across different databases/sources(0.3 weight), supporting experimental data regarding the complex(0.3 weight), accuracy \
     of corresponding protein-gene mapping(0.25 weight), and the analysis information being specific to the organism that it is \
     most promininent in(0.15 weight). The weight in parentheses following each grading convention signifies how much each \
-    criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the confidence score portion please only return the full arithmetic equation with its numeric values.", 
+    criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the \
+    confidence score portion please only return the full arithmetic equation with its numeric values. Your full analysis should include the following categories: \
+    \n'Complex Name'\
+    \n'Complex Function' \
+    \n'Organism'\
+    \n'Other Organisms'\
+    \n'Proteins'\
+    \n'Genes'\
+    \n'Self Confidence Score'",
 
     "few-shot":        
     "Perform a thorough analysis of the protein \
@@ -129,7 +137,7 @@ prompt_techniques = {
 #     ]
 
 # make jsonl file
-with open("gpt4o_in_pt4.jsonl", "w") as f:
+with open("test.jsonl", "w") as f:
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
             prompt = template.format(complex=complex_name).replace("    ", "")
@@ -138,14 +146,14 @@ with open("gpt4o_in_pt4.jsonl", "w") as f:
                 "method": "POST",
                 "url": "/v1/chat/completions",
                 "body": {
-                    "model": "gpt-4o",
+                    "model": "gpt-4o-mini",
                     "messages": [{"role": "user", "content": prompt}]
                 }
             }
             f.write(json.dumps(json_line) + "\n")
 
 # upload input file
-upload = openai.files.create(file=open("gpt4o_in_pt4.jsonl", "rb"), purpose="batch")
+upload = openai.files.create(file=open("test.jsonl", "rb"), purpose="batch")
 
 # create batch task
 batch = openai.batches.create(

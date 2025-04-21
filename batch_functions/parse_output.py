@@ -44,7 +44,7 @@ def extract_fields(text):
 
 # now read your .jsonl, pull out the `content`, parse, and build rows
 rows = []
-with open("test2.jsonl", encoding="utf8") as f:
+with open("test_output.jsonl", encoding="utf8") as f:
     for line in f:
         obj = json.loads(line)
         content = obj["response"]["body"]["choices"][0]["message"]["content"]
@@ -53,4 +53,4 @@ with open("test2.jsonl", encoding="utf8") as f:
 
 # dump to CSV
 df = pd.DataFrame(rows, columns=fields)
-df.to_csv("test2.csv", index=False)
+df.to_csv("test_output.csv", index=False)
