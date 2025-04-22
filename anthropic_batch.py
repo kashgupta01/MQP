@@ -1,89 +1,79 @@
-import openai
-import requests
-import pandas as pd
-import re 
-import requests
-import json 
+import anthropic
+from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+from anthropic.types.messages.batch_create_params import Request
+from dotenv import load_dotenv
+import os
+import re
 
-# Initialize API keys 
-#OPENAI_API_KEY = ""
-PERPLEXITY_API_KEY = ""
-# ANTHROPIC_API_KEY = ""
+load_dotenv()
 
-# Define LLM APIs
-LLM_APIS = {
-    #"ChatGPT": ("https://api.openai.com/v1/chat/completions", OPENAI_API_KEY),
-    "Perplexity": ("https://api.perplexity.ai/chat/completions", PERPLEXITY_API_KEY),
-    # "Anthropic": ("https://api.anthropic.com/v1/messages", ANTHROPIC_API_KEY)
-}
+client = anthropic.Anthropic(os.environ["ANTHROPIC_API_KEY"])
 
-# Define list of protein complexes (do in batches?)
+complexes = [
+    "ATP4A-ATP4B complex",
+    "Cytochrome bc1 Complex (Complex III)",
+    "Synaptonemal Complex",
+    "GNA12-GPR55-RGS2 complex",
+    "Melanocortin receptor 3",
+    "ATP1A1-TSHR complex",
+    "ADRA1B-CXCR4 complex",
+    "Bdkrb2-Tbxa2r complex",
+    "Drd3-Ednrb complex",
+    "Egflam-Gpr179 complex",
+    "Ceacam1-4L-Syk-Tlr4 complex",
+    "KDR-NRP1-VEGF165 complex",
+    "NRP1-VEGF121 complex",
+    "KDR-VEGF165 complex",
+    "FLT4-VEGFC complex",
+    "ITGA3-ITGB1 complex",
+    "Golgi-associated retrograde protein complex",
+    "Transmembrane channel-like (TMC) 2 complex",
+    "13 subunit eukaryotic initiation factor 3 (eIF3) complex",
+    "Tip60 chromatin-remodeling complex ",
+    "COP9 Signalosome",
+    "20S proteosome",
+    "HCN1-HCN4 complex",
+    "GRIN1-P2RY4 complex",
+    "LY96-TLR4 complex",
+    "RAD6-RAD18 ubiquitin ligase complex",
+    "PHO85-PHO80 CDK-cyclin complex",
+    "DNA polymerase (Pol) episolon (ε)",
+    "Golgi transport complex",
+    "GPI-anchor transamidase complex",
+    "Glycosylphosphatidylinositol-mannosyltransferase I complex",
+    "Dsl1 tethering complex",
+    "AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
+    "PAN1 actin cytoskeleton-regulatory complex",
+    "AMPK complex",
+    "Augmin complex",
+    "Myb-MuvB transcriptional activation complex",
+    "CORVET tethering complex",
+    "Sodium leak channel complex",
+    "ATG1 protein kinase complex",
+    "NXF1-NXT1 mRNA nuclear export factor complex",
+    "MON1-CCZ1 guanyl-nucleotide exchange factor complex",
+    "HipHop-HOAP telomere-capping complex",
+    "ZFP-1(AF10)/DOT-1 complex",
+    "ced-3-ced-4-mac-1 complex",
+    "Nuclear mitotic cohesin complex",
+    "Atk-1/Akt-2/Sgk-1 protein kinase complex",
+    "RB1-E2F1-TFDP1 transcription repressor complex",
+    "PETISCO, pid-1 variant",
+    "PETISCO, tost-1 variant",
+    "Ndc80 complex",
+    "Kinetochore Mis12 complex",
+    "THO complex",
+    "Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2",
+    "Ste12/Dig1/Dig2 transcription regulation complex",
+    "TRAPP II complex",
+    "CCM complex",
+    "mu-Calpain complex",
+    "GINS complex ",
+    "CMG helicase complex",
+    "20S mitochondrial small ribosomal subunit",
+    "Cardiac troponin complex"
+]
 
-complexes = ["ATP4A-ATP4B complex",
-"Cytochrome bc1 Complex (Complex III)",
-"Synaptonemal Complex",
-"GNA12-GPR55-RGS2 complex",
-"Melanocortin receptor 3",
-"ATP1A1-TSHR complex",
-"ADRA1B-CXCR4 complex",
-"Bdkrb2-Tbxa2r complex",
-"Drd3-Ednrb complex",
-"Egflam-Gpr179 complex",
-"Ceacam1-4L-Syk-Tlr4 complex",
-"KDR-NRP1-VEGF165 complex",
-"NRP1-VEGF121 complex",
-"KDR-VEGF165 complex",
-"FLT4-VEGFC complex",
-"ITGA3-ITGB1 complex",
-"Golgi-associated retrograde protein complex",
-"Transmembrane channel-like (TMC) 2 complex",
-"13 subunit eukaryotic initiation factor 3 (eIF3) complex",
-"Tip60 chromatin-remodeling complex",
-"COP9 Signalosome",
-"20S proteosome",
-"HCN1-HCN4 complex",
-"GRIN1-P2RY4 complex",
-"LY96-TLR4 complex",
-"RAD6-RAD18 ubiquitin ligase complex",
-"PHO85-PHO80 CDK-cyclin complex",
-"DNA polymerase (Pol) episolon (ε)",
-"Golgi transport complex",
-"GPI-anchor transamidase complex",
-"Glycosylphosphatidylinositol-mannosyltransferase I complex",
-"Dsl1 tethering complex",
-"AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
-"PAN1 actin cytoskeleton-regulatory complex",
-"AMPK complex",
-"Augmin complex",
-"Myb-MuvB transcriptional activation complex",
-"CORVET tethering complex",
-"Sodium leak channel complex",
-"ATG1 protein kinase complex",
-"NXF1-NXT1 mRNA nuclear export factor complex",
-"MON1-CCZ1 guanyl-nucleotide exchange factor complex",
-"HipHop-HOAP telomere-capping complex",
-"ZFP-1(AF10)/DOT-1 complex",
-"ced-3-ced-4-mac-1 complex",
-"Nuclear mitotic cohesin complex",
-"Atk-1/Akt-2/Sgk-1 protein kinase complex",
-"RB1-E2F1-TFDP1 transcription repressor complex",
-"PETISCO, pid-1 variant",
-"PETISCO, tost-1 variant",
-"Ndc80 complex",
-"Kinetochore Mis12 complex",
-"THO complex",
-"Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2",
-"Ste12/Dig1/Dig2 transcription regulation complex",
-"TRAPP II complex",
-"CCM complex",
-"mu-Calpain complex",
-"GINS complex",
-"CMG helicase complex",
-"20S mitochondrial small ribosomal subunit",
-"Cardiac troponin complex"]
-
-
-# Define prompting techniques
 prompt_techniques = {
     "zero-shot":
     "Perform a thorough analysis of the protein complex: {complex}. Avoid overgeneralization and \
@@ -191,107 +181,42 @@ prompt_techniques = {
     \n'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
     \n'Genes: unc80, na, unc79'\
     \n'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
-
-    
 }
 
+def make_custom_id(complex_name: str, technique: str) -> str:
+    """
+    Build a valid custom_id: `[A‑Z a‑z 0‑9 _‑]{1,64}`.
+    - Convert spaces to '_' so they stay readable.
+    - Strip everything else that isn't allowed.
+    - Truncate at 64 chars (Anthropic hard limit).
+    """
+    raw = f"{complex_name}__{technique}"
+    # 1) spaces → underscores
+    raw = raw.replace(" ", "_")
+    # 2) drop illegal chars
+    safe = re.sub(r"[^A-Za-z0-9_-]", "", raw)
+    # 3) enforce 64‑char limit
+    return safe[:64]
 
-# Initialize results list
-results = []
+def build_batch_requests(complexes, prompt_techniques,
+                         model="claude-3-opus-20240229",
+                         max_tokens=1024):
+    requests = []
+    for complex_name in complexes:
+        for technique, template in prompt_techniques.items():
+            prompt = template.format(complex=complex_name).replace("    ", "")
+            requests.append(
+                Request(
+                    custom_id=make_custom_id(complex_name, technique),
+                    params=MessageCreateParamsNonStreaming(
+                        model=model,
+                        max_tokens=max_tokens,
+                        messages=[{"role": "user", "content": prompt}],
+                    ),
+                )
+            )
+    return requests
 
-#Method to call each API  
-def call_api(llm_name, prompt):
-    url, api_key = LLM_APIS[llm_name]
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    
-    if llm_name == "ChatGPT":
-        data = {"model": "gpt-4", "messages": [{"role": "user", "content": prompt}]}
-    elif llm_name == "Perplexity":
-        data = {"model": "sonar-reasoning-pro", "messages": [{"role": "user", "content": prompt}]}
-    # elif llm_name == "Anthropic":
-    #     data = {"model": "claude-2", "messages": [{"role": "user", "content": prompt}]}
-    
-    response = requests.post(url, json=data, headers=headers)
-    return response.json().get("choices", [{}])[0].get("message", {}).get("content", "")
+batch_requests = build_batch_requests(complexes, prompt_techniques)
+batch = client.messages.batches.create(requests=batch_requests)
 
-data = []
-# Loop through each complex and each prompt technique
-#Right now it just records responses in 1 row, but find a way to do it in separated columns 
-'''
-for complex_name in complexes:
-    for technique, template in prompt_techniques.items():
-        prompt = template.format(complex=complex_name)
-        
-        for llm_name in LLM_APIS.keys():
-            response_text = call_api(llm_name, prompt)
-            match = re.search(
-                    r"Complex Function:\s*(.*?)\s*"
-                    r"Organism:\s*(.*?)\s*"
-                    r"Other Organisms:\s*(.*?)\s*"
-                    r"Proteins:\s*(.*?)\s*"
-                    r"Genes:\s*(.*?)\s*"
-                    r"Confidence Score:\s*(.*)", 
-                    response_text, 
-                    re.DOTALL)
-            if match:
-                complex_function, organism, other_organisms, proteins, genes, confidence_score = match.groups()
-                data.append([technique, complex_name, organism, other_organisms, complex_function, proteins, genes, confidence_score])
-'''
-def extract_field(text, label):
-    pattern = rf"{label}:\s*(.*)"
-    match = re.search(pattern, text, re.IGNORECASE)
-    return match.group(1).strip() if match else "N/A"
-
-for complex_name in complexes:
-    for technique, template in prompt_techniques.items():
-        prompt = template.format(complex=complex_name)
-        
-        for llm_name in LLM_APIS.keys():
-            response_text = call_api(llm_name, prompt)
-            organism = extract_field(response_text, "Organism")
-            complex_function = extract_field(response_text, "Complex Function")
-            confidence_score = extract_field(response_text, "Confidence Score")
-            complex_name = extract_field(response_text, "Complex Name") or complex_name
-            other_organisms = extract_field(response_text, "Other Organisms")
-            proteins = extract_field(response_text, "Proteins")
-            genes = extract_field(response_text, "Genes")
-                
-            #data.append([
-                #technique,
-                #complex_name,
-                #organism,
-                #other_organisms,
-                #complex_function,
-                #proteins,
-                #genes,
-                #confidence_score ])
-            result = {
-                "technique": technique,
-                "complex_name": complex_name,
-                "organism": organism,
-                "other_organisms": other_organisms,
-                "complex_function": complex_function,
-                "proteins": proteins,
-                "genes": genes,
-                "confidence_score": confidence_score
-            }
-            data.append(result)
-            
-
-
-# Convert results to DataFrame
-#results_df = pd.DataFrame(data, columns = ["Technique", "Complex Name","Organism", "Other Organisms", "Complex Function", "Proteins", "Genes", "Confidence Score"])
-#results_df.to_csv("Perplexity_results.csv", index=False)
-
-with open("Perplexity.json", "w") as json_file:
-    json.dump(data, json_file, indent=4)
-
-with open("Perplexity.json", "r") as json_file:
-    json_data = json.load(json_file)
-
-per_results = pd.DataFrame(json_data)
-per_results.to_csv("Perplexity.csv", index=False)
-
-print("Data collection complete. Results saved to Perplexity.json and Perplexity.csv.")
-
-#print("Data collection complete. Results saved to protein_complexes_results.csv.")

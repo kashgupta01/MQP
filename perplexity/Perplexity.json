@@ -1,0 +1,92 @@
+[
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "specific analysis \u00d7 0.15)",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "ATP4A: Potassium-transporting ATPase alpha chain 1 (catalytic subunit)[1][3][4]",
+        "genes": "ATP4A (encodes the alpha subunit)[1][3][5]",
+        "confidence_score": "N/A"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.0 \u00d7 0.3) + (0.0 \u00d7 0.3) + (0.0 \u00d7 0.25) + (0.0 \u00d7 0.15) = 0.0 + 0.0 + 0.0 + 0.0 = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "NatC complex",
+        "organism": "Human",
+        "other_organisms": "Also found in other eukaryotes including Saccharomyces cerevisiae and Drosophila melanogaster[1].",
+        "complex_function": "The NatC complex is a major N-terminal acetyltransferase in humans. It catalyzes the N-terminal acetylation (NTA) of nascent polypeptides during protein synthesis, a modification that affects protein stability, localization, degradation, and interaction. NatC is responsible for acetylating a specific subset of protein N-termini, influencing cellular processes and playing a critical regulatory role in the proteome[1].",
+        "proteins": "- NAA30 (catalytic subunit)",
+        "genes": "- NAA30",
+        "confidence_score": "(0.95 \u00d7 0.3) + (0.9 \u00d7 0.3) + (1.0 \u00d7 0.25) + (1.0 \u00d7 0.15) = 0.285 + 0.27 + 0.25 + 0.15 = **0.955**"
+    },
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "**"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "Describe its function",
+        "organism": "specific analysis cannot be performed. Without this information, it is not possible to:",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "Map proteins to corresponding genes",
+        "genes": "List occurrence in other organisms",
+        "confidence_score": "(0.0 \u00d7 0.3) + (0.0 \u00d7 0.3) + (0.0 \u00d7 0.25) + (0.0 \u00d7 0.15) = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "Mediator Complex",
+        "organism": "Human",
+        "other_organisms": "The Mediator complex is conserved across eukaryotes and is also found in Mouse, C. elegans, Drosophila melanogaster, and Saccharomyces cerevisiae, though with species-specific subunit composition and functional nuances[4].",
+        "complex_function": "The Mediator complex is an evolutionarily conserved multiprotein assembly that acts as a critical coactivator in eukaryotic transcription. In humans, it serves as a molecular bridge between gene-specific transcription factors bound to regulatory DNA elements and the RNA polymerase II machinery, facilitating transcription initiation and regulating gene expression. The Mediator complex is modular, composed of Head, Middle, and Tail modules\u2014each with specialized roles in genome targeting and transcriptional regulation. A separate Cyclin Kinase Module (CDK8 module) associates in a cell cycle-dependent manner to regulate transcriptional activity further[4].",
+        "proteins": "- MED1",
+        "genes": "- MED1, MED4, MED6, MED7, MED8, MED9, MED10, MED11, MED12, MED13, MED14, MED15, MED16, MED17, MED18, MED19, MED20, MED21, MED22, MED23, MED24, MED25, MED26, MED27, MED28, MED29, MED30, CDK8, CCNC, MED12L, MED13L",
+        "confidence_score": "(1.0 \u00d7 0.3) + (1.0 \u00d7 0.3) + (1.0 \u00d7 0.25) + (1.0 \u00d7 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+    },
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "- SYCP1 (Synaptonemal complex protein 1)",
+        "genes": ". Specifically, it forms a tripartite structure that brings homologous chromosomes into close alignment, enabling crossover and genetic exchange[1][2].",
+        "confidence_score": "N/A"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.00 \u00d7 0.3) + (0.00 \u00d7 0.3) + (0.00 \u00d7 0.25) + (0.00 \u00d7 0.15) = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "N/A"
+    }
+]

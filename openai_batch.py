@@ -8,15 +8,68 @@ load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 complexes = [
+    "ATP4A-ATP4B complex",
+    "Cytochrome bc1 Complex (Complex III)"
+    "Synaptonemal Complex",
+    "GNA12-GPR55-RGS2 complex",
+    "Melanocortin receptor 3",
+    "ATP1A1-TSHR complex",
+    "ADRA1B-CXCR4 complex",
+    "Bdkrb2-Tbxa2r complex",
+    "Drd3-Ednrb complex",
+    "Egflam-Gpr179 complex",
+    "Ceacam1-4L-Syk-Tlr4 complex",
+    "KDR-NRP1-VEGF165 complex",
+    "NRP1-VEGF121 complex",
+    "KDR-VEGF165 complex",
+    "FLT4-VEGFC complex",
+    "ITGA3-ITGB1 complex",
+    "Golgi-associated retrograde protein complex",
+    "Transmembrane channel-like (TMC) 2 complex",
+    "13 subunit eukaryotic initiation factor 3 (eIF3) complex",
+    "Tip60 chromatin-remodeling complex ",
+    "COP9 Signalosome",
+    "20S proteosome",
+    "HCN1-HCN4 complex",
+    "GRIN1-P2RY4 complex",
+    "LY96-TLR4 complex",
+    "RAD6-RAD18 ubiquitin ligase complex",
+    "PHO85-PHO80 CDK-cyclin complex",
+    "DNA polymerase (Pol) episolon (ε)",
+    "Golgi transport complex",
+    "GPI-anchor transamidase complex",
+    "Glycosylphosphatidylinositol-mannosyltransferase I complex",
+    "Dsl1 tethering complex",
+    "AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
+    "PAN1 actin cytoskeleton-regulatory complex",
+    "AMPK complex",
+    "Augmin complex",
+    "Myb-MuvB transcriptional activation complex",
+    "CORVET tethering complex",
+    "Sodium leak channel complex",
+    "ATG1 protein kinase complex",
+    "NXF1-NXT1 mRNA nuclear export factor complex",
+    "MON1-CCZ1 guanyl-nucleotide exchange factor complex",
+    "HipHop-HOAP telomere-capping complex",
+    "ZFP-1(AF10)/DOT-1 complex",
+    "ced-3-ced-4-mac-1 complex",
+    "Nuclear mitotic cohesin complex",
+    "Atk-1/Akt-2/Sgk-1 protein kinase complex",
+    "RB1-E2F1-TFDP1 transcription repressor complex",
+    "PETISCO, pid-1 variant",
+    "PETISCO, tost-1 variant",
+    "Ndc80 complex",
+    "Kinetochore Mis12 complex",
+    "THO complex",
     "Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2",
     "Ste12/Dig1/Dig2 transcription regulation complex",
-    "TRAPP II complex ",
-    "CCM complex ",
-    "mu-Calpain complex ",
+    "TRAPP II complex",
+    "CCM complex",
+    "mu-Calpain complex",
     "GINS complex ",
-    "CMG helicase complex ",
-    "20S mitochondrial small ribosomal subunit ",
-    "Cardiac troponin complex "
+    "CMG helicase complex",
+    "20S mitochondrial small ribosomal subunit",
+    "Cardiac troponin complex"
 ]
  
 prompt_techniques = {
@@ -33,7 +86,15 @@ prompt_techniques = {
     across different databases/sources(0.3 weight), supporting experimental data regarding the complex(0.3 weight), accuracy \
     of corresponding protein-gene mapping(0.25 weight), and the analysis information being specific to the organism that it is \
     most promininent in(0.15 weight). The weight in parentheses following each grading convention signifies how much each \
-    criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the confidence score portion please only return the full arithmetic equation with its numeric values.", 
+    criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the \
+    confidence score portion please only return the full arithmetic equation with its numeric values. Your full analysis should include the following categories: \
+    \n'Complex Name'\
+    \n'Complex Function' \
+    \n'Organism'\
+    \n'Other Organisms'\
+    \n'Proteins'\
+    \n'Genes'\
+    \n'Self Confidence Score'",
 
     "few-shot":        
     "Perform a thorough analysis of the protein \
@@ -118,18 +179,17 @@ prompt_techniques = {
     \n'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
     \n'Genes: unc80, na, unc79'\
     \n'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
-
-    
 }
 
 # models = [
 #     "gpt-4.1",
 #     "gpt-4o",
-#     "o4-mini"
+#     "o4-mini",
+#
 #     ]
 
 # make jsonl file
-with open("gpt4o_in_pt4.jsonl", "w") as f:
+with open("gpt.jsonl", "w") as f:
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
             prompt = template.format(complex=complex_name).replace("    ", "")
@@ -138,14 +198,14 @@ with open("gpt4o_in_pt4.jsonl", "w") as f:
                 "method": "POST",
                 "url": "/v1/chat/completions",
                 "body": {
-                    "model": "gpt-4o",
+                    "model": "o3",
                     "messages": [{"role": "user", "content": prompt}]
                 }
             }
             f.write(json.dumps(json_line) + "\n")
 
 # upload input file
-upload = openai.files.create(file=open("gpt4o_in_pt4.jsonl", "rb"), purpose="batch")
+upload = openai.files.create(file=open("gpt.jsonl", "rb"), purpose="batch")
 
 # create batch task
 batch = openai.batches.create(
