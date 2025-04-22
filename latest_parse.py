@@ -44,19 +44,19 @@ def extract_to_csv_with_quotes(
 
     # Common “spellings” for each field we have to recognise.
     VARIANTS: Dict[str, List[str]] = {
-        "complex name": ["complex\\s*name", "name\\s*of\\s*complex"],
-        "organism": ["organism", "species"],
-        "complex function": ["complex\\s*function", "function"],
-        "proteins": [
-            "proteins?",
-            "protein\\s*components?",
-            "protein\\s*composition",
+        "Complex Name": ["Complex\\s*Name", "Name\\s*of\\s*Complex"],
+        "Organism": ["Organism", "Species"],
+        "Complex Function": ["Complex\\s*Function", "Function"],
+        "Proteins": [
+            "Proteins?",
+            "Protein\\s*Components?",
+            "Protein\\s*Composition",
         ],
-        "genes": ["genes?", "gene\\s*list"],
-        "other organisms": ["other\\s*organisms?", "additional\\s*organisms?"],
-        "confidence score": [
-            "confidence\\s*score",
-            "self\\s*confidence\\s*score",
+        "Genes": ["Genes?", "Gene\\s*List"],
+        "Other Organisms": ["Other\\s*Organisms?", "Additional\\s*Organisms?"],
+        "Confidence Score": [
+            "Confidence\\s*Score",
+            "Self\\s*Confidence\\s*Score",
         ],
     }
 
@@ -64,10 +64,9 @@ def extract_to_csv_with_quotes(
     def _collapse_ws(s: str) -> str:
         return re.sub(r"\s+", " ", s.strip())
 
-    def _build_patterns() -> (
-        Dict[re.Pattern, str],
-        Dict[re.Pattern, str],
-    ):
+    def _build_patterns() -> tuple[
+        Dict[re.Pattern, str], Dict[re.Pattern, str]
+    ]:
         """Compile stand‑alone‑header and inline “Header: value” patterns."""
         header_pat: Dict[re.Pattern, str] = {}
         inline_pat: Dict[re.Pattern, str] = {}
@@ -123,7 +122,7 @@ def extract_to_csv_with_quotes(
 
             # Accumulator for field values
             values: Dict[str, List[str]] = {c: [] for c in COLS}
-            values["technique"].append(technique)
+            values["Technique"].append(technique)
 
             current_field: str | None = None
 
@@ -181,10 +180,12 @@ def extract_to_csv_with_quotes(
 # ---------------------------------------------------------------------- usage
 if __name__ == "__main__":
     extract_to_csv_with_quotes(
-        jsonl_path="test_output.jsonl",
-        csv_path="complexes_with_technique_quotes.csv",
+        jsonl_path="gpt-4-1_full_output.jsonl",
+        csv_path="gpt-4-1_parsed.csv",
     )
     print(
-        "Wrote CSV to complexes_with_technique_quotes.csv "
+        "Wrote CSV to gpt-4-1_parsed.csv "
         "— open it to inspect the results."
     )
+
+
