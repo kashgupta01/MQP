@@ -81,8 +81,8 @@ prompt_techniques = {
     "Perform a thorough analysis of the protein complex: {complex}. Avoid overgeneralization and \
     unnecessarily long answers. In your analysis, only include information that is specific to the organism that \
     the {complex} is most prominent in (either Human, Mouse, C. elegans, Drosophila melanogaster, or \
-    Saccharomyces cerevisiae). Your analysis should include the organism the complex belongs to, complex name, \
-    complex function, list of proteins the complex consists of, and a list of corresponding genes the proteins \
+    Saccharomyces cerevisiae). Your analysis should include the complex name, \
+    complex function, organism the complex belongs to, protein composition of the complex, and a list of corresponding genes the proteins \
     belong to. Additionally, list the other organisms (from the 5 previously mentioned) that the protein complex is found in only if applicable. After\
     completing your analysis, also assign a self confidence score for the data findings to help gauge the accuracy of the \
     information. The score should range from 0.00 to 1.00, with 0.00 being the lowest confidence and 1.00 indicating \
@@ -91,24 +91,24 @@ prompt_techniques = {
     of corresponding protein-gene mapping(0.25 weight), and the analysis information being specific to the organism that it is \
     most promininent in(0.15 weight). The weight in parentheses following each grading convention signifies how much each \
     criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the \
-    confidence score portion please only return the full arithmetic equation with its numeric values. Your full analysis should include the following categories: \
-    -'Complex Name'\
-    -'Complex Function' \
-    -'Organism'\
-    -'Other Organisms'\
-    -'Proteins'\
-    -'Genes'\
-    -'Self Confidence Score'",
+    confidence score portion please only return the full arithmetic equation with its numeric values. Your full analysis should be in the following order with the same naming scheme: \
+    -'Complex Name: '\
+    -'Complex Function: ' \
+    -'Organism: '\
+    -'Other Organisms: '\
+    -'Proteins: '\
+    -'Genes: '\
+    -'Self Confidence Score: '",
 
     "few-shot":        
     "Perform a thorough analysis of the protein \
     complex: {complex}. Avoid overgeneralization and unnecessarily long answers. In your analysis, only include \
     information that is specific to the organism that the {complex} is most prominent in (either Human, Mouse, \
     C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae). Your analysis should include:\
-    -The organism the complex belongs to\
     -Complex name\
     -Complex function\
-    -List of proteins the complex consists of\
+    -The organism the complex belongs to\
+    -Protein composition of the protein complex\
     -List of corresponding genes the proteins belong to\
     -List of other organisms that the protein complex is found in only if applicable(from the 5 previously mentioned).\
     After completing your analysis, also assign a self confidence score for the data findings to help gauge the \
@@ -120,7 +120,7 @@ prompt_techniques = {
     -The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
     The weight in parentheses following each grading convention signifies how much each criteria should effect \
     the confidence score with a total of 1.00 if every criteria is completely accurate. Please only return the final confidence score equation with corresponding weights. Here is an example \
-    of the total output for two complexes:\
+    of the total output for two complexes, follow this order and structure in your output:\
     -'Complex Name: ATP4A-ATP4B complex'\
     -'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
     for gastric acid secretion in the stomach.'\
@@ -146,9 +146,9 @@ prompt_techniques = {
     complex: {complex}. Avoid overgeneralization and unnecessarily long answers. In your analysis, only include \
     information that is specific to the organism that the {complex} is most prominent in (either Human, Mouse, \
     C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae). Your analysis should include:\
-    -The organism the complex belongs to\
     -Complex name\
     -Complex function\
+    -The organism the complex belongs to\
     -List of proteins the complex consists of\
     -List of corresponding genes the proteins belong to\
     -List of other organisms that the protein complex is found in only if applicable(from the 5 previously mentioned).\
@@ -161,7 +161,7 @@ prompt_techniques = {
     -The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
     The weight in parentheses following each grading convention signifies how much each criteria should effect \
     the confidence score with a total of 1.00 if every criteria is completely accurate. Please only return the final confidence score equation with corresponding weights. Here is an example \
-    of the total output for two complexes:\
+    of the total output for two complexes, follow this order and structure in the output:\
     -'Complex Name: ATP4A-ATP4B complex'\
     -'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
     for gastric acid secretion in the stomach.'\
