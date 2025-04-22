@@ -9,7 +9,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 complexes = [
     "ATP4A-ATP4B complex",
-    "Cytochrome bc1 Complex (Complex III)"
+    "Cytochrome bc1 Complex (Complex III)",
     "Synaptonemal Complex",
     "GNA12-GPR55-RGS2 complex",
     "Melanocortin receptor 3",
@@ -88,124 +88,150 @@ prompt_techniques = {
     most promininent in(0.15 weight). The weight in parentheses following each grading convention signifies how much each \
     criteria should effect the confidence score with a total of 1.00 if every criteria is completely accurate. For the \
     confidence score portion please only return the full arithmetic equation with its numeric values. Your full analysis should include the following categories: \
-    \n'Complex Name'\
-    \n'Complex Function' \
-    \n'Organism'\
-    \n'Other Organisms'\
-    \n'Proteins'\
-    \n'Genes'\
-    \n'Self Confidence Score'",
+    -'Complex Name'\
+    -'Complex Function' \
+    -'Organism'\
+    -'Other Organisms'\
+    -'Proteins'\
+    -'Genes'\
+    -'Self Confidence Score'",
 
     "few-shot":        
     "Perform a thorough analysis of the protein \
     complex: {complex}. Avoid overgeneralization and unnecessarily long answers. In your analysis, only include \
     information that is specific to the organism that the {complex} is most prominent in (either Human, Mouse, \
     C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae). Your analysis should include:\
-    \n-The organism the complex belongs to\
-    \n-Complex name\
-    \n-Complex function\
-    \n-List of proteins the complex consists of\
-    \n-List of corresponding genes the proteins belong to\
-    \n-List of other organisms that the protein complex is found in only if applicable\
-    \n\
+    -The organism the complex belongs to\
+    -Complex name\
+    -Complex function\
+    -List of proteins the complex consists of\
+    -List of corresponding genes the proteins belong to\
+    -List of other organisms that the protein complex is found in only if applicable(from the 5 previously mentioned).\
     After completing your analysis, also assign a self confidence score for the data findings to help gauge the \
     accuracy of the information. The score should range from 0.00 to 1.00, with 0.00 being the lowest confidence \
     and 1.00 indicating the highest confidence. To determine your score, consider the following grading conventions:\
-    \n-Consistency of information across different databases/sources(0.30 weight)\
-    \n-Supporting experimental data regarding the complex(0.3 weight)\
-    \n-Accuracy of corresponding protein-gene mapping(0.25 weight)\
-    \n-The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
-    \n\
+    -Consistency of information across different databases/sources(0.30 weight),\
+    -Supporting experimental data regarding the complex(0.3 weight),\
+    -Accuracy of corresponding protein-gene mapping(0.25 weight),\
+    -The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
     The weight in parentheses following each grading convention signifies how much each criteria should effect \
     the confidence score with a total of 1.00 if every criteria is completely accurate. Please only return the final confidence score equation with corresponding weights. Here is an example \
     of the total output for two complexes:\
-    \n'Complex Name: ATP4A-ATP4B complex'\
-    \n'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
+    -'Complex Name: ATP4A-ATP4B complex'\
+    -'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
     for gastric acid secretion in the stomach.'\
-    \n'Organism: Human'\
-    \n'Other Organisms: N/A'\
-    \n'Proteins: Potassium-transporting ATPase alpha chain 1, Potassium-transporting ATPase subunit beta'\
-    \n'Genes: ATP4A, ATP4B'\
-    \n'Self Confidence Score: (0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15  = **0.955**'\
-    \n\
-    \n'Complex Name: Sodium leak channel complex'\
-    \n'Complex Function: Voltage-gated ion channel responsible for the depolarizing sodium (Na+) leak currentsthat \
+    -'Organism: Human'\
+    -'Other Organisms: N/A'\
+    -'Proteins: Potassium-transporting ATPase alpha chain 1, Potassium-transporting ATPase subunit beta'\
+    -'Genes: ATP4A, ATP4B'\
+    -'Self Confidence Score: (0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15  = **0.955**'\
+    -\
+    -'Complex Name: Sodium leak channel complex'\
+    -'Complex Function: Voltage-gated ion channel responsible for the depolarizing sodium (Na+) leak currentsthat \
     determine resting Na(+) permeability and control neuronal excitability. Functions downstream of the molecular \
     circadian clock in pacemaker neurons to promote behavioral rhythmicity.'\
-    \n'Organism: Drosophila melanogaster'\
-    \n'Other Organisms: Human, C. elegans'\
-    \n'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
-    \n'Genes: unc80, na, unc79'\
-    \n'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
+    -'Organism: Drosophila melanogaster'\
+    -'Other Organisms: Human, C. elegans'\
+    -'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
+    -'Genes: unc80, na, unc79'\
+    -'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
 
+    # System contxt: "You are an expert scientist in the field of biology and molecular machines.
     "contextual": 
-    "You are an expert in the field of biology and molecular machines. Perform a thorough analysis of the protein \
+    "Perform a thorough analysis of the protein \
     complex: {complex}. Avoid overgeneralization and unnecessarily long answers. In your analysis, only include \
     information that is specific to the organism that the {complex} is most prominent in (either Human, Mouse, \
     C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae). Your analysis should include:\
-    \n-The organism the complex belongs to\
-    \n-Complex name\
-    \n-Complex function\
-    \n-List of proteins the complex consists of\
-    \n-List of corresponding genes the proteins belong to\
-    \n-List of other organisms that the protein complex is found in only if applicable\
-    \n\
+    -The organism the complex belongs to\
+    -Complex name\
+    -Complex function\
+    -List of proteins the complex consists of\
+    -List of corresponding genes the proteins belong to\
+    -List of other organisms that the protein complex is found in only if applicable(from the 5 previously mentioned).\
     After completing your analysis, also assign a self confidence score for the data findings to help gauge the \
     accuracy of the information. The score should range from 0.00 to 1.00, with 0.00 being the lowest confidence \
     and 1.00 indicating the highest confidence. To determine your score, consider the following grading conventions:\
-    \n-Consistency of information across different databases/sources(0.30 weight)\
-    \n-Supporting experimental data regarding the complex(0.3 weight)\
-    \n-Accuracy of corresponding protein-gene mapping(0.25 weight)\
-    \n-The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
-    \n\
+    -Consistency of information across different databases/sources(0.30 weight)\
+    -Supporting experimental data regarding the complex(0.3 weight)\
+    -Accuracy of corresponding protein-gene mapping(0.25 weight)\
+    -The analysis information being specific to the organism that it is most promininent in(0.15 weight).\
     The weight in parentheses following each grading convention signifies how much each criteria should effect \
     the confidence score with a total of 1.00 if every criteria is completely accurate. Please only return the final confidence score equation with corresponding weights. Here is an example \
     of the total output for two complexes:\
-    \n'Complex Name: ATP4A-ATP4B complex'\
-    \n'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
+    -'Complex Name: ATP4A-ATP4B complex'\
+    -'Complex Function: This is a part of the larger ATP4 or H+/K+ ATPase complex, a proton pump responsible \
     for gastric acid secretion in the stomach.'\
-    \n'Organism: Human'\
-    \n'Other Organisms: N/A'\
-    \n'Proteins: Potassium-transporting ATPase alpha chain 1, Potassium-transporting ATPase subunit beta'\
-    \n'Genes: ATP4A, ATP4B'\
-    \n'Self Confidence Score: (0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15  = **0.955**'\
-    \n\
-    \n'Complex Name: Sodium leak channel complex'\
-    \n'Complex Function: Voltage-gated ion channel responsible for the depolarizing sodium (Na+) leak currentsthat \
+    -'Organism: Human'\
+    -'Other Organisms: N/A'\
+    -'Proteins: Potassium-transporting ATPase alpha chain 1, Potassium-transporting ATPase subunit beta'\
+    -'Genes: ATP4A, ATP4B'\
+    -'Self Confidence Score: (0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15  = **0.955**'\
+    -\
+    -'Complex Name: Sodium leak channel complex'\
+    -'Complex Function: Voltage-gated ion channel responsible for the depolarizing sodium (Na+) leak currentsthat \
     determine resting Na(+) permeability and control neuronal excitability. Functions downstream of the molecular \
     circadian clock in pacemaker neurons to promote behavioral rhythmicity.'\
-    \n'Organism: Drosophila melanogaster'\
-    \n'Other Organisms: Human, C. elegans'\
-    \n'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
-    \n'Genes: unc80, na, unc79'\
-    \n'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
+    -'Organism: Drosophila melanogaster'\
+    -'Other Organisms: Human, C. elegans'\
+    -'Proteins: Protein unc-80 homolog, Narrow abdomen isoform F, Uncoordinated 79 isoform B'\
+    -'Genes: unc80, na, unc79'\
+    -'Self Confidence Score: (0.8333 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.25 + 0.27 + 0.25 + 0.15 = **0.92**'",
 }
 
 # models = [
 #     "gpt-4.1",
 #     "gpt-4o",
 #     "o4-mini",
-#
-#     ]
+#    ]
+
+model = "gpt-4.1-nano"
+file_name = model + "_input_w_sys_role" 
 
 # make jsonl file
-with open("gpt.jsonl", "w") as f:
+with open(f"{file_name}.jsonl", "w") as f:
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
-            prompt = template.format(complex=complex_name).replace("    ", "")
-            json_line = {
-                "custom_id": f"{complex_name}|{technique}",
-                "method": "POST",
-                "url": "/v1/chat/completions",
-                "body": {
-                    "model": "o3",
-                    "messages": [{"role": "user", "content": prompt}]
+            if technique == "contextual":
+                prompt = template.format(complex=complex_name).replace("    ", "")
+                json_line = {
+                    "custom_id": f"{complex_name}|{technique}",
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": model,
+                        "messages": [
+                            {
+                            "role": "system",
+                            "content": "You are an expert scientist in the field of biology and molecular machines."
+                             },
+                            {
+                            "role": "user", 
+                            "content": prompt
+                            }
+                        ]
+                    }
                 }
-            }
+            else:
+                prompt = template.format(complex=complex_name).replace("    ", "")
+                json_line = {
+                    "custom_id": f"{complex_name}|{technique}",
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": model,
+                        "messages": [
+                            {
+                            "role": "user", 
+                            "content": prompt
+                            }
+                        ]
+                    }
+                }
+
             f.write(json.dumps(json_line) + "\n")
 
 # upload input file
-upload = openai.files.create(file=open("gpt.jsonl", "rb"), purpose="batch")
+upload = openai.files.create(file=open(f"{file_name}.jsonl", "rb"), purpose="batch")
 
 # create batch task
 batch = openai.batches.create(

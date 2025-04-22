@@ -45,7 +45,8 @@ def extract_to_csv_with_quotes(
     # Common “spellings” for each field we have to recognise.
     VARIANTS: Dict[str, List[str]] = {
         "Complex Name": ["Complex\\s*Name", "Name\\s*of\\s*Complex"],
-        "Organism": ["Organism", "Species"],
+        "Organism": ["Organism?", "Species", "^Organism*"],
+        "Other Organisms": ["Other\\s*Organisms?", "Additional\\s*Organisms?"],
         "Complex Function": ["Complex\\s*Function", "Function"],
         "Proteins": [
             "Proteins?",
@@ -53,7 +54,6 @@ def extract_to_csv_with_quotes(
             "Protein\\s*Composition",
         ],
         "Genes": ["Genes?", "Gene\\s*List"],
-        "Other Organisms": ["Other\\s*Organisms?", "Additional\\s*Organisms?"],
         "Confidence Score": [
             "Confidence\\s*Score",
             "Self\\s*Confidence\\s*Score",
@@ -93,7 +93,7 @@ def extract_to_csv_with_quotes(
                         rf"""^[\'"]?      # optional opening quote
                              \s*(?:\*{{0,3}}\s*)?({v})[^:]*:\s*(.+)$
                         """,
-                        re.I | re.X,
+                        re.I | re.X, 
                     )
                 ] = canon
         return header_pat, inline_pat
@@ -107,16 +107,14 @@ def extract_to_csv_with_quotes(
         for line in jf:
             rec = json.loads(line)
 
-            # ---------------- technique
             custom_id = rec.get("custom_id", "")
+
             # OPEN AI -----------------------------
             technique = custom_id.split("|", 1)[1]
 
             # ANTHROPIC ---------------------------
             # technique = custom_id.split("__", 1)[1] 
 
-
-            # ---------------- message content to parse
             # OPEN AI ---------------------------------
             content = (
                 rec.get("response", {})
@@ -195,8 +193,8 @@ def extract_to_csv_with_quotes(
 # ---------------------------------------------------------------------- usage
 if __name__ == "__main__":
     extract_to_csv_with_quotes(
-        jsonl_path="openai_outputs\o4-mini_output.jsonl",
-        csv_path="o4-mini_parsed.csv",
+        jsonl_path="openai_outputs\gpt-4o\gpt-4o_full_output.jsonl",
+        csv_path="gpt-4o_parsed_v2.csv",
     )
     print(
         "Wrote CSV to gpt-4-1_parsed.csv "
