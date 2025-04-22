@@ -66,6 +66,7 @@ def extract_to_csv_with_quotes(
         "Confidence Score": [
             "Confidence\\s*Score",
             "Self\\s*Confidence\\s*Score",
+            "Our\\s*Self\\s*Confidence\\s*Score"
         ],
     }
 
