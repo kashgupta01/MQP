@@ -1,147 +1,821 @@
 Technique,Complex Name,Organism,Other Organisms,Complex Function,Proteins,Genes,Confidence Score
-few-shot,"ATP4A-ATP4B complex"""",
-""""Cytochrome bc1 Complex (Complex III)"""",
-""""Synaptonemal Complex"""",
-""""GNA12-GPR55-RGS2 complex"""",
-""""Melanocortin receptor 3"""",
-""""ATP1A1-TSHR complex"""",
-""""ADRA1B-CXCR4 complex"""",
-""""Bdkrb2-Tbxa2r complex"""",
-""""Drd3-Ednrb complex"""",
-""""Egflam-Gpr179 complex"""",
-""""Ceacam1-4L-Syk-Tlr4 complex"""",
-""""KDR-NRP1-VEGF165 complex"""",
-""""NRP1-VEGF121 complex"""",
-""""KDR-VEGF165 complex"""",
-""""FLT4-VEGFC complex"""",
-""""ITGA3-ITGB1 complex"""",
-"""" Golgi-associated retrograde protein complex """",
-"""" Transmembrane channel-like (TMC) 2 complex """",
-""""13 subunit eukaryotic initiation factor 3 (eIF3) complex"""",
-""""Tip60 chromatin-remodeling complex """",
-""""COP9 Signalosome """",
-""""20S proteosome """",
-""""HCN1-HCN4 complex"""",
-""""GRIN1-P2RY4 complex """",
-"""" LY96-TLR4 complex """",
-""""RAD6-RAD18 ubiquitin ligase complex"""",
-""""PHO85-PHO80 CDK-cyclin complex"""",
-""""DNA polymerase (Pol) episolon (ε)"""",
-""""Golgi transport complex"""",
-""""GPI-anchor transamidase complex"""",
-""""Glycosylphosphatidylinositol-mannosyltransferase I complex"""",
-""""Dsl1 tethering complex"""",
-""""AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)"""",
-""""PAN1 actin cytoskeleton-regulatory complex"""",
-""""AMPK complex"""",
-""""Augmin complex"""",
-""""Myb-MuvB transcriptional activation complex"""",
-""""CORVET tethering complex"""",
-""""Sodium leak channel complex"""",
-""""ATG1 protein kinase complex"""",
-""""NXF1-NXT1 mRNA nuclear export factor complex"""",
-""""MON1-CCZ1 guanyl-nucleotide exchange factor complex"""",
-""""HipHop-HOAP telomere-capping complex"""",
-""""ZFP-1(AF10)/DOT-1 complex"""",
-""""ced-3-ced-4-mac-1 complex"""",
-""""Nuclear mitotic cohesin complex"""",
-""""Atk-1/Akt-2/Sgk-1 protein kinase complex"""",
-""""RB1-E2F1-TFDP1 transcription repressor complex"""",
-""""PETISCO, pid-1 variant"""",
-""""PETISCO, tost-1 variant"""",
-""""Ndc80 complex"""",
-""""Kinetochore Mis12 complex"""",
-""""THO complex"""",
-""""Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2"""",
-""""Ste12/Dig1/Dig2 transcription regulation complex"""",
-""""TRAPP II complex """",
-""""CCM complex """",
-""""mu-Calpain complex """",
-""""GINS complex """",
-""""CMG helicase complex """",
-""""20S mitochondrial small ribosomal subunit """",
-""""Cardiac troponin complex ",Human,Mouse,"This complex forms the core of the H+/K+ ATPase proton pump, which is essential for gastric acid secretion in the stomach by exchanging cytoplasmic protons for extracellular potassium ions.","Potassium-transporting ATPase alpha chain 1, Potassium-transporting ATPase beta chain","ATP4A, ATP4B  
-Self","(0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15 = **0.955**  
+few-shot,ATP4A-ATP4B complex,"Human'
 
-Complex Name: Cytochrome bc1 Complex (Complex III)  
-Complex Function: A key component of the mitochondrial electron transport chain, Complex III transfers electrons from ubiquinol to cytochrome c while pumping protons across the mitochondrial membrane to contribute to ATP synthesis.  
-Organism: Human  
-Other Organisms: Mouse, Drosophila melanogaster, Saccharomyces cerevisiae, C. elegans  
-Proteins: Cytochrome b, Cytochrome c1, Rieske iron-sulfur protein, and several small subunits  
-Genes: MTCYB, CYC1, UQCRFS1, UQCR10, UQCR11, UQCRH (and others for accessory subunits)  
-Self Confidence Score: (1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.0**  
+'","ATP4A-ATP4B orthologous complexes are also found in other mammals (e.g., mouse), but the structure and function are most extensively characterized in humans.'[4][5]
 
-Complex Name: Synaptonemal Complex  
-Complex Function: This meiotic protein scaffold mediates chromosome pairing, synapsis, and recombination during meiosis.  
-Organism: Mouse  
-Other Organisms: Human, Drosophila melanogaster, C. elegans, Saccharomyces cerevisiae  
-Proteins: SYCP1, SYCP2, SYCP3, SYCE1, SYCE2, SYCE3, TEX12, SIX6OS1  
-Genes: Sycp1, Sycp2, Sycp3, Syce1, Syce2, Syce3, Tex12, Six6os1  
-Self Confidence Score: (0.9 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (0.95 × 0.15) = 0.27 + 0.285 + 0.25 + 0.1425 = **0.9475**"
-contextual,"ATP4A-ATP4B complex"""",
-""""Cytochrome bc1 Complex (Complex III)"""",
-""""Synaptonemal Complex"""",
-""""GNA12-GPR55-RGS2 complex"""",
-""""Melanocortin receptor 3"""",
-""""ATP1A1-TSHR complex"""",
-""""ADRA1B-CXCR4 complex"""",
-""""Bdkrb2-Tbxa2r complex"""",
-""""Drd3-Ednrb complex"""",
-""""Egflam-Gpr179 complex"""",
-""""Ceacam1-4L-Syk-Tlr4 complex"""",
-""""KDR-NRP1-VEGF165 complex"""",
-""""NRP1-VEGF121 complex"""",
-""""KDR-VEGF165 complex"""",
-""""FLT4-VEGFC complex"""",
-""""ITGA3-ITGB1 complex"""",
-"""" Golgi-associated retrograde protein complex """",
-"""" Transmembrane channel-like (TMC) 2 complex """",
-""""13 subunit eukaryotic initiation factor 3 (eIF3) complex"""",
-""""Tip60 chromatin-remodeling complex """",
-""""COP9 Signalosome """",
-""""20S proteosome """",
-""""HCN1-HCN4 complex"""",
-""""GRIN1-P2RY4 complex """",
-"""" LY96-TLR4 complex """",
-""""RAD6-RAD18 ubiquitin ligase complex"""",
-""""PHO85-PHO80 CDK-cyclin complex"""",
-""""DNA polymerase (Pol) episolon (ε)"""",
-""""Golgi transport complex"""",
-""""GPI-anchor transamidase complex"""",
-""""Glycosylphosphatidylinositol-mannosyltransferase I complex"""",
-""""Dsl1 tethering complex"""",
-""""AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)"""",
-""""PAN1 actin cytoskeleton-regulatory complex"""",
-""""AMPK complex"""",
-""""Augmin complex"""",
-""""Myb-MuvB transcriptional activation complex"""",
-""""CORVET tethering complex"""",
-""""Sodium leak channel complex"""",
-""""ATG1 protein kinase complex"""",
-""""NXF1-NXT1 mRNA nuclear export factor complex"""",
-""""MON1-CCZ1 guanyl-nucleotide exchange factor complex"""",
-""""HipHop-HOAP telomere-capping complex"""",
-""""ZFP-1(AF10)/DOT-1 complex"""",
-""""ced-3-ced-4-mac-1 complex"""",
-""""Nuclear mitotic cohesin complex"""",
-""""Atk-1/Akt-2/Sgk-1 protein kinase complex"""",
-""""RB1-E2F1-TFDP1 transcription repressor complex"""",
-""""PETISCO, pid-1 variant"""",
-""""PETISCO, tost-1 variant"""",
-""""Ndc80 complex"""",
-""""Kinetochore Mis12 complex"""",
-""""THO complex"""",
-""""Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2"""",
-""""Ste12/Dig1/Dig2 transcription regulation complex"""",
-""""TRAPP II complex """",
-""""CCM complex """",
-""""mu-Calpain complex """",
-""""GINS complex """",
-""""CMG helicase complex """",
-""""20S mitochondrial small ribosomal subunit """",
-""""Cardiac troponin complex ","Human'  
-'","The H+/K+ ATPase complex is also present in other mammals (e.g., Mouse), but the ATP4A-ATP4B complex is most extensively studied and most prominent in Human.'[2][4]  
-'","This complex forms the gastric H+/K+ ATPase, a proton pump located in the apical membrane of gastric parietal cells. It is responsible for exchanging H+ ions (protons) with K+ ions across the membrane, thus driving gastric acid secretion in the human stomach.'[2][3][4][5]  
-'","Potassium-transporting ATPase alpha chain 1 (catalytic subunit), Potassium-transporting ATPase subunit beta (regulatory subunit)'[2][4]  
-'","ATP4A (alpha subunit), ATP4B (beta subunit)'[1][2][3][4]  
+'","This complex forms the gastric H+/K+ ATPase, a proton pump responsible for exchanging intracellular hydrogen ions (H+) with extracellular potassium ions (K+) across the apical membrane of parietal cells. This is the key molecular mechanism for gastric acid secretion in the stomach, essential for digestion and maintaining an acidic environment in the human gastric lumen.'[1][3][4]
+
+'","'
+- Potassium-transporting ATPase alpha chain 1 (catalytic subunit)
+- Potassium-transporting ATPase beta subunit (glycoprotein regulatory subunit)[1][3]
+
+'","'
+- ATP4A (encodes the alpha subunit)
+- ATP4B (encodes the beta subunit)[2][3][4]
+
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+contextual,ATP4A-ATP4B complex,"Human'
+
+'","The ATP4A-ATP4B complex (gastric H+/K+ ATPase) is found in other mammals and select vertebrates, but is most prominent and extensively studied in humans; specific orthologs and similar complexes occur in mouse and other mammals.'
+
+'","Catalytic core of the gastric H+/K+ ATPase proton pump, responsible for exchanging intracellular H+ ions with extracellular K+ ions across the apical membrane of gastric parietal cells, enabling gastric acid (HCl) secretion essential for digestion.'[3][1]
+
+'","Potassium-transporting ATPase alpha chain 1 (catalytic subunit), Potassium-transporting ATPase subunit beta (stabilizing/glycosylated subunit)'[1][3]
+
+'","ATP4A (encoding alpha subunit), ATP4B (encoding beta subunit)'[2][4][5]
+
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+few-shot,Cytochrome bc1 Complex (Complex III),Human,"Mouse, C. elegans, Drosophila melanogaster, Saccharomyces cerevisiae, and most aerobic eukaryotes as well as many bacteria[2][4].","Functions as the third complex in the mitochondrial electron transport chain, catalyzing the transfer of electrons from ubiquinol (reduced coenzyme Q) to cytochrome c while simultaneously contributing to the generation of a proton gradient across the inner mitochondrial membrane. This gradient drives ATP synthesis through oxidative phosphorylation. The complex operates via a Q-cycle mechanism and is crucial for cellular energy production[1][4].","- Cytochrome b
+- Cytochrome c1
+- Rieske iron-sulfur protein (UQCRFS1)
+- Core protein I (UQCRC1)
+- Core protein II (UQCRC2)
+- UQCRH (cytochrome c1 heme lyase)
+- UQCRB 
+- UQCRQ
+- UQCR10 (also known as 11 kDa protein)
+- UQCR11 (also known as 7 kDa protein)
+- UQCR (sometimes multiple small subunits, nomenclature varies)[3][4]","- MTCYB (mitochondrially-encoded cytochrome b)
+- CYC1 (cytochrome c1)
+- UQCRFS1 (Rieske iron-sulfur protein)
+- UQCRC1 (core protein I)
+- UQCRC2 (core protein II)
+- UQCRH (cytochrome c1 heme lyase)
+- UQCRB 
+- UQCRQ
+- UQCR10
+- UQCR11
+- Other associated small subunits encoded by corresponding nuclear genes[4]
+
+Self","- Consistency of information across databases/sources: 1.0 (well-established, strong agreement)[3][4][5]  
+- Supporting experimental data regarding the complex: 1.0 (extensive biochemical, structural, and clinical studies)[1][4]  
+- Accuracy of corresponding protein-gene mapping: 1.0 (precise mapping in annotated human genome)[3][4][5]  
+- The analysis information being specific to the organism: 1.0 (focused on human complex and genes)[4]  
+
+Self Confidence Score Equation:  
+(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+few-shot,GNA12-GPR55-RGS2 complex,"Human'
+
+'","N/A (Based on current experimental evidence, the formation and modulation of the GNA12-GPR55-RGS2 complex, as described, has been characterized specifically in human cells[1].)'
+
+'","This ternary complex is involved in the modulation of GPR55-mediated G protein signaling. GPR55, a G protein-coupled receptor, interacts with the G protein alpha subunit GNA12 and the regulator of G protein signaling protein RGS2. When assembled, this complex regulates downstream signaling pathways such as ERK phosphorylation and intracellular calcium mobilization. RGS2 modulates GPR55-induced signaling, reducing cell proliferation and migration in human colon cancer cell lines by inhibiting certain downstream effects of GPR55 activation. The physiological significance is highlighted in the context of cancer cell signaling and migration, supporting RGS2 as a potential therapeutic target in GPR55-mediated pathophysiology[1].'
+
+'","G protein subunit alpha 12 (GNA12), G protein-coupled receptor 55 (GPR55), Regulator of G protein signaling 2 (RGS2)'
+
+'","GNA12, GPR55, RGS2'
+
+'Self",(0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15 = **0.955**'
+contextual,GNA12-GPR55-RGS2 complex,Human,"While analogous proteins exist in other mammals (e.g., mouse), the specific functional complex described here is most prominently characterized in humans[2][4].","This complex is involved in G protein-coupled receptor (GPCR) signaling in humans. GPR55 acts as an atypical GPCR that, upon activation by ligands such as lysophosphatidylinositol (LPI), interacts with the GNA12 subunit (Gα12) to activate downstream signaling pathways. These pathways can lead to diverse cellular effects, including modulation of proliferation and possibly involvement in cancer pathophysiology, especially in glioblastoma cells. RGS2 (Regulator of G-protein Signaling 2) is known to modulate G protein signaling by accelerating the GTPase activity of Gα subunits, effectively turning off the signal transduction[2][4][5].","- GNA12 (Guanine nucleotide-binding protein subunit alpha-12)
+- GPR55 (G protein-coupled receptor 55)
+- RGS2 (Regulator of G-protein signaling 2)","- GNA12 (gene encoding Gα12 subunit)[3]
+- GPR55 (gene encoding G protein-coupled receptor 55)[2]
+- RGS2 (gene encoding Regulator of G-protein signaling 2)
+
+Self",(0.85 × 0.3) + (0.8 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.255 + 0.24 + 0.25 + 0.15 = **0.895**
+few-shot,Melanocortin receptor 3,Human,"Mouse (Mus musculus)[5]; Topmouth culter (Culter alburnus)[5]; other vertebrates (general GPCR conservation), but physiological relevance is most prominent in humans and mice.","The Melanocortin receptor 3 (MC3R) is a G protein-coupled receptor (GPCR) primarily involved in the regulation of energy homeostasis. The receptor mediates its effects by binding melanocyte-stimulating hormone (MSH) and adrenocorticotropic hormone (ACTH), activating adenylate cyclase via stimulatory G proteins to increase cAMP levels. MC3R plays essential roles in modulating metabolism, influencing fat and lean mass, regulating feed efficiency and nutrient partitioning, and is also involved in peripheral functions such as immune response, inflammation, cardiovascular regulation, and natriuresis[1][2][4][5].",Melanocortin receptor 3 (MC3R),"MC3R
+
+Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+contextual,Melanocortin receptor 3,"Human'
+
+'","Mouse'
+
+'","MC3R is a G-protein coupled receptor (GPCR) that functions as a receptor for melanocyte-stimulating hormone (MSH) and adrenocorticotropic hormone (ACTH). It activates adenylate cyclase via G proteins upon binding with its ligands. MC3R plays a critical role in energy homeostasis, regulating nutrient partitioning, weight management, appetite, and hunger. It significantly influences body composition by affecting fat mass and lean mass. Additionally, MC3R has been implicated in the regulation of puberty timing and growth rate during childhood[2][4].'
+
+'","Melanocortin receptor 3'
+
+'","MC3R'
+
+'Self","(0.90 × 0.3) + (0.85 × 0.3) + (0.95 × 0.25) + (1.0 × 0.15) = 0.27 + 0.255 + 0.2375 + 0.15 = **0.9125**'
+
+## Detailed Analysis
+
+MC3R is a single-protein complex that functions as a receptor for melanocortin peptides. In humans, it is encoded by the MC3R gene located on chromosome 20[3]. Unlike some other molecular complexes that consist of multiple protein subunits, MC3R appears to function as an individual receptor protein, though it can form dimers/oligomers with itself or other G-protein coupled receptors[4].
+
+### Structure and Classification
+
+MC3R belongs to the G-protein coupled receptor (GPCR) family, which is characterized by a seven-transmembrane domain structure[2][4]. As a member of the melanocortin receptor subfamily, it has particularly high binding affinity for γ-melanocyte stimulating hormone (γ-MSH), while its related receptor MC4R preferentially binds to α-MSH and β-MSH[4].
+
+### Signaling Mechanism
+
+Upon activation by its ligands (MSH and ACTH), MC3R mediates signal transduction through G proteins that activate adenylate cyclase[1]. This initiates downstream signaling cascades that regulate various physiological processes related to energy homeostasis. MC3R can form dimers or oligomers with itself or other GPCR members, which can activate or deactivate secondary signaling pathways[4].
+
+### Physiological Functions
+
+Research in humans and mice has revealed several important functions of MC3R:
+
+1. **Energy Homeostasis**: MC3R regulates body composition and energy balance. Mice lacking MC3R develop a unique form of obesity characterized by increased fat mass, reduced lean mass, and altered energy partitioning despite normal or even decreased food intake[2][5].
+
+2. **Growth and Development**: Mutations in MC3R have been linked to reduced growth rate during childhood in humans[2].
+
+3. **Puberty Timing**: MC3R plays a role in the regulation of sexual maturation, with loss-of-function mutations associated with delayed puberty onset in humans[2][4].
+
+4. **Circadian Rhythm**: Studies suggest MC3R is involved in circadian rhythm regulation[4].
+
+### Clinical Significance
+
+Specific polymorphisms in the MC3R gene (C17A + G241A) have been associated with pediatric obesity and increased energy intake. Children homozygous for these variants consumed approximately 38% more food than those without the polymorphisms[2]. 
+
+A systematic review and meta-analysis published in April 2025 investigated the association between loss-of-function mutations in MC3R and human obesity risk[3], highlighting the ongoing clinical research interest in this receptor."
+few-shot,ADRA1B-CXCR4 complex,"Human'
+
+'","Evidence of similar heteromeric interactions between adrenergic and chemokine receptors has mainly been demonstrated in human cells, with recombinant systems suggesting potential in other mammals, but clear physiological relevance outside humans is not definitively established[3].'
+
+'","This heteromeric complex consists of the alpha-1B adrenergic receptor (ADRA1B) and the chemokine receptor CXCR4. In human leukocytes, particularly in monocytes and the THP-1 cell line, these receptors can physically associate to form functional heteromers. These complexes regulate chemokine receptor–mediated chemotaxis (cell migration) and modulate immune cell responses. The interaction allows for receptor cross-talk, meaning that ligands binding to one receptor can influence the signaling and function of the other, ultimately affecting immune cell movement and potentially modulating inflammation and oncogenic pathways[3].'
+
+'","Alpha-1B adrenergic receptor, C-X-C chemokine receptor type 4'
+
+'","ADRA1B, CXCR4'
+
+'Self",(0.95 × 0.3) + (0.8 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.24 + 0.25 + 0.15 = **0.925**'
+contextual,ADRA1B-CXCR4 complex,Human,"This specific ADRA1B-CXCR4 heteromeric complex has been experimentally validated in human monocytic cells (THP-1) and primary human monocytes[3][5]. No direct evidence was found for its occurrence in mouse, C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae from the current published data.","This complex is a heteromeric assembly primarily between the alpha-1B adrenergic receptor (ADRA1B) and the chemokine (C-X-C motif) receptor 4 (CXCR4). In humans, the ADRA1B-CXCR4 complex is involved in regulating immune cell chemotaxis—specifically monocyte migration—by integrating adrenergic and chemokine signaling pathways[2][3][5]. The presence of this heteromer is necessary for CXCR4-mediated migratory responses, with loss of ADRA1B significantly reducing chemotaxis toward CXCR4 agonists such as CXCL12[3][5].","- Alpha-1B adrenergic receptor (ADRA1B)  
+- C-X-C chemokine receptor type 4 (CXCR4)[2][3][5]","- ADRA1B  
+- CXCR4[1][3]
+
+Self","Consistency of information across databases/sources: 1.00 (multiple databases and publications confirm the complex in human cells[2][3][5])  
+Supporting experimental data regarding the complex: 1.00 (well-supported by proximity ligation assays, BRET, and chemotaxis assays[2][3][5])  
+Accuracy of corresponding protein-gene mapping: 1.00 (clear, non-ambiguous gene-protein relationships[1][3])  
+Analysis information specific to the organism: 1.00 (findings are specific to human and referenced cell types[3][5])
+
+Final Confidence Score Equation:  
+(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+few-shot,Bdkrb2-Tbxa2r complex,Human,"There are orthologs of both BDKRB2 and TBXA2R genes in mouse and other mammals, but the direct Bdkrb2-Tbxa2r complex, as described here, is best characterized in humans. Experimental data on the physical association of these two receptors as a stable complex is most prominent in human systems.","The Bdkrb2-Tbxa2r complex consists of two G protein-coupled receptors (GPCRs): the bradykinin receptor B2 (Bdkrb2) and the thromboxane A2 receptor (Tbxa2r). Bdkrb2 is primarily responsible for mediating responses to the bradykinin peptide, such as vasodilation, edema, smooth muscle spasm, and nociceptor (pain) stimulation, by activating downstream phosphatidylinositol-calcium second messenger signaling cascades[2][3][5]. While direct evidence for a native physical complex between Bdkrb2 and Tbxa2r is currently limited, crosstalk between these signaling pathways has been documented in vascular biology, where both receptors play roles in the regulation of vascular tone, platelet function, and inflammatory responses.","- Bradykinin receptor B2 (Bdkrb2)
+- Thromboxane A2 receptor (Tbxa2r)","- BDKRB2 (bradykinin receptor B2)[1][3][4][5]
+- TBXA2R (thromboxane A2 receptor)
+
+Self","(0.80 × 0.3) + (0.7 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.24 + 0.21 + 0.25 + 0.15 = **0.85**  
+- Consistency across databases is strong for BDKRB2 and TBXA2R individually, but direct evidence of their complex formation is less established.  
+- Experimental data supporting a specific heteromeric complex is moderate; most data relate to signal pathway crosstalk rather than a defined structure.  
+- Protein-gene mapping is accurate and precise.  
+- Analysis focuses on human biology, where the most relevant data are available."
+few-shot,Drd3-Ednrb complex,"Mouse'
+
+'","No direct evidence for this complex in other organisms, but both Drd3 and Ednrb homologs exist in human and other mammals[3].'
+
+'","The Drd3-Ednrb complex is a putative protein complex that may involve the interaction between the dopamine receptor D3 (Drd3) and the endothelin B receptor (Ednrb), both of which are G-protein-coupled receptors (GPCRs). Although comprehensive experimental data confirming this specific complex are lacking, both Drd3 and Ednrb individually play key roles in neural and metabolic processes in the mouse. Drd3 is involved in dopaminergic neurotransmission, influencing mood, cognition, and movement, while Ednrb mediates responses to endothelins, impacting neural crest cell development and metabolic regulation, particularly in oligodendrocyte differentiation, browning of adipose tissue, and enteric nervous system development. Potential interaction between these receptors could impact neural cell signaling and developmental pathways in the mouse[1][4][5].'
+
+'","Dopamine receptor D3, Endothelin B receptor'
+
+'","Drd3, Ednrb'
+
+'Self","(0.40 × 0.3) + (0.30 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.12 + 0.09 + 0.25 + 0.15 = **0.61**'
+
+**Confidence rationale:**  
+- Consistency of information: Moderate. Drd3 and Ednrb are well-characterized in mouse, but evidence of their physical or functional complex is limited or speculative.
+- Supporting experimental data: Low. No direct experimental confirmation of Drd3-Ednrb complex formation.
+- Protein-gene mapping: High. The mapping of Dopamine receptor D3 to Drd3 and Endothelin B receptor to Ednrb in mouse is fully accurate.
+- Organism specificity: High. The functional data refer specifically to the mouse, and the complex is most prominently considered in this context."
+contextual,Drd3-Ednrb complex,"Mouse  
+Based on gene and protein expression data, both Drd3 and Ednrb have been characterized in mouse central nervous system cells, particularly in OPCs and neural tissues where their genes are highly expressed and functionally relevant[3].","Human  
+Orthologs of Drd3 and Ednrb exist in humans, where they play similar roles in dopaminergic signaling (DRD3) and endothelin-mediated processes (EDNRB), but the specific Drd3-Ednrb complex is not broadly documented in other species or experimental systems beyond mouse and human[4][5].","The Drd3-Ednrb complex is a putative protein-protein interaction between Dopamine Receptor D3 (Drd3) and Endothelin Receptor Type B (Ednrb). While both receptors are G protein-coupled and are individually implicated in critical neural and physiological pathways, direct evidence for a stable Drd3-Ednrb heteromeric complex in vivo is limited. The Ednrb receptor is central in oligodendrocyte precursor cell (OPC) differentiation and central nervous system development, while Drd3 modulates dopaminergic neurotransmission. Current literature does not document a well-characterized, functionally distinct Drd3-Ednrb complex, but both receptors may co-exist or interact in neural tissues where they participate in overlapping signaling cascades that regulate neural differentiation, survival, and neurotransmitter responsiveness[3][4].","- Dopamine receptor D3 (Drd3)
+- Endothelin receptor type B (Ednrb)","- Drd3 (dopamine receptor D3 gene)
+- Ednrb (endothelin receptor type B gene)
+
+Self","- Consistency across databases/sources: 0.80 (Limited evidence for direct complex, but individual proteins and functions are well characterized)
+- Supporting experimental data on the complex: 0.65 (Some functional and expression overlap, but direct Drd3-Ednrb complex data is sparse)
+- Protein-gene mapping accuracy: 1.00 (Gene-to-protein mapping is definitive)
+- Organism specificity: 1.00 (Analysis is mouse-specific, which is where these gene products have been most characterized)
+
+Self Confidence Score Calculation:
+(0.80 × 0.3) + (0.65 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.24 + 0.195 + 0.25 + 0.15 = **0.835**"
+few-shot,Egflam-Gpr179 complex,Human,"Mouse (murine models are well-studied for this complex), but the most prominent and functionally characterized role is in humans[1][3].","Crucial for the synaptic organization of photoreceptors in the retina, this complex forms a transsynaptic bridge that mediates signal transmission between photoreceptors and bipolar cells. Egflam (also known as pikachurin) serves as an extracellular matrix protein that connects the dystroglycan-dystrophin complex on the photoreceptor side to the orphan G protein-coupled receptor GPR179 on the bipolar cell side. This interaction is essential for precise synaptic alignment and efficient visual signal processing, with mutations in either component linked to human blinding disorders[1][3][5].","- Egflam (pikachurin)
+- GPR179 (Probable G-protein coupled receptor 179)","- EGFLAM (also known as Q63HQ2, NCBI Gene: 133584, Ensembl: ENSG00000164318)[5]
+- GPR179 (UniProt: Q6PRD1)[4]
+
+Self","- Consistency of information across different databases/sources: 1.00 (well-supported by structural, genetic, and functional studies)[1][3][4][5]
+- Supporting experimental data regarding the complex: 1.00 (cryo-EM, x-ray crystallography, genetic studies)[1][2][3]
+- Accuracy of corresponding protein-gene mapping: 1.00 (confirmed UniProt/NCBI/Ensembl cross-references)[4][5]
+- The analysis information being specific to the organism that it is most prominent in: 1.00 (retinal role best documented in human contexts)[1][3][5]
+
+Self Confidence Score:  
+(1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+contextual,Egflam-Gpr179 complex,Human,"Mouse  
+(The Egflam-Gpr179 interaction is most studied and established in mammals, especially mouse and human retina[1]. No evidence supports its presence or function in C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae.)","This complex is critical for the organization of photoreceptor ribbon synapses in the retina. Egflam (also known as Pikachurin) acts as a transsynaptic bridge that links the extracellular matrix protein alpha-dystroglycan in photoreceptors to the postsynaptic GPR179 receptor on ON-bipolar neurons. This interaction is essential for synaptic structure, neurotransmission, and visual signal processing. Disruption of this complex impairs retinal synapse formation and visual function[1][4][3].","- EGFLAM (also known as Pikachurin)  
+- GPR179 receptor","- EGFLAM (Gene ID: 133584; also known as Pikachurin)[2][4]  
+- GPR179 (Gene ID: 222950)
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,Ceacam1-4L-Syk-Tlr4 complex,Mouse (Mus musculus). The described complex and its regulatory function in neutrophils is best characterized in the mouse model[1][2][4].,"The regulatory interaction involving CEACAM1, Syk, and TLR4 is not clearly established in humans or other model organisms based on available evidence; thus, this specific immune regulatory complex is currently described as mouse-specific in the literature[1][2][4].","This complex functions as a negative regulator of inflammasome activation in mouse neutrophils. Specifically, upon lipopolysaccharide (LPS) stimulation, TLR4, Syk kinase (phosphorylated Syk), and CEACAM1 (phosphorylated CEACAM1) form a complex that fine-tunes the production of the pro-inflammatory cytokine IL-1β. CEACAM1's inhibitory motif recruits phosphatases (such as SHP-1) that counteract Syk's activating effect, leading to inhibition of downstream caspase-1 activation and lysosomal destabilization, thereby reducing excessive inflammation. In CEACAM1-deficient neutrophils, this inhibition is lost, resulting in hyper-production of IL-1β[1][2][4].","- CEACAM1 (Carcinoembryonic antigen-related cell adhesion molecule 1; specifically the 4L isoform characterized by a long cytoplasmic tail containing immunoreceptor tyrosine-based inhibitory motifs)
+- Syk (Spleen tyrosine kinase)
+- TLR4 (Toll-like receptor 4)
+- SHP-1 (Src homology region 2 domain-containing phosphatase-1; recruited upon CEACAM1 phosphorylation)","- Ceacam1 (gene encoding CEACAM1)
+- Syk (gene encoding Syk kinase)
+- Tlr4 (gene encoding TLR4)
+- Ptpn6 (gene encoding SHP-1 phosphatase)
+
+Self Confidence Score Calculation:
+- Consistency of information across different databases/sources: 1.00 (mouse-specific interaction and function reproduced in multiple studies and reviews)[1][2][4]
+- Supporting experimental data regarding the complex: 1.00 (direct biochemical and functional evidence in mouse neutrophils)[1][2][4]
+- Accuracy of corresponding protein-gene mapping: 1.00 (well-established gene-protein assignments in mouse)
+- Analysis specificity to the organism: 1.00 (all published findings about this complex and its immune regulatory role are in mouse)
+
+Self","\[
+(1.00 \times 0.3) + (1.00 \times 0.3) + (1.00 \times 0.25) + (1.00 \times 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = \textbf{1.00}
+\]"
+contextual,Ceacam1-4L-Syk-Tlr4 complex,Mouse (Mus musculus)[1][2][4],"This complex and negative regulatory function have been specifically demonstrated in mouse neutrophils. While the individual proteins (CEACAM1, SYK, TLR4) are conserved in humans, the described LPS-induced complex and its precise immunoregulatory function are most clearly characterized in mouse; similar complexes may exist in other mammals but are not conclusively established based on current data[1][2][4].","This complex is critical for regulating inflammation in mouse neutrophils. Upon lipopolysaccharide (LPS) stimulation, Toll-like receptor 4 (Tlr4), phosphorylated Spleen tyrosine kinase (Syk), and phosphorylated Carcinoembryonic antigen-related cell adhesion molecule 1 (Ceacam1) assemble into a signaling complex. Recruitment of the phosphatase SHP-1 to the phosphorylated immunoreceptor tyrosine-based inhibitory motifs (ITIMs) of Ceacam1 inhibits Syk activity, suppressing inflammasome activation and thus reducing IL-1β production. This mechanism fine-tunes neutrophil inflammatory responses to bacterial LPS; disruption of Ceacam1 leads to excessive IL-1β secretion and heightened inflammation[1][2][4].","- CEACAM1 (Carcinoembryonic antigen-related cell adhesion molecule 1, specifically the long isoform with ITIMs, e.g., Ceacam1-4L)
+- SYK (Spleen tyrosine kinase, particularly its phosphorylated form)
+- TLR4 (Toll-like receptor 4)
+- SHP-1 (Src homology region 2 domain-containing phosphatase-1; recruited but not a core member)[1][2][4]","- Ceacam1 (encodes CEACAM1)
+- Syk (encodes Syk)
+- Tlr4 (encodes Tlr4)
+- Ptpn6 (encodes SHP-1)[1][2][4]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,KDR-NRP1-VEGF165 complex,"Human'
+
+'","Mouse (homologous complex forms with mouse orthologs: Vegfa165, Nrp1, and Kdr)'[2]
+
+'","This complex mediates vascular endothelial growth factor (VEGF)-induced angiogenic signaling. VEGF165 (the predominant human isoform of VEGFA) binds Neuropilin-1 (NRP1), which in turn promotes complex formation with the kinase insert domain receptor (KDR/VEGFR2). This assembly enhances endothelial cell migration, proliferation, chemotaxis, tubulogenesis, and vascular permeability, all crucial for physiological and pathological angiogenesis.'[1][4][5]
+
+'","'
+- Kinase insert domain receptor (KDR), also known as vascular endothelial growth factor receptor 2 (VEGFR2)
+- Neuropilin-1 (NRP1)
+- Vascular endothelial growth factor A, isoform VEGF165 (VEGFA)
+
+'","'
+- KDR (encodes VEGFR2)[1][2][4][5]
+- NRP1 (encodes Neuropilin-1)[1][2][4][5]
+- VEGFA (encodes VEGF165)[1][2][4][5]
+
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+contextual,KDR-NRP1-VEGF165 complex,"Human'
+
+'","Mouse'[1]
+  
+'","This tripartite protein complex mediates vascular endothelial growth factor (VEGF) signaling essential for angiogenesis in endothelial cells. Neuropilin-1 (NRP1) acts as a coreceptor by binding VEGF165 and forming a holoreceptor complex with VEGF receptor-2 (KDR/VEGFR2), thereby enhancing VEGFR2 signal transduction and promoting endothelial cell migration, chemotaxis, and tubulogenesis in response to VEGF stimulation.'[1][2][3][5]
+
+'","'
+- Kinase insert domain-containing receptor (KDR, also known as VEGFR2)
+- Neuropilin-1 (NRP1)
+- Vascular endothelial growth factor 165 (VEGF165, also known as VEGF-A165)
+
+'","'
+- KDR (gene encoding VEGF receptor-2)
+- NRP1 (gene encoding Neuropilin-1)
+- VEGFA (gene encoding VEGF165/VEGF-A165)
+
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+few-shot,NRP1-VEGF121 complex,"Human'  
+'","Mouse (evidence for NRP1 and VEGF121 orthologs and direct interaction in vascular biology is also present in mouse)'  
+'","This complex consists of Neuropilin-1 (NRP1) directly binding to Vascular Endothelial Growth Factor 121 (VEGF121), contributing to processes such as endothelial cell migration and sprout formation, although VEGF121 is not sufficient to bridge the NRP1-VEGFR2 complex. NRP1 thereby modulates VEGF121-induced angiogenic behavior in human endothelial cells.'[1][5]  
+'","Neuropilin-1 (NRP1), Vascular Endothelial Growth Factor 121 (VEGF121)'  
+'","NRP1 (encodes Neuropilin-1), VEGFA (encodes the VEGF121 isoform)'  
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+contextual,NRP1-VEGF121 complex,Human,"Mouse (based on the conservation of the NRP1 and VEGF-A system in mice, which is commonly used for in vivo angiogenesis research; VEGF-A/NRP1 interactions are highly conserved across mammals). However, the VEGF121 isoform’s functional binding and the resulting complex are most characterized and prominent in human systems[1][5].","The NRP1-VEGF121 complex involves the direct binding of vascular endothelial growth factor isoform 121 (VEGF121) to neuropilin-1 (NRP1), a receptor primarily expressed in human endothelial cells. This interaction is implicated in the regulation of endothelial cell migration, angiogenesis, and vascular sprout formation. While VEGF121 binds directly to NRP1, it does not facilitate the bridging of the NRP1-VEGFR2 complex as VEGF165 does, suggesting nuanced roles for different VEGF isoforms in angiogenic signaling. This complex is critical for specific endothelial cell signaling events required for blood vessel formation in humans[1][5].","- Neuropilin-1 (NRP1)
+- Vascular Endothelial Growth Factor 121 (VEGF121; an isoform of VEGF-A)","- NRP1 (neuropilin 1) [Gene ID: 8829][2]
+- VEGFA (vascular endothelial growth factor A) [Gene ID: 7422] (VEGF121 is produced from differential splicing of the VEGFA gene)
+
+Self","- Consistency of information across databases/sources: 1.00 (NRP1-VEGF121 complex and its direct binding are well documented in primary literature and databases)[1][5].
+- Supporting experimental data regarding the complex: 0.95 (Direct binding and functional studies exist, but the bridging function is more robust for VEGF165 than for VEGF121)[1][5].
+- Accuracy of corresponding protein-gene mapping: 1.00 (Protein-gene mappings for human NRP1 and VEGFA are well established)[2].
+- Analysis specificity to the organism where the complex is most prominent: 1.00 (The data provided and discussed is specific to human vascular biology with some reference to mammalian conservation)[1][5].
+
+Self Confidence Score Equation:
+(1.00 × 0.3) + (0.95 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.30 + 0.285 + 0.25 + 0.15 = **0.985**
+
+Summary Table
+
+| Attribute         | Value                                                                                   |
+|-------------------|----------------------------------------------------------------------------------------|
+| Complex Name      | NRP1-VEGF121 complex                                                                   |
+| Function          | Regulates endothelial migration, angiogenesis, and vascular sprout formation           |
+| Organism          | Human                                                                                  |
+| Other Organisms   | Mouse                                                                                  |
+| Proteins          | Neuropilin-1 (NRP1), VEGF121 (isoform of VEGFA)                                        |
+| Genes             | NRP1, VEGFA                                                                            |
+| Self Confidence   | **0.985**                                                                              |"
+contextual,KDR-VEGF165 complex,Human,Mouse,"The KDR-VEGF165 complex is central to angiogenesis in humans. It mediates the proliferation, migration, and survival of endothelial cells by activating intracellular signaling cascades upon ligand binding. The complex drives vascular development during embryogenesis, wound healing, and is implicated in pathological processes such as tumor angiogenesis and vascular leakage[1][5][3]. VEGF165 binding to KDR (also known as VEGFR2) initiates phosphorylation events critical for endothelial cell proliferation and survival[2][5].","- Vascular endothelial growth factor 165 (VEGF165)
+- Kinase insert domain receptor (KDR; also known as VEGFR2 or Flk-1 in mice)[3][5]","- VEGFA (encodes VEGF165)
+- KDR (encodes VEGFR2)[3][5]
+
+Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+few-shot,FLT4-VEGFC complex,Human,"Mouse, zebrafish","The FLT4-VEGFC complex is pivotal for lymphangiogenesis—the formation and maintenance of lymphatic vessels in humans. VEGFC (vascular endothelial growth factor C) acts as a ligand for the receptor tyrosine kinase FLT4 (also known as VEGFR-3), which is predominantly expressed on lymphatic endothelial cells. Upon binding, VEGFC stimulates FLT4-mediated signaling that governs lymphatic endothelial cell proliferation, migration, and survival. This signaling axis is also involved in controlling endothelial cell sprouting by inducing cell-cycle arrest through pathways involving p53, p21, and p27, thus conferring angiogenic potential specifically in lymphatic development[1][2][3][5].","- FLT4 (Fms-related tyrosine kinase 4, also known as VEGFR-3)
+- VEGFC (Vascular endothelial growth factor C)","- FLT4 (gene encoding VEGFR-3/FLT4)[1][5]
+- VEGFC (gene encoding VEGF-C)[3]
+
+Self",(1.0 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.27 + 0.25 + 0.15 = **0.97**
+contextual,FLT4-VEGFC complex,Human,"Mouse, Zebrafish (*Danio rerio*)[1], with a functionally analogous system in mouse and roles conserved in zebrafish. There is no evidence for this exact complex in *C. elegans*, *Drosophila melanogaster*, or *Saccharomyces cerevisiae*.","The FLT4-VEGFC complex is central to lymphangiogenesis in humans. Specifically, vascular endothelial growth factor C (VEGFC) binds to its main receptor, vascular endothelial growth factor receptor 3 (FLT4, also called VEGFR3), on the surface of lymphatic endothelial cells. Upon ligand binding, FLT4/VEGFR3 is activated, triggering downstream signaling cascades (such as ERK signaling) that drive lymphatic endothelial cell proliferation, migration, differentiation, and survival. This complex is crucial for the development, maintenance, and remodeling of the lymphatic vasculature[1][4]. The VEGFC/FLT4 axis also plays a role in tumor progression by supporting lymphatic vessel formation[3][4].","- Vascular Endothelial Growth Factor C (VEGFC)
+- Vascular Endothelial Growth Factor Receptor 3 (FLT4/VEGFR3)","- VEGFC (gene symbol: VEGFC)[3]
+- FLT4 (gene symbol: FLT4)[4]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,ITGA3-ITGB1 complex,Human,"The ITGA3-ITGB1 complex is conserved and present in other mammals (e.g., Mouse, Rat), but the data and highest prominence with detailed functional studies are in Human[3].","The ITGA3-ITGB1 complex, also known as the integrin α3β1 heterodimer, functions as a cell-surface adhesion receptor. It mediates cell adhesion and signal transduction by binding to a variety of extracellular matrix (ECM) proteins, including fibronectin, laminin, collagen, epiligrin, thrombospondin, and CSPG4. This complex is crucial for cell-matrix adhesion, migration, invasion, and integrin-mediated signaling pathways. It plays key roles in processes such as tissue morphogenesis, wound healing, tumor invasion/metastasis, and, specifically, is implicated in mechanical signal transmission in the human myometrium, as well as in the invasion and migration of prostate epithelial cells[2][3][1][4][5].","- Integrin alpha-3 (ITGA3)
+- Integrin beta-1 (ITGB1)[2][4][5]","- ITGA3 (Integrin Subunit Alpha 3)
+- ITGB1 (Integrin Subunit Beta 1)[2][4][5]
+
+Self","Consistency across databases/sources: 1.0  
+Supporting experimental data: 1.0  
+Accuracy of protein-gene mapping: 1.0  
+Specificity to most prominent organism (Human): 1.0  
+
+Score equation:  
+(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+contextual,Golgi-associated retrograde protein complex,Human,"The GARP complex is evolutionarily conserved and also found in Saccharomyces cerevisiae, Drosophila melanogaster, and other eukaryotes[4][5].","The GARP complex is essential for maintaining the Golgi glycosylation machinery in human cells. It mediates the recycling and retention of glycosylation enzymes by tethering endosome-derived vesicles to the trans-Golgi network (TGN), ensuring proper localization of enzymes critical for N- and O-glycan modification. Loss of GARP subunits leads to impaired glycosylation, destabilization of Golgi enzymes, and mis-sorting of glycosylation enzymes toward the endolysosomal pathway instead of retention at the Golgi[1][2].","- VPS51
+- VPS52
+- VPS53
+- VPS54","- VPS51 (gene symbol: VPS51)
+- VPS52 (gene symbol: VPS52)
+- VPS53 (gene symbol: VPS53)
+- VPS54 (gene symbol: VPS54)[1][2][4][5]
+
+Self","Consistency of information: 1.0 × 0.3  
+Supporting experimental data: 1.0 × 0.3  
+Accuracy of protein-gene mapping: 1.0 × 0.25  
+Organism-specific detail: 1.0 × 0.15  
+Final confidence score: (1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+contextual,Transmembrane channel-like (TMC) 2 complex,Human,"Mouse (as a prominent research organism for TMC2 function), and more generally in vertebrates; not prominent in C. elegans, Drosophila melanogaster, or Saccharomyces cerevisiae[4][5].","The TMC2 complex is a mechanotransduction ion channel required for converting mechanical stimuli (sound and head movement) into electrical signals in the hair cells of the inner ear. Specifically, it is essential for auditory (hearing) and vestibular (balance) function. TMC2 forms the pore of the hair cell mechanotransduction (MET) channel, likely as a dimer, and operates with auxiliary subunits to confer its function[3][1][5].","- Transmembrane channel-like protein 2 (TMC2)
+- (Forms a complex with other proteins such as CIB2 and CIB3 in vertebrate hair cells)","- TMC2 (encoding Transmembrane channel-like protein 2)[2][3]
+- CIB2 (calcium and integrin-binding family member 2) and CIB3 (for auxiliary complex components, though primarily characterized in mouse and vertebrates)[5]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,COP9 Signalosome,Human,"The COP9 signalosome is highly conserved and found in other eukaryotes, including Mouse (Mus musculus), C. elegans, Drosophila melanogaster, and Saccharomyces cerevisiae[5].","The COP9 signalosome is an essential multi-protein complex that regulates protein degradation chiefly by deneddylating cullin-based E3 ubiquitin ligases, thus modulating the ubiquitin-proteasome pathway in humans. It is involved in numerous cellular processes, including cell cycle control, DNA damage repair, transcriptional regulation, and response to environmental stimuli such as UV radiation. Additionally, some subunits also play roles as transcriptional coactivators and corepressors, impacting gene expression and developmental processes[2][5].","- COPS1 (COP9 signalosome subunit 1)
+- COPS2 (COP9 signalosome subunit 2)
+- COPS3 (COP9 signalosome subunit 3)
+- COPS4 (COP9 signalosome subunit 4)
+- COPS5 (COP9 signalosome subunit 5)
+- COPS6 (COP9 signalosome subunit 6)
+- COPS7A (COP9 signalosome subunit 7a)
+- COPS8 (COP9 signalosome subunit 8)
+- CSNAP (COP9 signalosome complex subunit 9/CSN9, also known as COPS9)","- COPS1
+- COPS2
+- COPS3
+- COPS4
+- COPS5
+- COPS6
+- COPS7A
+- COPS8
+- COPS9[1][2][3][4]
+
+Self",(1.00 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.30 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,HCN1-HCN4 complex,Human,"The HCN1-HCN4 complex (as heteromeric channels) is also described in mouse and rabbit sinoatrial node cells, but HCN4 is the dominant isoform in both, with HCN1 as a secondary component. However, HCN channels as a general class (including other combinations) are present in other mammals and invertebrates[2][3][5].","The HCN1-HCN4 complex forms heteromeric hyperpolarization-activated cyclic nucleotide-gated (HCN) channels in human cardiac pacemaker cells, specifically within the sinoatrial node (SAN). These channels control the “funny” current (I_f), a mixed Na^+/K^+ inward current that is crucial for pacemaking activity, responsible for initiating and regulating heart rate. HCN4 is the predominant isoform in the SAN, with HCN1 present at a significant but lower level. The formation of HCN1-HCN4 heteromers is proposed to contribute to the fine-tuning of pacemaker current properties, such as activation kinetics and sensitivity to cyclic nucleotides, thereby influencing cardiac rhythmicity[1][2][3].","- HCN1 (Hyperpolarization-activated cyclic nucleotide-gated channel 1)
+- HCN4 (Hyperpolarization-activated cyclic nucleotide-gated channel 4)","- HCN1
+- HCN4
+
+Self",(0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15 = **0.955**
+few-shot, LY96-TLR4 complex ,Human,"Mouse (evidence from knockout studies), but the complex is most prominent and well-studied in humans[4].","The LY96-TLR4 complex is critical for the innate immune response in humans. It recognizes and responds to bacterial lipopolysaccharide (LPS), a key component of Gram-negative bacterial outer membranes. Upon LPS binding, LY96 (also known as MD-2) forms a heterodimer with TLR4, facilitating the dimerization necessary for downstream signaling and activation of the immune response[4][3][5]. Accessory proteins, including CD14 and LPS-binding protein, assist in transferring LPS to the LY96-TLR4 complex, ensuring efficient recognition and signal transduction[4].","- LY96 (also called MD-2, Lymphocyte antigen 96)
+- TLR4 (Toll-like receptor 4)[4][3][5]","- LY96
+- TLR4[4][3][5]
+
+Self",(1.00 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+contextual, LY96-TLR4 complex ,"Human'
+
+'","Mouse'
+
+'","The LY96-TLR4 complex, also known as the TLR4-MD-2 complex, is critical for recognizing and binding bacterial lipopolysaccharide (LPS), a component of Gram-negative bacterial cell walls. Upon LPS binding, LY96 (MD-2) associates with TLR4 on the cell surface to initiate dimerization of the receptor complex, leading to downstream signaling and activation of innate immune responses, particularly pro-inflammatory cytokine production.[5][4][1]'
+
+'","Toll-like receptor 4 (TLR4), Lymphocyte antigen 96 (LY96, also known as MD-2)'
+
+'","TLR4, LY96'
+
 'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+few-shot,RAD6-RAD18 ubiquitin ligase complex,"Saccharomyces cerevisiae'  
+'","Human, Mouse, C. elegans, Drosophila melanogaster'  
+'","The RAD6-RAD18 ubiquitin ligase complex is responsible for monoubiquitinating proliferating cell nuclear antigen (PCNA) at stalled replication forks. This modification facilitates the recruitment of damage-tolerant DNA polymerases, enabling translesion synthesis and DNA damage bypass during post-replication repair. Rad18 acts as the E3 ubiquitin ligase and Rad6 as the E2 ubiquitin-conjugating enzyme, forming stable dimers and engaging with PCNA and DNA. This complex is central to DNA repair processes in response to replication-blocking DNA lesions[1][2][3].'  
+'","Rad6 protein (E2 ubiquitin-conjugating enzyme), Rad18 protein (E3 ubiquitin ligase)'  
+'","RAD6, RAD18'  
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+contextual,RAD6-RAD18 ubiquitin ligase complex,"Saccharomyces cerevisiae'  
+'","Human, Mouse, Drosophila melanogaster, C. elegans'  
+'","This complex is a heterodimeric E2-E3 ubiquitin ligase that plays a central role in postreplication repair (PRR) of UV-damaged DNA in Saccharomyces cerevisiae. It mediates monoubiquitination of PCNA (proliferating cell nuclear antigen), targeting stalled replication forks and facilitating translesion DNA synthesis, thereby enabling replication to continue past DNA lesions.'  
+'","Ubiquitin-conjugating enzyme E2 (RAD6), DNA repair protein RAD18'  
+'","RAD6, RAD18'  
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+contextual,PHO85-PHO80 CDK-cyclin complex,Saccharomyces cerevisiae (budding yeast),Not indicated in the search results,"The Pho85-Pho80 CDK-cyclin complex functions as a key regulator of the phosphate-repressible acid phosphatase system in response to extracellular phosphate availability[2][3]. This complex phosphorylates and inactivates the transcription factor Pho4 by promoting its export to the cytoplasm[1]. Besides its role in phosphate metabolism, the complex has multiple substrates, including its own components - the Pho80 cyclin subunit and the Pho81 CDK inhibitor[2]. The complex is also involved in cell cycle control, particularly in promoting the G1/S transition through the phosphorylation and inhibition of cell cycle regulators[5]. Specifically, Pho85-Pho80 stabilizes the Cln3 cyclin by phosphorylating Ser449 and Thr520, which contributes to cell cycle progression[5].","- Pho85 (Cyclin-dependent protein kinase)
+- Pho80 (Cyclin subunit)","- PHO85
+- PHO80
+
+The Pho85-Pho80 complex has several distinctive features that set it apart from other CDK-cyclin complexes. Unlike cell cycle CDKs that require phosphorylation of a conserved threonine or serine residue on the kinase subunit activation loop for full activation, Pho85 does not appear to have this requirement[3]. Additionally, the complex forms a stable association with its inhibitor, Pho81, under both high and low phosphate conditions, although inhibition only occurs under low phosphate conditions[3]. Recent research has shown that kinase inhibition by the constitutively associated Pho81 requires myo-D-heptakisphosphate (IP7)[3].
+
+The Pho85 CDK has diverse roles beyond phosphate regulation, including involvement in metabolism, stress response, and cell cycle control[4][5]. In cell cycle regulation, Pho85 is particularly important during the G1 phase and is essential for cell cycle progression in the absence of Cdc28 G1 cyclins[5]. Pho85, paired with various cyclins, phosphorylates several key cell cycle regulators:
+- With Pho80, it stabilizes Cln3 cyclin
+- With Pcl9, it phosphorylates the transcriptional repressor Whi5
+- With Pcl1, it phosphorylates the CDK-inhibitor Sic1, targeting it for degradation
+- It also inhibits the Start repressor Whi7 through phosphorylation of Ser27 and Thr100[5]
+
+Self",(0.95 × 0.3) + (0.85 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.255 + 0.25 + 0.15 = **0.94**
+few-shot,Golgi transport complex,Human,"Mouse, Saccharomyces cerevisiae, Drosophila melanogaster (COG complex is highly conserved in eukaryotes)[2][4].","The COG complex is essential for normal Golgi apparatus function, specifically facilitating retrograde vesicular transport within the Golgi. It ensures proper localization of Golgi enzymes by tethering vesicles carrying proteins, allowing for accurate glycosylation and overall protein modification. This process is critical for correct protein sorting and cellular function[4].","The COG complex is composed of eight subunits: COG1, COG2, COG3, COG4, COG5, COG6, COG7, and COG8[2][3][4].","COG1, COG2, COG3, COG4, COG5, COG6, COG7, COG8[2][3][4].  
+
+Self","- Consistency across databases: 1.0  
+- Supporting experimental data: 1.0  
+- Protein–gene mapping accuracy: 1.0  
+- Organism specificity: 1.0  
+
+Final Confidence Score Equation:  
+(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+contextual,GPI-anchor transamidase complex,Human (Homo sapiens),"Mouse, Saccharomyces cerevisiae, Chinese hamster (CHO cells); orthologous complexes are found with species-specific variants[3][5].","The GPI-anchor transamidase complex is a membrane-bound enzyme complex in the endoplasmic reticulum that catalyzes the post-translational attachment of glycosylphosphatidylinositol (GPI) anchors to a variety of proteins. This reaction involves replacing the C-terminal GPI attachment signal peptide of target proteins with a preassembled GPI anchor, facilitating their anchoring to the cell membrane. This complex is essential for the maturation and surface expression of GPI-anchored proteins[1][3][4].","- PIGK (also known as GPI8)
+- GPAA1 (GAA1)
+- PIGS
+- PIGT
+- PIGU[3][4][5]
+
+Corresponding","- PIGK
+- GPAA1
+- PIGS
+- PIGT
+- PIGU[1][2][3][4]
+
+Self Confidence Score Calculation:
+- Consistency of information across databases/sources: 1.00 (well-supported in UniProt, literature, and multiple reviews)
+- Supporting experimental data regarding the complex: 1.00 (cryo-EM structure, functional studies, gene knockout/knockdown experiments[4][5])
+- Accuracy of corresponding protein-gene mapping: 1.00 (directly mapped in UniProt and literature[1][4])
+- Analysis is specific to Humans, where this complex is most thoroughly characterized: 1.00
+
+Self",(1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.30 + 0.30 + 0.25 + 0.15 = **1.00**
+few-shot,PAN1 actin cytoskeleton-regulatory complex,Saccharomyces cerevisiae,"No strong evidence for a directly homologous PAN1 actin cytoskeleton-regulatory complex in humans, mouse, C. elegans, or Drosophila melanogaster. Functional analogs of PAN1 exist in other eukaryotes, but the specific PAN1-Sla1-End3 combination is primarily characterized in S. cerevisiae[2].","The PAN1 complex in Saccharomyces cerevisiae regulates the actin cytoskeleton and is essential for clathrin-mediated endocytosis. It acts as a scaffold protein linking early and late stages of endocytosis by coordinating interactions between coat proteins, actin-regulatory proteins, and the Arp2/3 complex. Disruption of PAN1 results in impaired endocytosis, actin misregulation, and defects in membrane-cytoskeleton interactions[1][3][4].","- Pan1p
+- Sla1p
+- End3p[2]","- PAN1 (YIR006C)
+- SLA1 (YBL007C)
+- END3 (YIL106W)[2][3]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,PAN1 actin cytoskeleton-regulatory complex,*Saccharomyces cerevisiae* (budding yeast)[1][2][3][4].,"The core PAN1 complex (as defined by Pan1p, Sla1p, and End3p) is unique to *Saccharomyces cerevisiae* and closely related fungi. Although functionally analogous complexes exist in other eukaryotes, the specific protein composition described here is not found in the other organisms listed in the query[2][3][4].","The PAN1 actin cytoskeleton-regulatory complex is essential for clathrin-mediated endocytosis in *Saccharomyces cerevisiae* (budding yeast). It serves as a central scaffold linking early and late stages of endocytosis, orchestrating the assembly and regulation of the actin cytoskeleton at endocytic sites. The complex is critical for actin polymerization dynamics and endocytic progression, facilitating vesicle internalization from the plasma membrane[1][3][4].","- Pan1p
+- Sla1p
+- End3p[2][5]","- PAN1 (encodes Pan1p)
+- SLA1 (encodes Sla1p)
+- END3 (encodes End3p)[2][3]
+
+Self Confidence Score Calculation:
+- Consistency across databases/sources: 1.00 (high agreement across SGD, UniProt, and peer-reviewed literature)
+- Supporting experimental data: 1.00 (strong experimental evidence for protein interactions and complex function)
+- Accuracy of protein-gene mapping: 1.00 (direct one-to-one gene-protein mapping, well-established in yeast genetics)
+- Analysis specificity to *S. cerevisiae*: 1.00 (all cited sources and details refer specifically to yeast)
+
+Self",\((1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.30 + 0.30 + 0.25 + 0.15 = \textbf{1.00}\)
+few-shot,AMPK complex,"Human'
+
+'","Mouse, C. elegans, Drosophila melanogaster, Saccharomyces cerevisiae, Arabidopsis, and others[1][5].'
+
+'","AMP-activated protein kinase (AMPK) is a heterotrimeric enzyme complex that acts as a central regulator of cellular and whole-body energy homeostasis. It is activated by increases in AMP or ADP relative to ATP, typically during energy stress. Once activated, AMPK promotes catabolic pathways that generate ATP and inhibits anabolic pathways that consume ATP. It also regulates other processes, including autophagy and cell polarity[1][2][5].'
+
+'","'
+- AMPK alpha subunit (α): catalytic subunit
+- AMPK beta subunit (β): scaffolding/regulatory subunit
+- AMPK gamma subunit (γ): regulatory subunit containing AMP/ADP/ATP binding sites[3][4].
+
+'","'
+- α subunit: PRKAA1, PRKAA2
+- β subunit: PRKAB1, PRKAB2
+- γ subunit: PRKAG1, PRKAG2, PRKAG3[3]
+
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+contextual,AMPK complex,Human,"Mouse, C. elegans, Drosophila melanogaster, Saccharomyces cerevisiae (highly conserved)[1][2].","AMPK is a heterotrimeric protein kinase complex that acts as a master regulator of cellular energy homeostasis. It senses shifts in the AMP/ATP ratio and, upon activation, restores energy balance by promoting catabolic processes (generating ATP) and inhibiting anabolic processes (consuming ATP). It has a central role in metabolic stress responses, regulation of mitochondrial homeostasis, autophagy, and inhibition of mTORC1 signaling[1][2][3].","- Catalytic α subunit (α1, α2 isoforms)
+- Regulatory β subunit (β1, β2 isoforms)
+- Regulatory γ subunit (γ1, γ2, γ3 isoforms)[1][3]","- α subunit: PRKAA1 (α1), PRKAA2 (α2)
+- β subunit: PRKAB1 (β1), PRKAB2 (β2)
+- γ subunit: PRKAG1 (γ1), PRKAG2 (γ2), PRKAG3 (γ3)[3]
+
+Self","Consistency of information across different databases/sources: 1.00 (well-documented and consistently described across multiple peer-reviewed sources and databases)
+Supporting experimental data regarding the complex: 1.00 (extensive experimental and structural studies available)
+Accuracy of corresponding protein-gene mapping: 1.00 (precise gene-protein correspondence established in human)
+Analysis information specific to the organism: 1.00 (analysis focused on human AMPK, the most characterized form)
+
+Final Score Equation:  
+(1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+few-shot,Augmin complex,Human,"Mouse, Drosophila melanogaster, plants, fungi (conserved in vertebrates, insects, plants, and fungi)[5].","The augmin complex is required for microtubule (MT)-dependent microtubule nucleation within the mitotic spindle, specifically amplifying spindle MT density by recruiting the γ-tubulin ring complex (γ-TuRC) to existing spindle MTs. This enables the formation of proper kinetochore fibers and efficient chromosome segregation during mitosis[1][5]. Loss of augmin leads to reduced spindle microtubule density and spindle assembly defects[5].","The human augmin complex is a hetero-octamer composed of the following proteins:
+- HAUS1
+- HAUS2
+- HAUS3
+- HAUS4
+- HAUS5
+- HAUS6
+- HAUS7
+- HAUS8[5]","The genes encoding the above subunits are:
+- HAUS1
+- HAUS2
+- HAUS3
+- HAUS4
+- HAUS5
+- HAUS6
+- HAUS7
+- HAUS8[2][5]
+
+Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+contextual,Augmin complex,Human,"Drosophila melanogaster, Xenopus, plants, fungi[3][4]","The Augmin complex plays a critical role in spindle microtubule generation during mitosis. It mediates microtubule nucleation from preexisting microtubules, which is essential for proper spindle assembly and chromosome segregation[4][5]. The complex targets the γ-tubulin ring complex (γ-TuRC) to spindle microtubules, facilitating branched microtubule nucleation around chromosomes[1][3]. When depleted, the Augmin complex causes reduced spindle microtubule density (including kinetochore fibers), triggers the spindle checkpoint, reduces tension on sister kinetochores, impairs metaphase progression, reduces the number of central spindle microtubules during anaphase, and causes late-stage cytokinesis failure[3][4].","The human Augmin complex is a hetero-octameric Y-shaped complex consisting of eight subunits[2][3]:
+- HAUS1
+- HAUS2
+- HAUS3
+- HAUS4
+- HAUS5
+- HAUS6
+- HAUS7
+- HAUS8 (formerly Dgt4)","- HAUS1
+- HAUS2
+- HAUS3
+- HAUS4
+- HAUS5
+- HAUS6
+- HAUS7
+- HAUS8
+
+The eight subunits form two biochemically distinct tetrameric subcomplexes[3]:
+1. Tetramer T-II: containing HAUS2, HAUS6, HAUS7, and HAUS8
+2. Tetramer T-III: containing HAUS1, HAUS3, HAUS4, and HAUS5
+
+Together, these tetramers form an interconnected, highly flexible Y-shaped octameric complex with a V-shaped head and a filamentous tail[3]. The primary microtubule-binding site is located in the intrinsically disordered N-terminus of HAUS8, with a second minor binding site in the HAUS6 subunit, both positioned in the V-shaped head of the complex[3].
+
+Recent research has revealed that the Augmin complex is directly regulated by the Ran-GTP pathway, suggesting a mechanism for how branched microtubule nucleation is spatially controlled around chromosomes during mitosis[1][3].
+
+Self",(0.90 × 0.3) + (0.85 × 0.3) + (0.95 × 0.25) + (1.0 × 0.15) = 0.27 + 0.255 + 0.2375 + 0.15 = **0.9125**
+contextual,Myb-MuvB transcriptional activation complex,Human,Drosophila melanogaster (functionally conserved activation mechanism in G2/M progression[4]),"The Myb–MuvB (MMB) complex is a key transcriptional activator that drives the expression of genes required for G2 and M phases of the cell cycle. In human cells, it is responsible for activating late cell cycle genes, specifically those involved in mitotic progression and cell proliferation. The complex assembles when B-Myb binds the MuvB core, directing the activation of mitotic gene promoters and coordinating progression from S phase into mitosis[2][3][1].","- LIN9
+- LIN37
+- LIN52
+- LIN54
+- RBBP4 (also known as RbAp48)
+- B-Myb (encoded by MYBL2)","- LIN9 (gene: LIN9)
+- LIN37 (gene: LIN37)
+- LIN52 (gene: LIN52)
+- LIN54 (gene: LIN54)
+- RBBP4 (gene: RBBP4)
+- B-Myb (gene: MYBL2)
+
+Self","- Consistency of information across different databases/sources: 1.00
+- Supporting experimental data regarding the complex: 1.00
+- Accuracy of corresponding protein-gene mapping: 1.00
+- The analysis information being specific to the organism that it is most prominent in: 1.00
+
+Self Confidence Score Equation:  
+(1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+few-shot,CORVET tethering complex,"Saccharomyces cerevisiae'  
+'","Human, Mouse, Drosophila melanogaster, C. elegans' [3][5]  
+'","Acts as a multisubunit endosomal tethering complex that facilitates the fusion of early endosomes by cross-linking two membranes and promoting the formation of SNARE complexes. CORVET interacts with the Rab5-family GTPase (Vps21 in yeast), playing a key role in endocytic trafficking and the maintenance of organelle identity in the endosomal/vacuolar pathway.'[1][2][3][4]  
+'","Vps11, Vps16, Vps18, Vps33, Vps3, Vps8' [2][4][5]  
+'","VPS11, VPS16, VPS18, VPS33, VPS3, VPS8' [2][4][5]  
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+few-shot,Sodium leak channel complex,Human,"Mouse, C. elegans, Drosophila melanogaster","Mediates the depolarizing sodium (Na+) leak current that determines resting Na+ permeability, thus controlling neuronal excitability in the central nervous system. It is crucial for maintaining resting membrane potential and influences physiological processes such as respiration, locomotion, and circadian rhythm. Dysfunctions are associated with severe neurological disorders[1][2][3].","- Sodium leak channel non-selective protein (NALCN)
+- Family with sequence similarity 155 member A (FAM155A)
+- UNC79 homolog protein (UNC79)
+- UNC80 homolog protein (UNC80)","- NALCN (encodes the sodium leak channel)
+- FAM155A (encodes the auxiliary subunit FAM155A)
+- UNC79 (encodes the auxiliary subunit UNC79)
+- UNC80 (encodes the auxiliary subunit UNC80)[2][3][4]
+
+Self",(1.0 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.27 + 0.25 + 0.15 = **0.97**
+contextual,Sodium leak channel complex,Human,"Mouse, C. elegans","NALCN is responsible for the major background sodium (Na+) conductance in neurons, generating persistently depolarizing sodium leak currents that enhance electrical excitability. It regulates the resting membrane potential (RMP) of neurons, controlling neuronal excitability linked to essential functions such as respiration, locomotion, and circadian rhythm[1][3]. This channel is vital for maintaining many biological functions and rhythmic behaviors in mammals[5].","The complex consists of:
+- NALCN (Sodium leak channel, non-selective)
+- FAM155A (Family with sequence similarity 155 member A)
+- Syntaxin 1A/1B (neuronal SNARE proteins)","- NALCN
+- FAM155A
+- STX1A, STX1B
+
+The NALCN complex in humans represents an essential leak channel with distinctive structural and functional characteristics. The structure shows that FAM155A forms an extracellular dome that shields the ion-selectivity filter from neurotoxin attack[1]. The complex has unusual voltage-sensor domains with asymmetric linkages to the pore, suggesting mechanisms for NALCN activity modulation[1].
+
+The pharmacology of NALCN is characterized by a walled-off central cavity with occluded lateral pore fenestrations[1]. The channel has a tightly closed pore gate where most missense patient mutations that cause gain-of-function phenotypes cluster around the S6 gate and distinctive π-bulges[1].
+
+Recent research has also revealed that NALCN is regulated by neuronal SNARE proteins, specifically Syntaxin 1A and 1B (Stx1a/1b), which play a role in controlling sodium leak currents[3]. The removal of Stx1a/1b results in increased sodium leak currents that can be cytotoxic to neurons, suggesting a protective regulatory mechanism[3].
+
+Mutations in NALCN cause severe neurological disorders and early death, highlighting its clinical significance[1][5]. These mutations have been reported in an increasing number of patients with severe manifestations similar to those observed in animal models[5].
+
+Self",(0.9 × 0.3) + (0.8 × 0.3) + (0.85 × 0.25) + (1.0 × 0.15) = 0.27 + 0.24 + 0.2125 + 0.15 = **0.8725**
+few-shot,ATG1 protein kinase complex,Saccharomyces cerevisiae,"Homologous complexes exist in higher eukaryotes (e.g., the ULK1 complex in humans and mice, and in Drosophila melanogaster), but the canonical ATG1 complex configuration described here is most prominent and characterized in S. cerevisiae[3].","The ATG1 protein kinase complex in Saccharomyces cerevisiae is essential for the initiation of autophagy. It regulates the assembly of the pre-autophagosomal structure (PAS), a critical step in autophagosome formation, by recruiting and organizing other Atg proteins at the PAS. ATG1 kinase activity, stimulated by interactions with other complex members, coordinates both the structure and the dynamic recruitment of autophagy machinery, thus controlling the early stages of autophagy and related cytoplasm-to-vacuole transport processes[1][2][4].","- Atg1p (serine/threonine kinase)  
+- Atg13p  
+- Atg17p  
+- Atg29p  
+- Atg31p","- ATG1  
+- ATG13  
+- ATG17  
+- ATG29  
+- ATG31  
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.30 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,NXF1-NXT1 mRNA nuclear export factor complex,"Human'  
+'","Mouse, C. elegans, Drosophila melanogaster, Saccharomyces cerevisiae'  
+'","Mediates the nuclear export of bulk mRNA from the nucleus to the cytoplasm. NXF1 (also known as TAP) forms a heterodimer with NXT1 (also known as p15), creating a platform that interacts with poly(A)+ RNA and nucleoporins at the nuclear pore. This complex is essential for general mRNA export and is also involved in the export of unspliced retroviral RNA containing a constitutive transport element (CTE). NXF1-NXT1 functionally interacts with other export factors such as the TREX complex to facilitate mRNA transport.'  
+'","Nuclear RNA export factor 1 (NXF1/TAP), Nuclear transport factor 2-like export factor 1 (NXT1/p15)'  
+'","NXF1 (for NXF1/TAP), NXT1 (for NXT1/p15)'  
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+few-shot,MON1-CCZ1 guanyl-nucleotide exchange factor complex,Saccharomyces cerevisiae (baker’s yeast),"The MON1-CCZ1 complex is also found in Drosophila melanogaster, mouse, and human, with conserved function across eukaryotes[5].","Guanine nucleotide exchange factor (GEF) that activates the Rab GTPase Ypt7, thereby driving the conversion from Rab5 to Rab7 on endosomes and facilitating the transition from early to late endosomal compartments. The complex is critical for endosome maturation, vacuole fusion, and proper vacuolar morphology. It is also required for the cytoplasm-to-vacuole targeting (Cvt) pathway, CPY and ALP trafficking pathways, endocytosis, and autophagy-related processes in Saccharomyces cerevisiae[1][3][4][5].","- Mon1 (also known as Vac8-interacting protein Mon1)
+- Ccz1","- MON1
+- CCZ1
+
+Self Confidence Score Calculation:
+- Consistency of information across different databases/sources: 1.0 (extensive and consistent findings in yeast literature and databases, e.g. SGD, PMC, PNAS)
+- Supporting experimental data regarding the complex: 1.0 (multiple experimental studies detailing the molecular, genetic, and biochemical function of the complex in S. cerevisiae)
+- Accuracy of corresponding protein-gene mapping: 1.0 (mon1 ↔ MON1; ccz1 ↔ CCZ1)
+- Information specificity to organism: 1.0 (analysis and sources focused on S. cerevisiae, the organism where the complex was originally and most thoroughly characterized)
+
+Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+few-shot,HipHop-HOAP telomere-capping complex,Drosophila melanogaster,"Not reported to be present in other model systems (e.g., human, mouse, C. elegans, S. cerevisiae)[1][2][3][5]. The HipHop-HOAP configuration is unique to Drosophila, though some functional analogies exist with capping complexes in yeast and mammals.","The HipHop-HOAP telomere-capping complex is essential for protecting the ends of Drosophila melanogaster chromosomes from being recognized and fused as DNA double-strand breaks. This is achieved by maintaining a specialized chromatin state at telomeres, independent of the underlying DNA sequence, thereby preventing inappropriate DNA repair activities and end-to-end chromosome fusions. Loss or destabilization of either HipHop or HOAP results in telomere deprotection and fusion, underscoring their interdependent roles in capping function[1][2][3][5].","- HipHop (HP1-HOAP-interacting protein)
+- HOAP (HP1/ORC-associated protein)
+- HP1 (Heterochromatin Protein 1)—often found in complex but not always considered a core constituent","- hiphop (encodes HipHop)
+- cav (cav is the gene encoding HOAP, also referred to as cav1 in some literature)
+- Su(var)205 (encodes HP1; included due to frequent co-localization but is a general heterochromatin protein)
+
+Self","- Consistency of information across different databases/sources: 1.0  
+- Supporting experimental data regarding the complex: 1.0  
+- Accuracy of corresponding protein-gene mapping: 1.0  
+- Analysis information specific to Drosophila melanogaster: 1.0  
+
+Confidence Score Equation:  
+(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+contextual,HipHop-HOAP telomere-capping complex,"Drosophila melanogaster'  
+'","Not reported outside Drosophila; suggested analogies to capping complexes in yeast and mammals, but HipHop and HOAP themselves are specific to Drosophila.'[1][3][5]  
+'","This complex is essential for telomere capping in Drosophila melanogaster, preventing chromosome end fusions by maintaining a specialized chromatin structure at telomeres that is independent of the underlying DNA sequence. Loss of either HipHop or HOAP destabilizes the other and renders telomeres susceptible to end-to-end fusions. The complex interacts with HP1 and is required for the epigenetic identity and protection of chromosome ends.'[1][2][3]  
+'","HOAP (HP1/ORC-associated protein), HipHop (HP1-HOAP-interacting protein), plus interaction with HP1 (Heterochromatin Protein 1)'[1][2][3]  
+'","HOAP (encoded by *cav*), HipHop (encoded by *hiphop*), HP1 (encoded by *Su(var)205*)'[3]  
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+few-shot,ZFP-1(AF10)/DOT-1 complex,Caenorhabditis elegans,"This protein complex is conserved and also found in mammals, where orthologs of ZFP-1 and DOT-1.1 play a similar role in chromatin regulation and developmental gene expression[2].","In Caenorhabditis elegans, the ZFP-1(AF10)/DOT-1.1 complex is crucial for transcriptional regulation during development. The primary function of this complex is to negatively modulate the level of RNA polymerase II transcription on widely expressed, essential genes by promoting pausing or slowing elongation of RNA Pol II, particularly at developmental and stress-responsive genes. Its action is associated with increased H3K79 methylation and decreased H2B monoubiquitination, constituting a negative feedback mechanism for modulating gene expression. The complex is particularly important for neural development and the expression of enhancer-regulated, lineage-specific genes, as well as for appropriate neuronal migration and olfaction in C. elegans[1][2].","- ZFP-1 (C. elegans homolog of AF10)
+- DOT-1.1 (C. elegans homolog of DOT1)","- zfp-1
+- dot-1.1
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,ZFP-1(AF10)/DOT-1 complex,Caenorhabditis elegans,"While functionally similar complexes may exist in other metazoans, the specific ZFP-1(AF10)/DOT-1.1 complex—as defined by the C. elegans proteins and genes—is most prominent and well-characterized in C. elegans[1][4][5]. Homologous complexes, such as the DOT1L complex, occur in humans, mice, and yeast, but the precise composition and function differ[3].","In Caenorhabditis elegans (C. elegans), the ZFP-1(AF10)/DOT-1 complex plays a critical role in negative regulation of RNA polymerase II-mediated transcription on essential, widely expressed genes. This complex contributes to the progressive pausing of RNA polymerase II during development and rapid pausing in response to cellular stress. Its function is closely tied to chromatin modifications: the ZFP-1/DOT-1.1 complex increases H3K79 methylation and decreases H2B monoubiquitination, thereby initiating a negative feedback mechanism for modulating gene expression[1][4][5]. Disruption of this complex impairs proper chromatin regulation and transcriptional control in C. elegans.","- ZFP-1 (Zinc finger protein ZFP-1, homologous to human AF10)
+- DOT-1.1 (H3K79 methyltransferase, homologous to human DOT1L)","- zfp-1 (encodes ZFP-1)[2]
+- dot-1.1 (encodes DOT-1.1)[5]
+
+Self","- Consistency of information across different databases/sources: 1.0  
+- Supporting experimental data regarding the complex: 1.0  
+- Accuracy of corresponding protein-gene mapping: 1.0  
+- The analysis information being specific to the organism that it is most prominent in: 1.0  
+
+Self Confidence Score:  
+\((1.0 \times 0.3) + (1.0 \times 0.3) + (1.0 \times 0.25) + (1.0 \times 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = \textbf{1.00}\)"
+few-shot,ced-3-ced-4-mac-1 complex,Caenorhabditis elegans,"No evidence for the functional ced-3-ced-4-mac-1 complex in other organisms. Homologous proteins exist (e.g., Apaf-1 in mammals is related to CED-4), and MAC-1 is similar to Drosophila Smallminded, but the specific tripartite complex is characterized in C. elegans[1].","This complex is central to the regulation of programmed cell death (apoptosis) in Caenorhabditis elegans. CED-3 is an executioner caspase, CED-4 is required to activate CED-3, and MAC-1 is a AAA family ATPase that interacts with CED-4 (and also CED-3), contributing to regulation of apoptosis by forming a multiprotein complex with these proteins. The activity of this complex determines whether cells undergo apoptosis during development, with MAC-1 serving essential roles for development and modulating the function of CED-3 and CED-4[1][4][5].","- CED-3 (Cell death protein 3), a cysteine protease/caspase[2][5]
+- CED-4 (Cell death abnormality protein 4), a homolog of mammalian Apaf-1, required for CED-3 activation[1][5]
+- MAC-1 (Mitochondria-associated AAA ATPase 1), a regulatory ATPase[1][4]","- ced-3
+- ced-4
+- mac-1[1][4][5]
+
+Self","- Consistency of information across different databases/sources: 1.0 (Highly consistent; multiple sources agree on complex composition and function)[1][4][5]
+- Supporting experimental data regarding the complex: 0.9 (Experimental immunoprecipitation confirms interaction; functional studies in C. elegans and mammalian cells, but complex characterization is stronger in C. elegans than in mammals)[1][4]
+- Accuracy of corresponding protein-gene mapping: 1.0 (Direct and unambiguous mapping between protein names and gene names in curated databases)[1][4][5]
+- Analysis information is specific to the organism that it is most prominent in: 1.0 (All information focused on C. elegans)
+
+Self Confidence Score Equation:
+\[
+(1.0 \times 0.3) + (0.9 \times 0.3) + (1.0 \times 0.25) + (1.0 \times 0.15) = 0.3 + 0.27 + 0.25 + 0.15 = \textbf{0.97}
+\]"
+few-shot,"PETISCO, pid-1 variant",*Caenorhabditis elegans*,"No compelling evidence exists that the PETISCO complex, specifically with the pid-1 effector, is found in organisms outside of *C. elegans*[1][2][3][4].","The PETISCO, pid-1 variant is essential for the biogenesis of 21U-RNAs, a class of PIWI-interacting RNAs (piRNAs) in *Caenorhabditis elegans*. These small RNAs are critical for transposon silencing and genome integrity in the germline. Specifically, the PID-1 variant of PETISCO mediates the processing and maturation of 21U-RNA precursors[1][3].","- IFE-3
+- TOFU-6
+- PID-3
+- ERH-2
+- PID-1 (variant-specific effector)[1][3][4]
+
+Corresponding","- ife-3
+- tofu-6
+- pid-3
+- erh-2
+- pid-1[1][3][4]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,"PETISCO, pid-1 variant",*Caenorhabditis elegans*,Not reported outside *C. elegans* in the current literature; the PETISCO complex (especially the pid-1 variant) is specific to *C. elegans*[1].,"The PETISCO, pid-1 variant is essential for the biogenesis of 21U RNAs, a class of PIWI-interacting RNAs (piRNAs) in *Caenorhabditis elegans*. Specifically, the pid-1 variant stabilizes 21U-RNA precursor molecules and promotes their processing, which is crucial for germline genome integrity and transposon silencing[1][2][3].","- IFE-3 (eIF4E isoform)
+- TOFU-6 (contains an RRM domain)
+- PID-3
+- ERH-2 (Enhancer of rudimentary homolog 2)","- ife-3 (codes for IFE-3)
+- tofu-6 (codes for TOFU-6)
+- pid-3 (codes for PID-3)
+- erh-2 (codes for ERH-2)[1][2][4]
+
+Self Confidence Score Calculation:
+- Consistency across databases/sources: 1.00 (well-supported in primary publications and UniProt)
+- Supporting experimental data: 0.95 (multiple peer-reviewed studies using structural biology and genetics)
+- Protein-gene mapping accuracy: 1.00 (clear, direct mapping in all sources)
+- Organism specificity: 1.00 (function and composition described specifically for *C. elegans*)
+
+Self",(1.00 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,"PETISCO, tost-1 variant",Caenorhabditis elegans,"No evidence for PETISCO, tost-1 variant has been found in Human, Mouse, Drosophila melanogaster, or Saccharomyces cerevisiae; it appears specific to C. elegans[1][3].","The PETISCO, tost-1 variant is an essential protein complex involved in early embryogenesis in the nematode Caenorhabditis elegans. Unlike the PID-1 variant (which mediates 21U RNA/piRNA biogenesis), the tost-1 variant of PETISCO is specifically required for processes in the early embryo, although the precise molecular mechanism remains incompletely characterized[1][2][3][5].","- IFE-3
+- TOFU-6
+- PID-3
+- ERH-2
+- TOST-1 (effector protein specific to the tost-1 variant)[1][2][3][5]","- ife-3 (for IFE-3)
+- tofu-6 (for TOFU-6)
+- pid-3 (for PID-3)
+- erh-2 (for ERH-2)
+- tost-1 (for TOST-1)[2][4]
+
+Self",(1.00 × 0.3) + (0.95 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.30 + 0.285 + 0.25 + 0.15 = **0.985**
+contextual,"PETISCO, tost-1 variant",Caenorhabditis elegans,Not reported in organisms outside Caenorhabditis elegans[1][2][5].,"The PETISCO TOST-1 variant is essential for early embryogenesis in Caenorhabditis elegans. While the PETISCO PID-1 variant is required for piRNA (21U RNA) biogenesis, the TOST-1 variant specifically accumulates in the nucleus during embryogenesis and is necessary for proper chromosome segregation—a function distinct from piRNA processing[1][2][5]. The precise molecular mechanism linking PETISCO/TOST-1 to chromosome segregation is not fully understood, but experimental studies demonstrate its critical role in early development[1][5].","- IFE-3
+- TOFU-6
+- PID-3
+- ERH-2
+- TOST-1 (effector protein specific for this variant)","- ife-3 (IFE-3 protein)
+- tofu-6 (TOFU-6 protein)
+- pid-3 (PID-3 protein)
+- erh-2 (ERH-2 protein)
+- tost-1 (TOST-1 protein)[1][2][4]
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,Ndc80 complex,Saccharomyces cerevisiae (budding yeast),"Human, Schizosaccharomyces pombe, Caenorhabditis elegans, Xenopus laevis[5]","The Ndc80 complex is a crucial component of the kinetochore that provides the principal link between mitotic spindle microtubules and centromere-associated proteins[1][3]. It is essential for stable kinetochore-microtubule attachments needed to sustain the centromere tensions involved in achieving proper chromosome alignment during cell division[4]. The complex functions to congress chromosomes and to signal the spindle checkpoint, and is considered the best candidate for coupling microtubule depolymerization to chromosome movement[3]. Loss-of-function mutations in any of the complex subunits cause chromosomes to detach from spindle microtubules and inactivate the spindle checkpoint, resulting in extremely high rates of chromosome loss[5].","The Ndc80 complex is a heterotetramer consisting of:
+- Ndc80p
+- Nuf2p
+- Spc24p
+- Spc25p[1][5]
+
+These proteins form a long rod with globular ""heads"" at either end of an α-helical coiled-coil shaft approximately 600 Å long. The CH domains of Ndc80 and Nuf2 form a microtubule-attachment module at one end, while the RWD domains of Spc24 and Spc25 at the other end bind to adaptor proteins emanating from centromere-bound kinetochore components[1][5].","- NDC80 (encodes Ndc80p)
+- NUF2 (encodes Nuf2p)
+- SPC24 (encodes Spc24p)
+- SPC25 (encodes Spc25p)[2][5]
+
+Self",(0.95 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.285 + 0.27 + 0.25 + 0.15 = **0.955**
+contextual,Ndc80 complex,Saccharomyces cerevisiae (budding yeast)[1][2][4][5],"Human, Mouse, C. elegans, Drosophila melanogaster, Schizosaccharomyces pombe, Xenopus laevis[1][5]","The Ndc80 complex is essential for stable kinetochore-microtubule attachments, which are necessary to generate the centromere tension required for accurate chromosome alignment and segregation during mitosis. Loss of function in any of its four subunits causes chromosomes to detach from spindle microtubules, disrupts the spindle checkpoint, and results in high rates of chromosome missegregation[1][4][5]. The complex acts as the principal connector between centromere-associated kinetochore assemblies and spindle microtubules but does not bind DNA or microtubules directly. Instead, it links microtubule-binding proteins and spindle checkpoint proteins to centromeric proteins[1][5].","- Ndc80p
+- Nuf2p
+- Spc24p
+- Spc25p[4][5]","- NDC80
+- NUF2
+- SPC24
+- SPC25[2][4]
+
+Self",(1.00 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+few-shot,Kinetochore Mis12 complex,Human,"The Mis12 complex is highly conserved and also found in other eukaryotes, including mouse, C. elegans, Drosophila melanogaster, and Saccharomyces cerevisiae, though subunit composition and nomenclature may vary slightly[1][2].","The human Mis12 complex is a critical component of the kinetochore, serving as a central assembly hub within the KMN (KNL1-Mis12-Ndc80) network. It is essential for connecting microtubules to centromeric chromatin, ensuring proper chromosome alignment and segregation during mitosis, and facilitating the assembly of both the inner and outer kinetochore layers[1][2][3][5].","- MIS12 homolog (MIS12)
+- NSL1 (NSL1 homolog)
+- DSN1 homolog (DSN1)
+- PMF1 homolog (PMF1, also referred to as NNF1 in some literature)[1][2][3][4][5]","- MIS12 (encoding MIS12 protein)
+- NSL1 (encoding NSL1 protein)
+- DSN1 (encoding DSN1 protein)
+- PMF1 (encoding PMF1 protein)[4][5]
+
+Self","Consistency of information across different databases/sources: 1.00  
+Supporting experimental data regarding the complex: 1.00  
+Accuracy of corresponding protein-gene mapping: 1.00  
+Analysis information being specific to the organism that it is most prominent in: 1.00  
+
+Self Confidence Score Equation:  
+(1.00 × 0.3) + (1.00 × 0.3) + (1.00 × 0.25) + (1.00 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+few-shot,Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2,Saccharomyces cerevisiae,"Not explicitly reported as conserved with the exact composition in other organisms; mammalian homologues exist for individual components (e.g., Tlg2 is homologous to mammalian syntaxin 16), but this specific complex is best-characterized and most prominent in Saccharomyces cerevisiae[3].","Mediates membrane fusion in endosomal and Golgi trafficking by spontaneous assembly of four complementary SNARE (soluble N-ethylmaleimide-sensitive factor attachment protein receptor) proteins. This complex is specifically involved in vesicular transport processes, ensuring the fusion of vesicles with target membranes, especially within the late-Golgi and endosomal compartments[1][2][3].","- Tlg2
+- Vti1
+- Tlg1
+- Snc2[1][2][3]","- TLG2
+- VTI1
+- TLG1
+- SNC2[1][2]
+
+Self","- Consistency of information across different databases/sources: 1.0 (clear agreement between primary Saccharomyces Genome Database entries and supporting literature)[1][2][3]
+- Supporting experimental data regarding the complex: 0.9 (well characterized in yeast with experimental data, but less so in other organisms)[1][2][3]
+- Accuracy of corresponding protein-gene mapping: 1.0 (exact gene-protein relationship is well established in S. cerevisiae)[1][2]
+- Information specificity to the organism: 1.0 (analysis focused solely on S. cerevisiae)[1][2][3]
+
+Self Confidence Score Equation:  
+(1.0 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.27 + 0.25 + 0.15 = **0.97**"
+contextual,Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2,Saccharomyces cerevisiae,"Not commonly found in the same composition in other model organisms such as Human, Mouse, C. elegans, or Drosophila melanogaster; the TLG2-VTI1-TLG1-SNC2 complex is specific to yeast (S. cerevisiae)[1].","Mediates membrane fusion through the spontaneous assembly of four complementary SNARE (soluble N-ethylmaleimide-sensitive factor attachment protein receptor) proteins, specifically facilitating endosomal and late-Golgi transport membrane fusion events in the cell. This assembly is essential for intracellular vesicular trafficking, ensuring correct cargo delivery in the secretory and endocytic pathways[1][2][5].","- Tlg2
+- Vti1
+- Tlg1
+- Snc2","- TLG2
+- VTI1
+- TLG1
+- SNC2
+
+Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**
+few-shot,Ste12/Dig1/Dig2 transcription regulation complex,Saccharomyces cerevisiae (budding yeast)[1][2][3][5],"The Ste12/Dig1/Dig2 complex is specific to Saccharomyces cerevisiae. There is no evidence it functions as an orthologous complex in Human, Mouse, C. elegans, or Drosophila melanogaster.","The Ste12/Dig1/Dig2 complex regulates the transcription of mating-specific genes in response to pheromone signaling in Saccharomyces cerevisiae. Ste12 serves as the central transcription factor, with Dig1 and Dig2 acting as inhibitors that modulate Ste12 activity and protect it from degradation. Upon activation of the MAP kinase pathway by mating pheromones, the repression by Dig1 and Dig2 is relieved, allowing Ste12 to induce expression of target genes critical for mating. This complex specifically controls mating-related gene expression through Ste12-binding sites on DNA, distinct from the Tec1/Ste12/Dig1 complex that regulates filamentation genes[3][5].","- Ste12 (transcription factor)
+- Dig1 (regulator/inhibitor)
+- Dig2 (regulator/inhibitor)[1][3][5]","- STE12 (encodes Ste12)
+- DIG1 (encodes Dig1)
+- DIG2 (encodes Dig2)[1]
+
+Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**
+contextual,Ste12/Dig1/Dig2 transcription regulation complex,"Saccharomyces cerevisiae'
+
+'","No clear evidence that the Ste12/Dig1/Dig2 complex as such exists outside Saccharomyces cerevisiae.'
+
+'","This complex regulates transcription of genes critical for mating and filamentous growth in Saccharomyces cerevisiae. In the absence of mating pheromone, Ste12 is inhibited by Dig1 and Dig2, preventing inappropriate transcriptional activation. Upon stimulation (e.g., mating pheromone), Dig1 and Dig2 are phosphorylated and dissociate from Ste12, allowing Ste12 to activate transcription of mating-specific genes. Dig1 and Dig2 also serve to stabilize Ste12, protect it from degradation, and modulate its ability to reposition gene loci within the nucleus.'[1][3][4][5]
+
+'","Ste12, Dig1, Dig2'
+
+'","STE12, DIG1, DIG2'
+
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+few-shot,TRAPP II complex,Saccharomyces cerevisiae (Budding yeast),"The TRAPP II complex, or homologous forms, are also found in other eukaryotes including Drosophila melanogaster and plants, but its composition and predominant characterization are best defined in S. cerevisiae[3][5].","Acts as a multi-subunit tethering complex in Saccharomyces cerevisiae, primarily mediating vesicle tethering during intra-Golgi, endosome-to-Golgi, and Golgi-exit trafficking. It functions specifically at the late Golgi and is essential for cell viability. The TRAPP II complex also plays a role in cytokinesis by associating with secretory vesicles at the division site[2][3][4][5].","- Core TRAPP subunits: Bet3p, Bet5p, Trs20p, Trs23p, Trs31p, Trs33p, Trs65p
+- TRAPP II-specific subunits: Trs120p, Trs130p[3][4]","- BET3 (Bet3p)
+- BET5 (Bet5p)
+- TRS20 (Trs20p)
+- TRS23 (Trs23p)
+- TRS31 (Trs31p)
+- TRS33 (Trs33p)
+- TRS65 (Trs65p)
+- TRS120 (Trs120p)
+- TRS130 (Trs130p)[2][3][4]
+
+Self",(0.93 × 0.3) + (0.9 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.279 + 0.27 + 0.25 + 0.15 = **0.949**
+few-shot,mu-Calpain complex,Human,Mouse,"The mu-Calpain complex (also known as calpain-1) is a calcium-dependent cysteine protease involved in regulated proteolysis of specific substrates. It plays important roles in processes such as cell migration, cytoskeletal remodeling, cell motility, cell cycle progression, and cell-type-specific activities like neuronal long-term potentiation and muscle remodeling. In particular, knockdown of mu-calpain in human cells impairs cell migration by affecting cytoskeletal proteins like filamin and talin[1][2][4]. Its activity is tightly regulated by calcium and post-translational modifications such as phosphorylation[1][4].","- Calpain-1 catalytic subunit (CAPN1)
+- Calpain small regulatory subunit (CAPNS1) (shared with m-calpain)[1][4]","- CAPN1 (calpain 1, catalytic subunit)
+- CAPNS1 (calpain small subunit 1)
+
+Self","Consistency across sources: Human mu-calpain composition, genes, and function are consistently described, with some references to shared features across calpains (0.95).  
+Supporting experimental data: Functional studies (including RNA interference and rescue assays) specifically support roles in migration and cytoskeletal regulation (0.95).  
+Protein-gene mapping: Protein and gene mapping is clear and unambiguous (1.0).  
+Organism-specificity: Information is tailored to human, where the complex is most prominent, though it is also found in mouse (0.95).
+
+Self Confidence Score Equation:  
+\[
+(0.95 \times 0.3) + (0.95 \times 0.3) + (1.0 \times 0.25) + (0.95 \times 0.15) = 0.285 + 0.285 + 0.25 + 0.1425 = \textbf{0.9625}
+\]"
+contextual,mu-Calpain complex,"Human'  
+'","Mouse, rat, bovine, pig, hamster, rabbit'[5]  
+'","Calcium-dependent, non-lysosomal cysteine protease that mediates limited proteolysis of substrates involved in cytoskeletal remodeling, signal transduction, cell mobility, cell cycle progression, memory, and apoptotic cell death. Activity is tightly regulated by calcium influx and post-translational modifications, and the complex is cytosolic, mainly found in the cell bodies and dendrites of neurons, as well as platelets, erythrocytes, and various tissues.'[1][3][4][5]  
+'","Calpain 1 (large catalytic subunit), Calpain small subunit 1 (common regulatory subunit)'[3][4][5]  
+'","CAPN1 (Calpain 1, large subunit), CAPNS1 (Calpain small subunit 1)'[2][3][4][5]  
+'Self",(1.0 × 0.3) + (0.95 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.285 + 0.25 + 0.15 = **0.985**'
+contextual,CMG helicase complex,"Saccharomyces cerevisiae'  
+'","Humans, Drosophila melanogaster, C. elegans, Mice'  
+'","The CMG helicase complex is the primary eukaryotic replicative helicase, responsible for unwinding duplex DNA at the replication fork during DNA replication. It forms the core of the replisome, encircling and translocating along the leading-strand template to separate parental DNA strands, thus facilitating polymerase progression and accurate genome duplication.'  
+'","Cdc45, Mcm2, Mcm3, Mcm4, Mcm5, Mcm6, Mcm7, Psf1, Psf2, Psf3, Sld5'  
+'","CDC45, MCM2, MCM3, MCM4, MCM5, MCM6, MCM7, PSF1, PSF2, PSF3, SLD5'  
+'Self",(1.0 × 0.3) + (1.0 × 0.3) + (1.0 × 0.25) + (1.0 × 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**'
+few-shot,20S mitochondrial small ribosomal subunit,Human,Mouse,"The mitochondrial small ribosomal subunit (mt-SSU) plays a crucial role in mitochondrial protein synthesis. It is responsible for binding mRNA and tRNA to ensure accurate initiation and decoding of genetic information[1]. The mt-SSU provides the platform for mRNA binding and decoding, and is directly involved in the recruitment and decoding of mitochondrial mRNAs[4]. It also plays a key role in the formation of the initiation complex, which requires interaction with mRNA, initiator tRNA, and initiation factors[2]. The mt-SSU functions as part of the complete mitochondrial ribosome (mitoribosome), which synthesizes proteins responsible for oxidative phosphorylation in the mitochondrial inner membrane[3].","The human mitoribosomal small subunit consists of 31 mitochondrial ribosomal proteins (MRPs), numbered S2 to S39 (with gaps)[4]. Of these 31 MRPs, 15 are homologous to bacterial ribosomal proteins, most of which have acquired mitochondria-specific N-terminal and/or C-terminal amino acid extensions[4]. Six bacterial ribosomal proteins (S1, S4, S8, S13, S19, and S20) do not have homologs in the mitoribosomal small subunit[4]. The remaining 16 MRPs are mitochondria-specific with no bacterial homologs[4].","The search results do not provide a comprehensive list of the genes corresponding to all mitoribosomal proteins. However, it is mentioned that METTL15 is a gene involved in the modification of 12S rRNA in the mouse mitoribosomal small subunit[5]. The mitochondrial initiation factor (mt-IF-2) also plays a role in the assembly of the mitoribosomal small subunit[3].
+
+Self","(0.70 × 0.3) + (0.60 × 0.3) + (0.50 × 0.25) + (0.90 × 0.15) = 0.21 + 0.18 + 0.125 + 0.135 = **0.65**
+
+The confidence score reflects limitations in the search results, particularly regarding the comprehensive listing of all proteins and their corresponding genes. While there is good information about the complex's function and structural characteristics, specific details about the complete protein-gene mapping are lacking. The search results provide more information about the human mitoribosomal small subunit, supporting high confidence in the organism specificity."
+few-shot,Cardiac troponin complex,Human,Present in other vertebrates with cardiac and skeletal muscle systems,"The cardiac troponin complex plays a crucial role in muscle contraction regulation in the heart. It functions as a calcium-dependent molecular switch that controls the interaction between actin and myosin filaments. When calcium binds to the troponin C subunit, it causes a conformational change that exposes binding sites for myosin on the actin filaments, allowing crossbridge formation and initiating muscle contraction. This complex is integral to connecting changes in intracellular Ca²⁺ concentration with the generation of cardiac muscle contraction.[1][3]","- Troponin C (TnC) - the calcium-binding subunit
+- Troponin I (TnI) - the inhibitory subunit
+- Troponin T (TnT) - the tropomyosin-binding subunit[1][3]","- TNNC1 (for cardiac Troponin C)
+- TNNI3 (for cardiac Troponin I)
+- TNNT2 (for cardiac Troponin T)
+
+Self",(0.9 × 0.3) + (0.85 × 0.3) + (0.8 × 0.25) + (1.0 × 0.15) = 0.27 + 0.255 + 0.2 + 0.15 = **0.875**
