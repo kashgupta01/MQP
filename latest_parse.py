@@ -45,15 +45,24 @@ def extract_to_csv_with_quotes(
     # Common “spellings” for each field we have to recognise.
     VARIANTS: Dict[str, List[str]] = {
         "Complex Name": ["Complex\\s*Name", "Name\\s*of\\s*Complex"],
-        "Organism": ["Organism?", "Species", "^Organism*"],
-        "Other Organisms": ["Other\\s*Organisms?", "Additional\\s*Organisms?"],
-        "Complex Function": ["Complex\\s*Function", "Function"],
+        "Organism": ["Organism?", "Species?", "Organism"],
+        "Other Organisms": [
+                            "Other\\s*Organisms?", 
+                            "Additional\\s*Organisms?",
+                            "Presence\\s*in\\s*Other\\s*Organisms"
+                            ],
+        "Complex Function": [
+            "Complex\\s*Function", 
+            "Function",
+            "Function\\s*of\\s*Complex"
+            ],
         "Proteins": [
             "Proteins?",
             "Protein\\s*Components?",
             "Protein\\s*Composition",
+            "List\\s*of\\s*Proteins"
         ],
-        "Genes": ["Genes?", "Gene\\s*List"],
+        "Genes": ["Genes?", "Gene\\s*List", "Corresponding\\s*Genes?"],
         "Confidence Score": [
             "Confidence\\s*Score",
             "Self\\s*Confidence\\s*Score",
