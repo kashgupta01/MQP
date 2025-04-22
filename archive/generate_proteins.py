@@ -6,7 +6,7 @@ import requests
 
 # Initialize API keys 
 #OPENAI_API_KEY = ""
-PERPLEXITY_API_KEY = "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"
+PERPLEXITY_API_KEY = ""
 # ANTHROPIC_API_KEY = ""
 
 # Define LLM APIs
@@ -214,6 +214,7 @@ def call_api(llm_name, prompt):
 data = []
 # Loop through each complex and each prompt technique
 #Right now it just records responses in 1 row, but find a way to do it in separated columns 
+'''
 for complex_name in complexes:
     for technique, template in prompt_techniques.items():
         prompt = template.format(complex=complex_name)
@@ -232,6 +233,38 @@ for complex_name in complexes:
             if match:
                 complex_function, organism, other_organisms, proteins, genes, confidence_score = match.groups()
                 data.append([technique, complex_name, organism, other_organisms, complex_function, proteins, genes, confidence_score])
+'''
+def extract_field(text, label):
+    pattern = rf"{label}:\s*(.*)"
+    match = re.search(pattern, text, re.IGNORECASE)
+    return match.group(1).strip() if match else "N/A"
+
+for complex_name in complexes:
+    for technique, template in prompt_techniques.items():
+        prompt = template.format(complex=complex_name)
+        
+        for llm_name in LLM_APIS.keys():
+            response_text = call_api(llm_name, prompt)
+
+            if organism != "N/A" and complex_function != "N/A":
+                organism = extract_field(response_text, "Organism")
+                complex_function = extract_field(response_text, "Complex Function")
+                confidence_score = extract_field(response_text, "Confidence Score")
+                complex_name = extract_field(response_text, "Complex Name") or complex_name
+                other_organisms = extract_field(response_text, "Other Organisms")
+                proteins = extract_field(response_text, "Proteins")
+                genes = extract_field(response_text, "Genes")
+                
+                data.append([
+                    technique,
+                    complex_name,
+                    organism,
+                    other_organisms,
+                    complex_function,
+                    proteins,
+                    genes,
+                    confidence_score
+                ])
 
 
 # Convert results to DataFrame
