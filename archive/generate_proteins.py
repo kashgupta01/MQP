@@ -18,7 +18,7 @@ LLM_APIS = {
 }
 
 # Define list of protein complexes (do in batches?)
-'''
+
 complexes = ["ATP4A-ATP4B complex",
 "Cytochrome bc1 Complex (Complex III)",
 "Synaptonemal Complex",
@@ -43,7 +43,7 @@ complexes = ["ATP4A-ATP4B complex",
 "20S proteosome",
 "HCN1-HCN4 complex",
 "GRIN1-P2RY4 complex",
-" LY96-TLR4 complex ",
+"LY96-TLR4 complex",
 "RAD6-RAD18 ubiquitin ligase complex",
 "PHO85-PHO80 CDK-cyclin complex",
 "DNA polymerase (Pol) episolon (ε)",
@@ -81,11 +81,7 @@ complexes = ["ATP4A-ATP4B complex",
 "CMG helicase complex",
 "20S mitochondrial small ribosomal subunit",
 "Cardiac troponin complex"]
-'''
 
-complexes = ["ATP4A-ATP4B complex",
-"Cytochrome bc1 Complex (Complex III)",
-"Synaptonemal Complex"]
 
 # Define prompting techniques
 prompt_techniques = {
@@ -211,7 +207,7 @@ def call_api(llm_name, prompt):
     if llm_name == "ChatGPT":
         data = {"model": "gpt-4", "messages": [{"role": "user", "content": prompt}]}
     elif llm_name == "Perplexity":
-        data = {"model": "sonar-pro", "messages": [{"role": "user", "content": prompt}]}
+        data = {"model": "sonar-reasoning-pro", "messages": [{"role": "user", "content": prompt}]}
     # elif llm_name == "Anthropic":
     #     data = {"model": "claude-2", "messages": [{"role": "user", "content": prompt}]}
     
