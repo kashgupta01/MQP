@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import re 
 import requests
+import json 
 
 # Initialize API keys 
 #OPENAI_API_KEY = ""
@@ -17,6 +18,7 @@ LLM_APIS = {
 }
 
 # Define list of protein complexes (do in batches?)
+'''
 complexes = ["ATP4A-ATP4B complex",
 "Cytochrome bc1 Complex (Complex III)",
 "Synaptonemal Complex",
@@ -79,6 +81,11 @@ complexes = ["ATP4A-ATP4B complex",
 "CMG helicase complex",
 "20S mitochondrial small ribosomal subunit",
 "Cardiac troponin complex"]
+'''
+
+complexes = ["ATP4A-ATP4B complex",
+"Cytochrome bc1 Complex (Complex III)",
+"Synaptonemal Complex"]
 
 # Define prompting techniques
 prompt_techniques = {
@@ -253,20 +260,42 @@ for complex_name in complexes:
             proteins = extract_field(response_text, "Proteins")
             genes = extract_field(response_text, "Genes")
                 
-            data.append([
-                technique,
-                complex_name,
-                organism,
-                other_organisms,
-                complex_function,
-                proteins,
-                genes,
-                confidence_score
-            ])
+            #data.append([
+                #technique,
+                #complex_name,
+                #organism,
+                #other_organisms,
+                #complex_function,
+                #proteins,
+                #genes,
+                #confidence_score ])
+            result = {
+                "technique": technique,
+                "complex_name": complex_name,
+                "organism": organism,
+                "other_organisms": other_organisms,
+                "complex_function": complex_function,
+                "proteins": proteins,
+                "genes": genes,
+                "confidence_score": confidence_score
+            }
+            data.append(result)
+            
 
 
 # Convert results to DataFrame
-results_df = pd.DataFrame(data, columns = ["Technique", "Complex Name","Organism", "Other Organisms", "Complex Function", "Proteins", "Genes", "Confidence Score"])
-results_df.to_csv("Perplexity_results.csv", index=False)
+#results_df = pd.DataFrame(data, columns = ["Technique", "Complex Name","Organism", "Other Organisms", "Complex Function", "Proteins", "Genes", "Confidence Score"])
+#results_df.to_csv("Perplexity_results.csv", index=False)
 
-print("Data collection complete. Results saved to protein_complexes_results.csv.")
+with open("Perplexity.json", "w") as json_file:
+    json.dump(data, json_file, indent=4)
+
+with open("Perplexity.json", "r") as json_file:
+    json_data = json.load(json_file)
+
+per_results = pd.DataFrame(json_data)
+per_results.to_csv("Perplexity.csv", index=False)
+
+print("Data collection complete. Results saved to Perplexity.json and Perplexity.csv.")
+
+#print("Data collection complete. Results saved to protein_complexes_results.csv.")

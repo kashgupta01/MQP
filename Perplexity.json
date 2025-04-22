@@ -1,0 +1,92 @@
+[
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "1.00"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.0 \u00d7 0.3) + (0.0 \u00d7 0.3) + (0.0 \u00d7 0.25) + (0.0 \u00d7 0.15) = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "NatA complex",
+        "organism": "Human",
+        "other_organisms": "Saccharomyces cerevisiae, Mouse, Drosophila melanogaster, and C. elegans (all contain orthologs or equivalent complexes; NatA is highly conserved across eukaryotes)[1][2].",
+        "complex_function": "The NatA complex is a major N-terminal acetyltransferase in humans, responsible for co-translational N-terminal protein acetylation on a significant portion (~85%) of the human proteome. This modification influences protein stability, degradation, folding, interactions, and cellular localization, impacting various cellular phenotypes and functions, and its dysregulation is implicated in diseases including cancer and neurological disorders[1][2].",
+        "proteins": "- NAA10 (catalytic subunit)",
+        "genes": "- NAA10",
+        "confidence_score": "- Consistency of information across databases/sources: 1.0 (data is well-established and consistent[1][2])"
+    },
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "0.85 (focused on human, cross-referenced with other organisms only where relevant)",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "N/A"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.00 \u00d7 0.3) + (0.00 \u00d7 0.3) + (0.00 \u00d7 0.25) + (0.00 \u00d7 0.15) = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "NatC Complex",
+        "organism": "Human",
+        "other_organisms": "The NatC complex is also present in yeast (Saccharomyces cerevisiae) and other eukaryotes, though the subunit composition may differ[1].",
+        "complex_function": "The NatC complex is a major N-terminal acetyltransferase in humans that catalyzes N-terminal acetylation\u2014a prevalent protein modification influencing stability, function, localization, degradation, and protein interactions. This modification predominantly occurs co-translationally and is critical for various cellular processes, including morphology, protein-protein interactions, and has been linked to the development of cancer and neurological disorders[1][2].",
+        "proteins": "- NAA30 (the catalytic subunit)",
+        "genes": "- NAA30 (encodes NAA30 protein)",
+        "confidence_score": "(1.0 \u00d7 0.3) + (1.0 \u00d7 0.3) + (1.0 \u00d7 0.25) + (1.0 \u00d7 0.15) = 0.3 + 0.3 + 0.25 + 0.15 = **1.00**"
+    },
+    {
+        "technique": "zero-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "N/A"
+    },
+    {
+        "technique": "few-shot",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.00 \u00d7 0.3) + (0.00 \u00d7 0.3) + (0.00 \u00d7 0.25) + (0.00 \u00d7 0.15) = 0.00 + 0.00 + 0.00 + 0.00 = **0.00**"
+    },
+    {
+        "technique": "contextual",
+        "complex_name": "N/A",
+        "organism": "N/A",
+        "other_organisms": "N/A",
+        "complex_function": "N/A",
+        "proteins": "N/A",
+        "genes": "N/A",
+        "confidence_score": "(0.0 \u00d7 0.3) + (0.0 \u00d7 0.3) + (0.0 \u00d7 0.25) + (0.0 \u00d7 0.15) = 0.0 + 0.0 + 0.0 + 0.0 = **0.00**"
+    }
+]
