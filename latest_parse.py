@@ -109,9 +109,15 @@ def extract_to_csv_with_quotes(
 
             # ---------------- technique
             custom_id = rec.get("custom_id", "")
-            technique = custom_id.split("|", 1)[1] 
+            # OPEN AI -----------------------------
+            technique = custom_id.split("|", 1)[1]
+
+            # ANTHROPIC ---------------------------
+            # technique = custom_id.split("__", 1)[1] 
+
 
             # ---------------- message content to parse
+            # OPEN AI ---------------------------------
             content = (
                 rec.get("response", {})
                 .get("body", {})
@@ -119,6 +125,15 @@ def extract_to_csv_with_quotes(
                 .get("message", {})
                 .get("content", "")
             )
+
+            # ANTHROPIC -------------------------------
+            # content = (
+            #     rec.get("result", {})
+            #     .get("message", {})
+            #     .get("content", [{}])[0]
+            #     .get("text", "")
+            # )
+
 
             # Accumulator for field values
             values: Dict[str, List[str]] = {c: [] for c in COLS}
@@ -180,8 +195,8 @@ def extract_to_csv_with_quotes(
 # ---------------------------------------------------------------------- usage
 if __name__ == "__main__":
     extract_to_csv_with_quotes(
-        jsonl_path="gpt-4-1_full_output.jsonl",
-        csv_path="gpt-4-1_parsed.csv",
+        jsonl_path="openai_outputs\o4-mini_output.jsonl",
+        csv_path="o4-mini_parsed.csv",
     )
     print(
         "Wrote CSV to gpt-4-1_parsed.csv "
