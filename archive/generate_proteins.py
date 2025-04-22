@@ -245,26 +245,24 @@ for complex_name in complexes:
         
         for llm_name in LLM_APIS.keys():
             response_text = call_api(llm_name, prompt)
-
-            if organism != "N/A" and complex_function != "N/A":
-                organism = extract_field(response_text, "Organism")
-                complex_function = extract_field(response_text, "Complex Function")
-                confidence_score = extract_field(response_text, "Confidence Score")
-                complex_name = extract_field(response_text, "Complex Name") or complex_name
-                other_organisms = extract_field(response_text, "Other Organisms")
-                proteins = extract_field(response_text, "Proteins")
-                genes = extract_field(response_text, "Genes")
+            organism = extract_field(response_text, "Organism")
+            complex_function = extract_field(response_text, "Complex Function")
+            confidence_score = extract_field(response_text, "Confidence Score")
+            complex_name = extract_field(response_text, "Complex Name") or complex_name
+            other_organisms = extract_field(response_text, "Other Organisms")
+            proteins = extract_field(response_text, "Proteins")
+            genes = extract_field(response_text, "Genes")
                 
-                data.append([
-                    technique,
-                    complex_name,
-                    organism,
-                    other_organisms,
-                    complex_function,
-                    proteins,
-                    genes,
-                    confidence_score
-                ])
+            data.append([
+                technique,
+                complex_name,
+                organism,
+                other_organisms,
+                complex_function,
+                proteins,
+                genes,
+                confidence_score
+            ])
 
 
 # Convert results to DataFrame
