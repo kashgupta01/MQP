@@ -204,7 +204,7 @@ def make_custom_id(complex_name: str, technique: str) -> str:
 #     "claude-3-5-haiku-20241022"		
 #    ]
 
-def build_batch_requests(complexes, prompt_techniques, model="claude-3-5-haiku-20241022", max_tokens=1024):
+def build_batch_requests(complexes, prompt_techniques, model="claude-3-opus-20240229", max_tokens=1024):
     requests = []
     for complex_name in complexes:
         for technique, template in prompt_techniques.items():
