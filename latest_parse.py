@@ -241,7 +241,7 @@ def extract_to_csv(
 
 if __name__ == "__main__":
     extract_to_csv(
-        jsonl_path="gpt-4o_output_v2.jsonl",
-        csv_path="clean.csv",
+        jsonl_path="anthropic_outputs\claude-3-opus_output_v2.jsonl",
+        csv_path="claude-3-opus_v2_parsed.csv",
     )
     print("CSV written – open it to inspect results.")

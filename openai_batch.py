@@ -8,58 +8,58 @@ load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 complexes = [
-    # "ATP4A-ATP4B complex",
-    # "Cytochrome bc1 Complex (Complex III)",
-    # "Synaptonemal Complex",
-    # "GNA12-GPR55-RGS2 complex",
-    # "Melanocortin receptor 3",
-    # "ATP1A1-TSHR complex",
-    # "ADRA1B-CXCR4 complex",
-    # "Bdkrb2-Tbxa2r complex",
-    # "Drd3-Ednrb complex",
-    # "Egflam-Gpr179 complex",
-    # "Ceacam1-4L-Syk-Tlr4 complex",
-    # "KDR-NRP1-VEGF165 complex",
-    # "NRP1-VEGF121 complex",
-    # "KDR-VEGF165 complex",
-    # "FLT4-VEGFC complex",
-    # "ITGA3-ITGB1 complex",
-    # "Golgi-associated retrograde protein complex",
-    # "Transmembrane channel-like (TMC) 2 complex",
-    # "13 subunit eukaryotic initiation factor 3 (eIF3) complex",
-    # "Tip60 chromatin-remodeling complex ",
-    # "COP9 Signalosome",
-    # "20S proteosome",
-    # "HCN1-HCN4 complex",
-    # "GRIN1-P2RY4 complex",
-    # "LY96-TLR4 complex",
-    # "RAD6-RAD18 ubiquitin ligase complex",
-    # "PHO85-PHO80 CDK-cyclin complex",
-    # "DNA polymerase (Pol) episolon (ε)",
-    # "Golgi transport complex",
-    # "GPI-anchor transamidase complex",
-    # "Glycosylphosphatidylinositol-mannosyltransferase I complex",
-    # "Dsl1 tethering complex",
-    # "AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
-    # "PAN1 actin cytoskeleton-regulatory complex",
-    # "AMPK complex",
-    # "Augmin complex",
-    # "Myb-MuvB transcriptional activation complex",
-    # "CORVET tethering complex",
-    # "Sodium leak channel complex",
-    # "ATG1 protein kinase complex",
-    # "NXF1-NXT1 mRNA nuclear export factor complex",
-    # "MON1-CCZ1 guanyl-nucleotide exchange factor complex",
-    # "HipHop-HOAP telomere-capping complex",
-    # "ZFP-1(AF10)/DOT-1 complex",
-    # "ced-3-ced-4-mac-1 complex",
-    # "Nuclear mitotic cohesin complex",
-    # "Atk-1/Akt-2/Sgk-1 protein kinase complex",
-    # "RB1-E2F1-TFDP1 transcription repressor complex",
-    # "PETISCO, pid-1 variant",
-    # "PETISCO, tost-1 variant",
-    # "Ndc80 complex",
-    # "Kinetochore Mis12 complex",
+    "ATP4A-ATP4B complex",
+    "Cytochrome bc1 Complex (Complex III)",
+    "Synaptonemal Complex",
+    "GNA12-GPR55-RGS2 complex",
+    "Melanocortin receptor 3",
+    "ATP1A1-TSHR complex",
+    "ADRA1B-CXCR4 complex",
+    "Bdkrb2-Tbxa2r complex",
+    "Drd3-Ednrb complex",
+    "Egflam-Gpr179 complex",
+    "Ceacam1-4L-Syk-Tlr4 complex",
+    "KDR-NRP1-VEGF165 complex",
+    "NRP1-VEGF121 complex",
+    "KDR-VEGF165 complex",
+    "FLT4-VEGFC complex",
+    "ITGA3-ITGB1 complex",
+    "Golgi-associated retrograde protein complex",
+    "Transmembrane channel-like (TMC) 2 complex",
+    "13 subunit eukaryotic initiation factor 3 (eIF3) complex",
+    "Tip60 chromatin-remodeling complex ",
+    "COP9 Signalosome",
+    "20S proteosome",
+    "HCN1-HCN4 complex",
+    "GRIN1-P2RY4 complex",
+    "LY96-TLR4 complex",
+    "RAD6-RAD18 ubiquitin ligase complex",
+    "PHO85-PHO80 CDK-cyclin complex",
+    "DNA polymerase (Pol) episolon (ε)",
+    "Golgi transport complex",
+    "GPI-anchor transamidase complex",
+    "Glycosylphosphatidylinositol-mannosyltransferase I complex",
+    "Dsl1 tethering complex",
+    "AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",
+    "PAN1 actin cytoskeleton-regulatory complex",
+    "AMPK complex",
+    "Augmin complex",
+    "Myb-MuvB transcriptional activation complex",
+    "CORVET tethering complex",
+    "Sodium leak channel complex",
+    "ATG1 protein kinase complex",
+    "NXF1-NXT1 mRNA nuclear export factor complex",
+    "MON1-CCZ1 guanyl-nucleotide exchange factor complex",
+    "HipHop-HOAP telomere-capping complex",
+    "ZFP-1(AF10)/DOT-1 complex",
+    "ced-3-ced-4-mac-1 complex",
+    "Nuclear mitotic cohesin complex",
+    "Atk-1/Akt-2/Sgk-1 protein kinase complex",
+    "RB1-E2F1-TFDP1 transcription repressor complex",
+    "PETISCO, pid-1 variant",
+    "PETISCO, tost-1 variant",
+    "Ndc80 complex",
+    "Kinetochore Mis12 complex",
     "THO complex",
     "Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2",
     "Ste12/Dig1/Dig2 transcription regulation complex",
@@ -187,48 +187,48 @@ prompt_techniques = {
 model = "gpt-4o"
 file_name = model + "_input_v2(3)" 
 
-# # make jsonl file
-# with open(f"{file_name}.jsonl", "w") as f:
-#     for complex_name in complexes:
-#         for technique, template in prompt_techniques.items():
-#             if technique == "contextual":
-#                 prompt = template.format(complex=complex_name).replace("    ", "")
-#                 json_line = {
-#                     "custom_id": f"{complex_name}|{technique}",
-#                     "method": "POST",
-#                     "url": "/v1/chat/completions",
-#                     "body": {
-#                         "model": model,
-#                         "messages": [
-#                             {
-#                             "role": "system",
-#                             "content": "You are an expert scientist in the field of biology and molecular machines."
-#                              },
-#                             {
-#                             "role": "user", 
-#                             "content": prompt
-#                             }
-#                         ]
-#                     }
-#                 }
-#             else:
-#                 prompt = template.format(complex=complex_name).replace("    ", "")
-#                 json_line = {
-#                     "custom_id": f"{complex_name}|{technique}",
-#                     "method": "POST",
-#                     "url": "/v1/chat/completions",
-#                     "body": {
-#                         "model": model,
-#                         "messages": [
-#                             {
-#                             "role": "user", 
-#                             "content": prompt
-#                             }
-#                         ]
-#                     }
-#                 }
+# make jsonl file
+with open(f"{file_name}.jsonl", "w") as f:
+    for complex_name in complexes:
+        for technique, template in prompt_techniques.items():
+            if technique == "contextual":
+                prompt = template.format(complex=complex_name).replace("    ", "")
+                json_line = {
+                    "custom_id": f"{complex_name}|{technique}",
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": model,
+                        "messages": [
+                            {
+                            "role": "system",
+                            "content": "You are an expert scientist in the field of biology and molecular machines."
+                             },
+                            {
+                            "role": "user", 
+                            "content": prompt
+                            }
+                        ]
+                    }
+                }
+            else:
+                prompt = template.format(complex=complex_name).replace("    ", "")
+                json_line = {
+                    "custom_id": f"{complex_name}|{technique}",
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": model,
+                        "messages": [
+                            {
+                            "role": "user", 
+                            "content": prompt
+                            }
+                        ]
+                    }
+                }
 
-#             f.write(json.dumps(json_line) + "\n")
+            f.write(json.dumps(json_line) + "\n")
 
 # upload input file
 upload = openai.files.create(file=open(f"{file_name}.jsonl", "rb"), purpose="batch")
