@@ -1,206 +1,247 @@
 import json
 import re
 import csv
-from typing import List, Dict
+from typing import List, Dict, Pattern
+
+# -----------------------------------------------------------------------------
+# Configuration
+# -----------------------------------------------------------------------------
+
+COLS: List[str] = [
+    "Technique",
+    "Complex Name",
+    "Organism",
+    "Other Organisms",
+    "Complex Function",
+    "Proteins",
+    "Genes",
+    "Confidence Score",
+]
+
+# --- Header variants ---------------------------------------------------------
+VARIANTS: Dict[str, List[str]] = {
+    "Complex Name": [
+        r"Complex\s*Name",
+        r"Name\s*of\s*Complex",
+    ],
+    "Organism": [
+        r"Organism\b",
+        r"Species\b",
+    ],
+    "Other Organisms": [
+        r"Other\s*Organisms?",
+        r"Additional\s*Organisms?",
+        r"Presence\s*in\s*Other\s*Organisms",
+    ],
+    "Complex Function": [
+        r"Complex\s*Function",
+        r"Function\s*of\s*Complex",
+        r"Function\b",
+    ],
+    "Proteins": [
+        r"Proteins?",
+        r"Protein\s*Components?",
+        r"Protein\s*Composition",
+        r"List\s*of\s*Proteins",
+        r"Proteins\s*in\s*the\s*Complex",
+        r"Protein\s*Comprising\s*the\s*Complex",
+        r"Composition\s*\(List\s*of\s*Proteins\)",
+    ],
+    "Genes": [
+        r"Genes\b",
+        r"Gene\s*List",
+        r"Corresponding\s*Genes?",
+    ],
+    "Confidence Score": [
+        r"Confidence\s*Score",
+        r"Self\s*Confidence\s*Score",
+        r"Confidence\s*Score\s*Calculation",
+        r"Self\s*Confidence\s*Score\s*Calculation",
+        r"Total\s*Self\s*Confidence\s*Score",
+        r"Total\s*Confidence\s*Score",
+        r"Confidence\s*Score\s*Equation",
+        r"Assigned\s*Score",
+    ],
+}
+
+# Regex for stripping leading list markers ("1.", "-", "*", etc.)
+LIST_MARKER_RE: Pattern[str] = re.compile(r"^[\s>*-]*\d*\.?\s*")
+
+# Map of fancy Unicode quotes → nothing
+UNICODE_QUOTES = dict.fromkeys(map(ord, "\u2018\u2019\u201c\u201d"), None)
+
+# -----------------------------------------------------------------------------
+# Helper functions
+# -----------------------------------------------------------------------------
+
+def _collapse_ws(s: str) -> str:
+    """Trim and collapse internal whitespace."""
+    return re.sub(r"\s+", " ", s.strip())
 
 
-def extract_to_csv_with_quotes(
+def _strip_decorations(line: str) -> str:
+    """Remove markdown / typographic artefacts so header regexes match."""
+    line = line.translate(UNICODE_QUOTES)      # drop curly quotes
+    line = re.sub(r"^#+\s*", "", line)      # markdown headings
+    line = line.replace("**", "")              # bold markers
+    line = line.strip("'\"")                  # straight quotes
+    line = line.replace("`", "")               # backticks
+    return line
+
+
+def _build_patterns() -> tuple[Dict[Pattern[str], str], Dict[Pattern[str], str]]:
+    """Compile regex objects for header styles."""
+    header_pat: Dict[Pattern[str], str] = {}
+    inline_pat: Dict[Pattern[str], str] = {}
+
+    for canon, variants in VARIANTS.items():
+        for v in variants:
+            header_pat[re.compile(rf"^[\s>*-]*\**\s*({v})\s*$", re.I)] = canon
+            inline_pat[re.compile(rf"^[\s>*-]*\**\s*({v})\s*:\s*(.*)$", re.I)] = canon
+    return header_pat, inline_pat
+
+HEADER_PATTERNS, INLINE_PATTERNS = _build_patterns()
+
+# -----------------------------------------------------------------------------
+# Core extraction logic
+# -----------------------------------------------------------------------------
+
+def extract_to_csv(
     jsonl_path: str,
     csv_path: str,
-    separator_regex: str = r"''",
+    item_sep_regex: str = r"''|;|,",  # split on two single quotes, semicolon, comma
 ) -> None:
-    """
-    Parse each `message.content` in an OpenAI JSONL response log and write the
-    desired fields to a CSV file.
+    """Parse a JSONL log and write a clean CSV."""
 
-    • Adds a “technique” column taken from the part of `custom_id` that appears
-      after the first “|”.
-    • Normalises field names so that variants like “Complex Name”, "**complex
-      name**", or "'Complex Name:'" are all recognised.
-    • Splits multi‑item values on two single quotes (``' '``) – e.g.
-      "ProteinA''ProteinB" → "ProteinA; ProteinB".
-
-    Parameters
-    ----------
-    jsonl_path : str
-        Path to the input .jsonl file.
-    csv_path : str
-        Destination for the output CSV.
-    separator_regex : str, optional
-        Regex used to split within a value (default ``r"''"``).
-    """
-
-    # Order of columns in the output
-    COLS: List[str] = [
-        "Technique",
-        "Complex Name",
-        "Organism",
-        "Other Organisms",
-        "Complex Function",
-        "Proteins",
-        "Genes",
-        "Confidence Score",
-    ]
-
-    # Common “spellings” for each field we have to recognise.
-    VARIANTS: Dict[str, List[str]] = {
-        "Complex Name": ["Complex\\s*Name", "Name\\s*of\\s*Complex"],
-        "Organism": ["Organism", "Species"],
-        "Complex Function": ["Complex\\s*Function", "Function"],
-        "Proteins": [
-            "Proteins?",
-            "Protein\\s*Components?",
-            "Protein\\s*Composition",
-        ],
-        "Genes": ["Genes?", "Gene\\s*List"],
-        "Other Organisms": ["Other\\s*Organisms?", "Additional\\s*Organisms?"],
-        "Confidence Score": [
-            "Confidence\\s*Score",
-            "Self\\s*Confidence\\s*Score",
-        ],
-    }
-
-    # ------------------------------------------------------------------ helpers
-    def _collapse_ws(s: str) -> str:
-        return re.sub(r"\s+", " ", s.strip())
-
-    def _build_patterns() -> tuple[
-        Dict[re.Pattern, str], Dict[re.Pattern, str]
-    ]:
-        """Compile stand‑alone‑header and inline “Header: value” patterns."""
-        header_pat: Dict[re.Pattern, str] = {}
-        inline_pat: Dict[re.Pattern, str] = {}
-
-        for canon, variants in VARIANTS.items():
-            for v in variants:
-                #  Header on its own line (optional quotes / asterisks / colon)
-                header_pat[
-                    re.compile(
-                        rf"""^[\'"]?      # optional opening quote
-                             \s*(?:\*{{0,5}}\s*)?  # up to 3 asterisks
-                             ({v})                # the field name
-                             \s*(?:\*{{0,5}})?    # trailing asterisks
-                             [\'"]?               # optional closing quote
-                             \s*:?\s*$            # optional colon
-                        """,
-                        re.I | re.X,
-                    )
-                ] = canon
-
-                #  “Header: value” on the same line
-                inline_pat[
-                    re.compile(
-                        rf"""^[\'"]?      # optional opening quote
-                             \s*(?:\*{{0,3}}\s*)?({v})[^:]*:\s*(.+)$
-                        """,
-                        re.I | re.X,
-                    )
-                ] = canon
-        return header_pat, inline_pat
-
-    HEADER_PATTERNS, INLINE_PATTERNS = _build_patterns()
-
-    # ------------------------------------------------------------------ parsing
     rows: List[Dict[str, str]] = []
 
-    with open(jsonl_path, "r", encoding="utf‑8") as jf:
-        for line in jf:
-            rec = json.loads(line)
+    with open(jsonl_path, "r", encoding="utf-8") as jf:
+        for raw_line in jf:
+            obj = json.loads(raw_line)
 
-            # ---------------- technique
-            custom_id = rec.get("custom_id", "")
-            # OPEN AI -----------------------------
-            technique = custom_id.split("|", 1)[1]
+            # ---- technique & content ---------------------------------------
+            custom_id = obj.get("custom_id", "")
+            if "|" in custom_id:
+                technique = custom_id.split("|")[-1]
+                content = (
+                    obj.get("response", {})
+                    .get("body", {})
+                    .get("choices", [{}])[0]
+                    .get("message", {})
+                    .get("content", "")
+                )
+            else:
+                technique = custom_id.split("__")[-1]
+                content = (
+                    obj.get("result", {})
+                    .get("message", {})
+                    .get("content", [{}])[0]
+                    .get("text", "")
+                )
 
-            # ANTHROPIC ---------------------------
-            # technique = custom_id.split("__", 1)[1] 
-
-
-            # ---------------- message content to parse
-            # OPEN AI ---------------------------------
-            content = (
-                rec.get("response", {})
-                .get("body", {})
-                .get("choices", [{}])[0]
-                .get("message", {})
-                .get("content", "")
-            )
-
-            # ANTHROPIC -------------------------------
-            # content = (
-            #     rec.get("result", {})
-            #     .get("message", {})
-            #     .get("content", [{}])[0]
-            #     .get("text", "")
-            # )
-
-
-            # Accumulator for field values
+            # ---- initialise per‑row accumulator ----------------------------
             values: Dict[str, List[str]] = {c: [] for c in COLS}
             values["Technique"].append(technique)
-
             current_field: str | None = None
 
+            # ---- iterate through content -----------------------------------
             for raw in content.splitlines():
-                line = raw.strip()
-                if not line:
-                    continue
+                # Some models pack every header/value in ONE long line using
+                # "-'Header: value'‑" concatenations (e.g. few‑shot style).
+                # We split those on a hyphen *followed by* a quote so each
+                # pair is parsed separately.
+                for segment in re.split(r"-\s*(?=['\"])", raw):
+                    if not segment.strip():
+                        continue
 
-                # -------- First, try “Header: value” in the same line
-                matched = False
-                for pat, canon in INLINE_PATTERNS.items():
-                    m = pat.match(line)
-                    if m:
-                        val_part = m.group(2)
-                        parts = [
+                    segment = LIST_MARKER_RE.sub("", segment)
+                    segment = _strip_decorations(segment)
+                    line = _collapse_ws(segment)
+
+                    if not line:
+                        current_field = None
+                        continue
+
+                    # -- inside Confidence Score block ----------------------
+                    if current_field == "Confidence Score":
+                        # keep collecting until explicit *different* header
+                        header_switched = False
+                        for pat, canon in HEADER_PATTERNS.items():
+                            if pat.match(line) and canon != "Confidence Score":
+                                header_switched = True
+                                break
+                        if not header_switched:
+                            values[current_field].append(line)
+                            continue
+
+                    # -- inline Header: value -------------------------------
+                    matched_inline = False
+                    for pat, canon in INLINE_PATTERNS.items():
+                        m = pat.match(line)
+                        if m:
+                            val_part = m.group(2).strip()
+                            if val_part:
+                                items = [
+                                    _collapse_ws(p)
+                                    for p in re.split(item_sep_regex, val_part)
+                                    if _collapse_ws(p)
+                                ]
+                                values[canon].extend(items)
+                                current_field = None
+                            else:
+                                current_field = canon  # header only
+                            matched_inline = True
+                            break
+                    if matched_inline:
+                        continue
+
+                    # -- stand‑alone header ---------------------------------
+                    matched_header = False
+                    for pat, canon in HEADER_PATTERNS.items():
+                        if pat.match(line):
+                            current_field = canon
+                            matched_header = True
+                            break
+                    if matched_header:
+                        continue
+
+                    # -- continuation of current field ----------------------
+                    if current_field:
+                        items = [
                             _collapse_ws(p)
-                            for p in re.split(separator_regex, val_part)
+                            for p in re.split(item_sep_regex, line)
                             if _collapse_ws(p)
                         ]
-                        values[canon].extend(parts)
-                        current_field = None
-                        matched = True
-                        break
-                if matched:
-                    continue
+                        values[current_field].extend(items)
 
-                # -------- Stand‑alone header line?
-                for pat, canon in HEADER_PATTERNS.items():
-                    if pat.match(line):
-                        current_field = canon
-                        matched = True
-                        break
-                if matched:
-                    continue
+            # ---- final tidy‑up per row -------------------------------------
+            cleaned_row: Dict[str, str] = {}
+            for col in COLS:
+                seen, uniq = set(), []
+                for item in values[col]:
+                    if item not in seen:
+                        uniq.append(item)
+                        seen.add(item)
+                if col == "Confidence Score" and uniq:
+                    nums = re.findall(r"\d+\.\d+", " ".join(uniq))
+                    cleaned_row[col] = nums[-1] if nums else "; ".join(uniq)
+                else:
+                    cleaned_row[col] = "; ".join(uniq)
+            rows.append(cleaned_row)
 
-                # -------- Continuation line for the current field
-                if current_field:
-                    parts = [
-                        _collapse_ws(p)
-                        for p in re.split(separator_regex, line)
-                        if _collapse_ws(p)
-                    ]
-                    values[current_field].extend(parts)
-
-            # Collate lists → single string per column
-            rows.append({c: "; ".join(values[c]) for c in COLS})
-
-    # ------------------------------------------------------------------ output
-    with open(csv_path, "w", newline="", encoding="utf‑8") as cf:
+    # ---- write CSV ----------------------------------------------------------
+    with open(csv_path, "w", newline="", encoding="utf-8") as cf:
         writer = csv.DictWriter(cf, fieldnames=COLS)
         writer.writeheader()
         writer.writerows(rows)
 
+# -----------------------------------------------------------------------------
+# Example CLI entry‑point ------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# ---------------------------------------------------------------------- usage
 if __name__ == "__main__":
-    extract_to_csv_with_quotes(
-        jsonl_path="openai_outputs\o4-mini_output.jsonl",
-        csv_path="o4-mini_parsed.csv",
+    extract_to_csv(
+        jsonl_path="gpt-4o_output_v2.jsonl",
+        csv_path="clean.csv",
     )
-    print(
-        "Wrote CSV to gpt-4-1_parsed.csv "
-        "— open it to inspect the results."
-    )
-
-
+    print("CSV written – open it to inspect results.")
