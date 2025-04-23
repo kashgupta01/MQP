@@ -1,5 +1,6 @@
 Complex Name,Organism,Complex Function ,Proteins,Genes
-ATP4A-ATP4B complex,Human,"The gastric H+ , K+ - ATPase is an integral membrane protein which derives energy from the hydrolysis of ATP to transport H+ ions from the parietal cells of the gastric mucosa into the stomach in exchange for K+ ions. It is responsible for the acidic environment of the stomach, which is essential for digestion. Acid secretion is regulated by the recruitment of the H+ , K+ - ATPase from intracellular stores into the plasma membrane on the ingestion of food",Potassium-transporting ATPase alpha chain 1 (ATP4A) ,"ATP4A - human 
+ATP4A-ATP4B complex,Human,"The gastric H+ , K+ - ATPase is an integral membrane protein which derives energy from the hydrolysis of ATP to transport H+ ions from the parietal cells of the gastric mucosa into the stomach in exchange for K+ ions. It is responsible for the acidic environment of the stomach, which is essential for digestion. Acid secretion is regulated by the recruitment of the H+ , K+ - ATPase from intracellular stores into the plasma membrane on the ingestion of food","Potassium-transporting ATPase alpha chain 1 (ATP4A) 
+Potassium-transporting ATPase subunit beta (ATP4B) ","ATP4A - human 
 ATP4B - human "
 Cytochrome bc1 Complex (Complex III),Mouse,"Transfers electrons from ubiquinol to cytochrome c in the mitochondrial electron transport chain, aiding ATP production.","Cytochrome b (MT-CYB)
 Rieske iron-sulfur protein (UQCRFS1)
