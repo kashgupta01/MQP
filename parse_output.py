@@ -51,8 +51,9 @@ LIST_MARKER_RE: Pattern[str] = re.compile(r"^[\s>*-]*\d*\.?\s*")
 SEGMENTS_RE: Pattern[str] = re.compile(r"[\-–]\s*(?=['\"])")
 UNICODE_QUOTES = dict.fromkeys(map(ord, "\u2018\u2019\u201C\u201D"), None)
 
-
-# cleaning & structuring helper functions
+# -----------------------------------------------------------------------------
+# Helpers
+# -----------------------------------------------------------------------------
 
 def _collapse_ws(s: str) -> str:
     return re.sub(r"\s+", " ", s.strip())
@@ -76,11 +77,12 @@ def _build_patterns() -> tuple[Dict[Pattern[str], str], Dict[Pattern[str], str]]
 
 HEADER_PATTERNS, INLINE_PATTERNS = _build_patterns()
 
-
-# normalize technique name 
+# -----------------------------------------------------------------------------
+# Technique normalisation
+# -----------------------------------------------------------------------------
 
 def _normalize_technique(tag: str) -> str:
-    """Return canonical label: few-shot, zero-shot, contextual."""
+    """Return canonical label with hyphen: few-shot, zero-shot, contextual."""
     tag = tag.lower()
     if "few" in tag:
         return "few-shot"
@@ -90,8 +92,9 @@ def _normalize_technique(tag: str) -> str:
         return "contextual"
     return tag or "unknown"
 
-
-# content extraction 
+# -----------------------------------------------------------------------------
+# Core extraction
+# -----------------------------------------------------------------------------
 
 def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|,") -> None:
     rows: List[Dict[str, str]] = []
@@ -108,15 +111,15 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
                 tech_raw = raw_tag
             technique = _normalize_technique(tech_raw)
 
-            # OpenAI content shape
-            if "response" in obj: 
+            # get content (OpenAI vs Anthropic shapes)
+            if "response" in obj:  # OpenAI-ish
                 content = (
                     obj["response"].get("body", {})
                     .get("choices", [{}])[0]
                     .get("message", {})
                     .get("content", "")
                 )
-            else:  # Anthropic content shape
+            else:  # Anthropic-ish
                 content = (
                     obj.get("result", {})
                     .get("message", {})
@@ -129,6 +132,17 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
             current_field: str | None = None
 
             for raw in content.splitlines():
+                # ----------------------------------------------------
+                # Reset field on a truly blank / whitespace‑only line
+                # but **keep** the context if we're currently inside the
+                # Confidence Score section; we don't want blank spacer
+                # lines to kick us out and cause the next equation bullet
+                # (e.g. "Organism‑specific analysis: …") to be mis‑parsed
+                # as a fresh header.
+                if not raw.strip():
+                    if current_field != "Confidence Score":
+                        current_field = None
+                    continue
                 # break packed few‑shot line into pieces first
                 for seg in SEGMENTS_RE.split(raw):
                     seg = LIST_MARKER_RE.sub("", seg)
@@ -191,11 +205,10 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
         writer.writeheader()
         writer.writerows(rows)
 
-
-
+# -----------------------------------------------------------------------------
 if __name__ == "__main__":
     extract_to_csv(
-        jsonl_path="openai_outputs\o4-mini_output_v2.jsonl",
-        csv_path="o4-mini_v2_parsed.csv",
+        jsonl_path="anthropic_outputs\claude-3-5-haiku_output_v2.jsonl",
+        csv_path="parsed_output.csv",
     )
     print("Done → parsed_output.csv")
