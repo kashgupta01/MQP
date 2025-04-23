@@ -61,7 +61,8 @@ def extract_to_csv_with_quotes(
             "Protein\\s*Components?",
             "Protein\\s*Composition",
             "List\\s*of\\s*Proteins",
-            "Protein\\s*Comprising\\s*the\\s*Complex"
+            "Protein\\s*Comprising\\s*the\\s*Complex", 
+            "Composition\\s*\\(List\\s*of\\s*Proteins\\)"
         ],
         "Genes": ["Genes","Genes?", "Gene\\s*List", "Corresponding\\s*Genes?"],
         "Confidence Score": [
