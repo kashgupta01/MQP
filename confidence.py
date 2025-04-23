@@ -2,6 +2,8 @@ import pandas as pd
 
 combined_csv = ("all_62_complexes\combined_llm_results.csv")
 
-df = pd.read_csv(combined_csv, usecols=["Confidence Score"]) 
+df = pd.read_csv(combined_csv)
+ 
 
-print(df)
+for index, row in df.loc[:, ['Model', 'Technique', 'Confidence Score']].iterrows():
+    print (row['Model'], row['Technique'], row['Confidence Score'])
