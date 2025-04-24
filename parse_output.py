@@ -191,6 +191,6 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
     extract_to_csv(
-        jsonl_path="anthropic_outputs\claude-3-5-haiku_output_v2.jsonl",
-        csv_path="parsed_output.csv",
+        jsonl_path="openai_outputs\gpt-4o\gpt-4o_output_v2(3).jsonl",
+        csv_path="PARSR.csv",
     )
