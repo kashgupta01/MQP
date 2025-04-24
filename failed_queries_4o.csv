@@ -1,0 +1,135 @@
+Protein,Organism
+"['ATP4A', 'ATP4B.']",Homo Sapiens
+"['Potassium-transporting ATPase alpha chain 1', 'Potassium-transporting ATPase subunit beta', 'Protein unc-80 homolog', 'Narrow abdomen isoform F', 'Uncoordinated 79 isoform B']",Homo Sapiens
+"['Potassium-transporting ATPase alpha chain 1', 'Potassium-transporting ATPase subunit beta', 'Protein unc-80 homolog', 'Narrow abdomen isoform F', 'Uncoordinated 79 isoform B']",Homo Sapiens
+['ATP1A1 and TSHR'],Homo Sapiens
+"['ADRA1B', 'CXCR4.']",Homo Sapiens
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Homo Sapiens
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Mus Musculus
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Mus Musculus
+"['Dopamine Receptor D3', 'Endothelin Receptor Type B']",Mus Musculus
+"['Dopamine receptor D3', ""Endothelin receptor type B'""]",Mus Musculus
+"['Dopamine receptor D3', ""Endothelin receptor type B'""]",Mus Musculus
+"['KDR/Flk-1', 'NRP1', 'VEGF165']",Homo Sapiens
+"['KDR/Flk-1', 'NRP1', 'VEGF165']",Homo Sapiens
+"['Kinase insert domain receptor', 'Neuropilin-1', 'Vascular endothelial growth factor 165']",Homo Sapiens
+"['Kinase insert domain receptor', 'Neuropilin-1', 'Vascular endothelial growth factor 165']",Homo Sapiens
+"['Neuropilin-1', 'Vascular Endothelial Growth Factor 121']",Homo Sapiens
+"['Neuropilin-1', ""Vascular endothelial growth factor 121'""]",Homo Sapiens
+"['Neuropilin-1', 'Vascular endothelial growth factor 121']",Homo Sapiens
+"['KDR', 'VEGF165']",Homo Sapiens
+"['Kinase insert domain receptor', ""Vascular endothelial growth factor 165'""]",Homo Sapiens
+"['Kinase insert domain receptor', 'Vascular endothelial growth factor 165']",Homo Sapiens
+"['KAT5', 'EPC1', 'EPC2', 'ING3', 'TFPT', 'MEAF6', 'TRRAP', 'RUVBL1/2', 'BAF53A', 'DMAP1.']",Homo Sapiens
+"['KAT5', 'EPC1', 'EPC2', 'ING3', 'TFPT', 'MEAF6', 'TRRAP', 'RUVBL1/2', 'BAF53A', 'DMAP1.']",Homo Sapiens
+"['HTATIP', 'EPC1', 'ING3', 'MRGBP', 'BRD8', 'TRRAP', 'DMAP1', 'actin proteins ACTL6A', 'Actin-like proteins']",Homo Sapiens
+"['HTATIP', 'EPC1', 'ING3', 'MRGBP', 'BRD8', 'TRRAP', 'DMAP1', 'actin proteins ACTL6A', 'Actin-like proteins']",Homo Sapiens
+"['Tip60', 'Domino', 'Trrap', 'Reptin', 'Pontin', 'Nipped-A', 'DMAP1', 'E', 'Mrg15', ""GAS41'""]",Drosophila Melanogaster
+"['CSN1', 'CSN2', 'CSN3', 'CNS4', 'CNS5', 'CNS6', 'CNS7', 'CSN8']",Homo Sapiens
+"['CSN1', 'CSN2', 'CSN3', 'CNS4', 'CNS5', 'CNS6', 'CNS7', 'CSN8']",Homo Sapiens
+"['CSN1', 'CSN2', 'CSN3', 'CNS4', 'CNS5', 'CNS6', 'CNS7', 'CSN8']",Homo Sapiens
+"['CSN1', 'CSN2', 'CSN3', 'CNS4', 'CNS5', 'CNS6', 'CNS7', 'CSN8']",Homo Sapiens
+"['COP9 signalosome complex subunit 1', 'COP9 signalosome complex subunit 2', 'COP9 signalosome complex subunit 3', 'COP9 signalosome complex subunit 4', 'COP9 signalosome complex subunit 5', 'COP9 signalosome complex subunit 6', 'COP9 signalosome complex subunit 7', 'COP9 signalosome complex subunit 8']",Homo Sapiens
+"['COP9 signalosome complex subunit 1', 'COP9 signalosome complex subunit 2', 'COP9 signalosome complex subunit 3', 'COP9 signalosome complex subunit 4', 'COP9 signalosome complex subunit 5', 'COP9 signalosome complex subunit 6', 'COP9 signalosome complex subunit 7', 'COP9 signalosome complex subunit 8']",Homo Sapiens
+"['The 20S proteasome in Saccharomyces cerevisiae is composed of 14 subunits arranged into a barrel-shaped complex made up of four stacked rings. The two outer rings consist of seven alpha subunits', 'and the two inner rings consist of seven beta subunits. These subunits form a highly organized structure that allows the proteasome to process and degrade a variety of protein substrates.']",Saccharomyces cerevisiae
+"['The 20S proteasome in Saccharomyces cerevisiae is composed of 14 subunits arranged into a barrel-shaped complex made up of four stacked rings. The two outer rings consist of seven alpha subunits', 'and the two inner rings consist of seven beta subunits. These subunits form a highly organized structure that allows the proteasome to process and degrade a variety of protein substrates.']",Saccharomyces cerevisiae
+"['Pre6', 'Pre8', 'Pre9', 'Pre10', 'Pre11', 'Pup1', 'Pup2', 'Pre1', 'Pre2', 'Pre3', 'Pup3', 'Pre4', 'Pre5', 'Pre7']",Saccharomyces cerevisiae
+"['Glutamate receptor subunit zeta-1', 'P2Y purinoceptor 4']",Homo Sapiens
+"['Glutamate receptor subunit zeta-1', ""P2Y purinoceptor 4'""]",Homo Sapiens
+"['E2 ubiquitin-conjugating enzyme RAD6', ""E3 ubiquitin-protein ligase RAD18'""]",Saccharomyces cerevisiae
+"['Cyclin-dependent kinase PHO85', ""Cyclin PHO80'""]",Saccharomyces cerevisiae
+"['Pol2', 'Dpb2', 'Dpb3', 'Dpb4.']",Saccharomyces cerevisiae
+"['Catalytic subunit Pol2', 'Subunit Dpb2', 'Subunit Dpb3', 'Subunit Dpb4']",Saccharomyces cerevisiae
+"['Catalytic subunit Pol2', 'Subunit Dpb2', 'Subunit Dpb3', 'Subunit Dpb4']",Saccharomyces cerevisiae
+"['Catalytic subunit Pol2', 'Subunit Dpb2', 'Subunit Dpb3', 'Subunit Dpb4']",Saccharomyces cerevisiae
+"['Catalytic subunit Pol2', 'Subunit Dpb2', 'Subunit Dpb3', 'Subunit Dpb4']",Saccharomyces cerevisiae
+"['In Saccharomyces cerevisiae', 'the COG complex is composed of eight core subunits traditionally grouped into two lobes:']",Saccharomyces cerevisiae
+"['The GPI-anchor transamidase complex in Saccharomyces cerevisiae is composed of multiple subunits', 'notably the proteins Gpi8p', 'Gaa1p', 'Gpi16p', 'Gpi17p', 'Cdc91p.']",Saccharomyces cerevisiae
+"['The GPI-anchor transamidase complex in Saccharomyces cerevisiae is composed of multiple subunits', 'notably the proteins Gpi8p', 'Gaa1p', 'Gpi16p', 'Gpi17p', 'Cdc91p.']",Saccharomyces cerevisiae
+"['The GPI-anchor transamidase complex in Saccharomyces cerevisiae is composed of multiple subunits', 'notably the proteins Gpi8p', 'Gaa1p', 'Gpi16p', 'Gpi17p', 'Cdc91p.']",Saccharomyces cerevisiae
+"['Gpi8p', 'Gaa1p', 'Gpi16p', 'Gab1p', 'Cdc91p']",Saccharomyces cerevisiae
+"['Gpi18p', 'Gpi19p.']",Saccharomyces cerevisiae
+"['Gpi18p', 'Gpi19p.']",Saccharomyces cerevisiae
+"['Phosphatidylinositol glycan', 'class T', 'Glycosyltransferase 1']",Saccharomyces cerevisiae
+"['Phosphatidylinositol glycan', 'class T', 'Glycosyltransferase 1']",Saccharomyces cerevisiae
+"['Phosphatidylinositol glycan', 'class T', 'Glycosyltransferase 1']",Saccharomyces cerevisiae
+"['Apl2p', 'Apl4p', 'Aps1p', 'Apy1p.']",Saccharomyces cerevisiae
+"['Apl2p', 'Apl4p', 'Aps1p', 'Apy1p.']",Saccharomyces cerevisiae
+"['Apl2p', 'Apl4p', 'Aps1p', 'Apy1p.']",Saccharomyces cerevisiae
+"['Apl2p', 'Apl4p', 'Aps1p', 'Apy1p.']",Saccharomyces cerevisiae
+"['Adapter-related protein complex 1 subunit beta-1', 'Adapter-related protein complex 1 subunit gamma-1', 'Adapter-related protein complex 1 subunit mu-1', ""Adapter-related protein complex 1 subunit sigma-1A'""]",Homo Sapiens
+"['Adapter-related protein complex 1 subunit beta-1', 'Adapter-related protein complex 1 subunit gamma-1', 'Adapter-related protein complex 1 subunit mu-1', ""Adapter-related protein complex 1 subunit sigma-1A'""]",Homo Sapiens
+"['Adapter-related protein complex 1 subunit beta-1', 'Adapter-related protein complex 1 subunit gamma-1', 'Adapter-related protein complex 1 subunit mu-1', ""Adapter-related protein complex 1 subunit sigma-1A'""]",Homo Sapiens
+"['Adapter-related protein complex 1 subunit beta-1', 'Adapter-related protein complex 1 subunit gamma-1', 'Adapter-related protein complex 1 subunit mu-1', ""Adapter-related protein complex 1 subunit sigma-1A'""]",Homo Sapiens
+"['Pan1p', 'End3p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p', 'Sla2p', ""Myo5p'""]",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p', 'Sla2p', ""Myo5p'""]",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p', 'Sla2p', ""Myo5p'""]",Saccharomyces cerevisiae
+"['AMP-activated protein kinase catalytic subunit alpha-1', 'AMP-activated protein kinase catalytic subunit alpha-2', 'AMP-activated protein kinase', 'beta-1 non-catalytic subunit', 'beta-2 non-catalytic subunit', 'gamma-1 non-catalytic subunit', 'gamma-2 non-catalytic subunit', ""gamma-3 non-catalytic subunit'""]",Homo Sapiens
+"['AMP-activated protein kinase catalytic subunit alpha-1', 'AMP-activated protein kinase catalytic subunit alpha-2', 'AMP-activated protein kinase', 'beta-1 non-catalytic subunit', 'beta-2 non-catalytic subunit', 'gamma-1 non-catalytic subunit', 'gamma-2 non-catalytic subunit', ""gamma-3 non-catalytic subunit'""]",Homo Sapiens
+"['AMP-activated protein kinase catalytic subunit alpha-1', 'AMP-activated protein kinase catalytic subunit alpha-2', 'AMP-activated protein kinase', 'beta-1 non-catalytic subunit', 'beta-2 non-catalytic subunit', 'gamma-1 non-catalytic subunit', 'gamma-2 non-catalytic subunit', ""gamma-3 non-catalytic subunit'""]",Homo Sapiens
+"['HAUS1', 'HAUS2', 'HAUS3', 'HAUS4', 'HAUS5', 'HAUS6', 'HAUS7', 'HAUS8.']",Homo Sapiens
+"['Augmin complex subunit enzymes', 'including Dgt2-9 subunits']",Drosophila Melanogaster
+"['Augmin complex subunit enzymes', 'including Dgt2-9 subunits']",Drosophila Melanogaster
+"['Augmin complex subunit 1', 'Augmin complex subunit 2', 'Augmin complex subunit 3', 'Augmin complex subunit 4', 'Augmin complex subunit 5']",Drosophila Melanogaster
+"['Augmin complex subunit 1', 'Augmin complex subunit 2', 'Augmin complex subunit 3', 'Augmin complex subunit 4', 'Augmin complex subunit 5']",Drosophila Melanogaster
+"['Augmin complex subunit 1', 'Augmin complex subunit 2', 'Augmin complex subunit 3', 'Augmin complex subunit 4', 'Augmin complex subunit 5']",Drosophila Melanogaster
+"['Augmin complex subunit 1', 'Augmin complex subunit 2', 'Augmin complex subunit 3', 'Augmin complex subunit 4', 'Augmin complex subunit 5']",Drosophila Melanogaster
+"['Augmin complex subunit 1', 'Augmin complex subunit 2', 'Augmin complex subunit 3', 'Augmin complex subunit 4', 'Augmin complex subunit 5']",Drosophila Melanogaster
+"['dMyb', 'Mip130', 'Mip120', 'Mip40', 'Drosophila RBF.']",Drosophila Melanogaster
+"['Vps8', 'Vps11', 'Vps16', 'Vps18', 'Vps33', 'Vps3', ""Vps41'""]",Saccharomyces cerevisiae
+"['Atg1p', 'Atg13p', 'Atg17p', 'Atg29p', 'Atg31p']",Saccharomyces cerevisiae
+"['Atg1p', 'Atg13p', 'Atg17p', 'Atg29p', 'Atg31p']",Saccharomyces cerevisiae
+"['Atg1p', 'Atg13p', 'Atg17p', 'Atg29p', 'Atg31p']",Saccharomyces cerevisiae
+"['Atg1p', 'Atg13p', 'Atg17p', 'Atg29p', 'Atg31p']",Saccharomyces cerevisiae
+"['Atg1p', 'Atg13p', 'Atg17p', 'Atg29p', 'Atg31p']",Saccharomyces cerevisiae
+"['ATG1', 'ATG13', 'ATG17', 'ATG29', ""ATG31'""]",Saccharomyces cerevisiae
+"['NXF1', 'NXT1.']",Homo Sapiens
+"['Nuclear RNA export factor 1', ""Nuclear transport factor 2-like export factor 1'""]",Homo Sapiens
+"['Heterochromatin Protein 1/ORC-Associated Protein', 'HipHop protein']",Drosophila Melanogaster
+"['ZFP-1', 'DOT-1']",Caenorhabditis Elegans
+"['ZFP-1', ""DOT-1'""]",Caenorhabditis Elegans
+"['Zinc finger protein 1 homolog', 'Disruptor of telomeric silencing one homolog']",Caenorhabditis Elegans
+"['Zinc finger protein 1 homolog', 'Disruptor of telomeric silencing one homolog']",Caenorhabditis Elegans
+"['Atk-1', 'Akt-2', 'Sgk-1']",Caenorhabditis Elegans
+"['PID-1', 'PRG-1', 'RDE-4.']",Caenorhabditis Elegans
+"['PID-1', 'TOFU-6', 'ERH-2', ""TOFU-5'""]",Caenorhabditis Elegans
+"['PID-1', 'TOFU-6', 'ERH-2', ""IFE-3'""]",Caenorhabditis Elegans
+"['TOFU-6', 'ERI-1', 'TOST-1', 'SACY-1.']",Caenorhabditis Elegans
+"['TOFU-6', 'PID-3', 'ERH-2', 'SMN-1', ""TOFU-5'""]",Caenorhabditis Elegans
+"['TOAST-1', 'ERH-2', 'ICL-1', 'SMN-1']",Caenorhabditis Elegans
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', ""Spc25p'""]",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', ""Spc25p'""]",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['MIS12 protein homolog', 'Kinetochore associated protein 1', 'Kinetochore scaffold 1', 'NNF1 homolog']",Homo Sapiens
+"['Hpr1', 'Mft1', 'Thp2', 'Tex1', ""Tho2'""]",Saccharomyces cerevisiae
+"['TLG2', 'VTI1', 'TLG1', ""SNC2'""]",Saccharomyces cerevisiae
+"['Ste12', 'Dig1', ""Dig2'""]",Saccharomyces cerevisiae
+"['Trs33', 'Trs85', 'Trs120', 'Trs130', 'Bet5', 'Bet3', 'Trs31', 'Trs23.']",Saccharomyces cerevisiae
+"['CCM1', 'CCM2', ""CCM3'""]",Homo Sapiens
+"['Calpain-1 catalytic subunit', ""Calpain-1 regulatory subunit'""]",Homo Sapiens
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', 'GINS', 'Cdc45p', 'Mcm2p', 'Mcm3p', 'Mcm4p', 'Mcm5p', 'Mcm6p', 'Mcm7p', 'Psf1p', 'Psf2p', 'and Psf3p.']",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', ""GINS components'""]",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2-7', ""GINS components'""]",Saccharomyces cerevisiae
+"['Cdc45', 'Mcm2', 'Mcm3', 'Mcm4', 'Mcm5', 'Mcm6', 'Mcm7', 'GINS complex subunits Sld5', 'Psf1', 'Psf2', ""Psf3'""]",Saccharomyces cerevisiae
+"['Mrps5', 'Mrps6', 'Mrps7', 'Mrps8', 'Mrps9']",Saccharomyces cerevisiae
+"['Mrps5', 'Mrps6', 'Mrps7', 'Mrps8', 'Mrps9']",Saccharomyces cerevisiae
+"['Mitochondrial ribosomal protein S2', 'Mitochondrial ribosomal protein S3', 'Mitochondrial ribosomal protein S6', 'Mitochondrial ribosomal protein S9', 'Mitochondrial ribosomal protein S10']",Homo Sapiens
+"['Mitochondrial ribosomal protein S2', 'Mitochondrial ribosomal protein S3', 'Mitochondrial ribosomal protein S6', 'Mitochondrial ribosomal protein S9', 'Mitochondrial ribosomal protein S10']",Homo Sapiens
+"['Mitochondrial ribosomal protein S2', 'Mitochondrial ribosomal protein S3', 'Mitochondrial ribosomal protein S6', 'Mitochondrial ribosomal protein S9', 'Mitochondrial ribosomal protein S10']",Homo Sapiens
