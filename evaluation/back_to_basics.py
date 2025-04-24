@@ -57,12 +57,15 @@ def query_uniprot(protein, organism):
         return "Error"
 
 # Apply protein mapping per row
+failed_queries = []
 def map_proteins_to_uniprot(row):
     proteins = [p.strip() for p in row['Proteins'].split(";") if p.strip()]
     organism = row['Organism']
     accessions = []
     for protein in proteins:
         acc = query_uniprot(protein, organism)
+        if acc in ["Error", "Not Found"]: 
+            failed_queries.append(proteins, organism)
         accessions.append(acc)
         time.sleep(0.5)  # Be respectful to UniProt API
     return "; ".join(accessions)
@@ -79,5 +82,8 @@ manual_df.to_csv("manual_with_uniprot_mapping.csv", index=False)
 gpt41_df.to_csv("gpt41_with_uniprot_mapping.csv", index=False)
 print("Mapping completed and files saved.")
 
-#https://rest.uniprot.org/uniprotkb/search?query=protein_name:"Potassium-transporting ATPase alpha chain 1" AND organism_name:"Homo sapiens"&fields=accession&format=json&size=1
-#https://rest.uniprot.org/uniprotkb/search?query=Potassium-transporting+ATPase+alpha+chain+1+AND+organism_name%3A%22Homo+Sapiens%22&fields=accession&format=json&size=1
+if failed_queries:
+    pd.DataFrame(failed_queries, columns=["Protein", "Organism"]).to_csv("failed_queries.csv", index=False)
+    print(f"{len(failed_queries)} queries failed. Saved to 'failed_queries.csv'.")
+else:
+    print("All queries succeeded!")
