@@ -76,6 +76,8 @@ def map_proteins_to_uniprot(row):
     accessions = []
     for protein in proteins:
         acc = query_uniprot(protein, organism)
+        if acc is None: 
+            acc = "Not Found"
         if acc in ["Error", "Not Found"]: 
             failed_queries.append((proteins, organism))
         accessions.append(acc)
