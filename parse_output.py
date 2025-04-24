@@ -3,9 +3,6 @@ import re
 import csv
 from typing import List, Dict, Pattern
 
-# -----------------------------------------------------------------------------
-# Configuration
-# -----------------------------------------------------------------------------
 
 COLS: List[str] = [
     "Technique",
@@ -18,7 +15,7 @@ COLS: List[str] = [
     "Confidence Score",
 ]
 
-# Mapping of header variants ➜ canonical names
+
 VARIANTS: Dict[str, List[str]] = {
     "Complex Name": [r"Complex\s*Name", r"Name\s*of\s*Complex"],
     "Organism": [r"Organism\b", r"Species\b"],
@@ -30,59 +27,56 @@ VARIANTS: Dict[str, List[str]] = {
         r"Protein\s*Composition",
         r"List\s*of\s*Proteins",
         r"Proteins\s*in\s*the\s*Complex",
-        r"Protein\\s*Comprising\\s*the\\s*Complex",
-        r"Composition\\s*\\(List\\s*of\\s*Proteins\\)",
+        r"Protein\s*Comprising\s*the\s*Complex",
+        r"Composition\s*\(List\s*of\s*Proteins\)",
     ],
-    "Genes": [r"Genes", r"Genes?", r"Gene\s*List", r"Corresponding\s*Genes?"],
+    "Genes": [r"Genes", r"Gene\s*List", r"Corresponding\s*Genes?"],
     "Confidence Score": [
         r"Confidence\s*Score",
         r"Self\s*Confidence\s*Score",
         r"Confidence\s*Score\s*Calculation",
         r"Confidence\s*Score\s*Equation",
         r"Assigned\s*Score",
-        r"Self\\s*Confidence\\s*Score\\s*Calculation",
-        r"Confidence\\s*Score\\s*Calculation",
+        r"Self\s*Confidence\s*Score\s*Calculation",
         r"Total\s*Self\s*Confidence\s*Score",
-        r"Total\s*Confidence\s*Score",
     ],
 }
 
+# Pre‑compiled helpers
 LIST_MARKER_RE: Pattern[str] = re.compile(r"^[\s>*-]*\d*\.?\s*")
 SEGMENTS_RE: Pattern[str] = re.compile(r"[\-–]\s*(?=['\"])")
-UNICODE_QUOTES = dict.fromkeys(map(ord, "\u2018\u2019\u201C\u201D"), None)
+CONF_EQ_RE: Pattern[str] = re.compile(r"^\([^=]*=.+\d+\.\d+")
 
 # -----------------------------------------------------------------------------
-# Helpers
+# Utility
 # -----------------------------------------------------------------------------
 
 def _collapse_ws(s: str) -> str:
     return re.sub(r"\s+", " ", s.strip())
 
+UNICODE_QUOTES = dict.fromkeys(map(ord, "\u2018\u2019\u201c\u201d"), None)
+
 def _strip_decorations(line: str) -> str:
-    line = line.translate(UNICODE_QUOTES)  # drop curly quotes
-    line = re.sub(r"^#+\s*", "", line)  # markdown headings
+    line = line.translate(UNICODE_QUOTES)
+    line = re.sub(r"^#+\s*", "", line)   # markdown headings
     line = line.replace("**", "")
     line = line.strip("'\"")
     line = line.replace("`", "")
     return line
 
-def _build_patterns() -> tuple[Dict[Pattern[str], str], Dict[Pattern[str], str]]:
-    header_pat: Dict[Pattern[str], str] = {}
-    inline_pat: Dict[Pattern[str], str] = {}
-    for canon, variants in VARIANTS.items():
-        for v in variants:
-            header_pat[re.compile(rf"^[\s>*-]*\**\s*({v})\s*\**\s*:?$", re.I)] = canon
-            inline_pat[re.compile(rf"^[\s>*-]*\**\s*({v})[^:]*:\s*(.+)$", re.I)] = canon
-    return header_pat, inline_pat
-
-HEADER_PATTERNS, INLINE_PATTERNS = _build_patterns()
+# Build header regex maps
+HEADER_PATTERNS: Dict[Pattern[str], str] = {}
+INLINE_PATTERNS: Dict[Pattern[str], str] = {}
+for canon, variants in VARIANTS.items():
+    for v in variants:
+        HEADER_PATTERNS[re.compile(rf"^[\s>*-]*\**\s*({v})\s*\**\s*:?$", re.I)] = canon
+        INLINE_PATTERNS[re.compile(rf"^[\s>*-]*\**\s*({v})[^:]*:\s*(.+)$", re.I)] = canon
 
 # -----------------------------------------------------------------------------
-# Technique normalisation
+# Technique normaliser
 # -----------------------------------------------------------------------------
 
 def _normalize_technique(tag: str) -> str:
-    """Return canonical label with hyphen: few-shot, zero-shot, contextual."""
     tag = tag.lower()
     if "few" in tag:
         return "few-shot"
@@ -93,7 +87,7 @@ def _normalize_technique(tag: str) -> str:
     return tag or "unknown"
 
 # -----------------------------------------------------------------------------
-# Core extraction
+# Core extractor
 # -----------------------------------------------------------------------------
 
 def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|,") -> None:
@@ -102,67 +96,50 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
     with open(jsonl_path, "r", encoding="utf-8") as jf:
         for line in jf:
             obj = json.loads(line)
-            raw_tag = obj.get("custom_id", "")
-            if "|" in raw_tag:
-                tech_raw = raw_tag.split("|")[-1]
-            elif "__" in raw_tag:
-                tech_raw = raw_tag.split("__")[-1]
+            cid = obj.get("custom_id", "")
+            if "|" in cid:
+                tech_raw = cid.split("|")[-1]
+                content = obj.get("response", {}).get("body", {}).get("choices", [{}])[0].get("message", {}).get("content", "")
             else:
-                tech_raw = raw_tag
+                tech_raw = cid.split("__")[-1]
+                content = obj.get("result", {}).get("message", {}).get("content", [{}])[0].get("text", "")
+
             technique = _normalize_technique(tech_raw)
-
-            # get content (OpenAI vs Anthropic shapes)
-            if "response" in obj:  # OpenAI-ish
-                content = (
-                    obj["response"].get("body", {})
-                    .get("choices", [{}])[0]
-                    .get("message", {})
-                    .get("content", "")
-                )
-            else:  # Anthropic-ish
-                content = (
-                    obj.get("result", {})
-                    .get("message", {})
-                    .get("content", [{}])[0]
-                    .get("text", "")
-                )
-
             values: Dict[str, List[str]] = {c: [] for c in COLS}
             values["Technique"].append(technique)
+
             current_field: str | None = None
-
             for raw in content.splitlines():
-                # ----------------------------------------------------
-                # Reset field on a truly blank / whitespace‑only line
-                # but **keep** the context if we're currently inside the
-                # Confidence Score section; we don't want blank spacer
-                # lines to kick us out and cause the next equation bullet
-                # (e.g. "Organism‑specific analysis: …") to be mis‑parsed
-                # as a fresh header.
-                if not raw.strip():
-                    if current_field != "Confidence Score":
-                        current_field = None
-                    continue
-                # break packed few‑shot line into pieces first
-                for seg in SEGMENTS_RE.split(raw):
-                    seg = LIST_MARKER_RE.sub("", seg)
-                    seg = _strip_decorations(seg)
-                    seg = _collapse_ws(seg)
-                    if not seg:
+                # explode jammed few‑shot lines into parts first
+                for segment in SEGMENTS_RE.split(raw):
+                    seg_raw = segment
+                    if not seg_raw.strip():
+                        # blank line
+                        if current_field != "Confidence Score":
+                            current_field = None
                         continue
 
-                    # stay inside Confidence Score block
-                    if current_field == "Confidence Score":
-                        parts = [p for p in re.split(item_sep_regex, seg) if _collapse_ws(p)]
-                        values[current_field].extend(parts)
+                    seg_raw = LIST_MARKER_RE.sub("", seg_raw)
+                    seg_raw = _strip_decorations(seg_raw)
+                    line = _collapse_ws(seg_raw)
+                    if not line:
                         continue
 
-                    # inline header
+                    # If equation‑style score line, force field
+                    if CONF_EQ_RE.match(line):
+                        current_field = "Confidence Score"
+
+                    # Inline header?
                     matched = False
                     for pat, canon in INLINE_PATTERNS.items():
-                        m = pat.match(seg)
+                        m = pat.match(line)
                         if m:
-                            parts = [p for p in re.split(item_sep_regex, m.group(2)) if _collapse_ws(p)]
+                            val = m.group(2)
+                            parts = [
+                                _collapse_ws(p)
+                                for p in re.split(item_sep_regex, val)
+                                if _collapse_ws(p)
+                            ]
                             values[canon].extend(parts)
                             current_field = None
                             matched = True
@@ -170,34 +147,38 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
                     if matched:
                         continue
 
-                    # stand‑alone header
+                    # Stand‑alone header?
                     for pat, canon in HEADER_PATTERNS.items():
-                        if pat.match(seg):
+                        if pat.match(line):
                             current_field = canon
                             matched = True
                             break
                     if matched:
                         continue
 
-                    # continuation line
+                    # Continuation
                     if current_field:
-                        parts = [p for p in re.split(item_sep_regex, seg) if _collapse_ws(p)]
+                        parts = [
+                            _collapse_ws(p)
+                            for p in re.split(item_sep_regex, line)
+                            if _collapse_ws(p)
+                        ]
                         values[current_field].extend(parts)
 
-            # collate & dedupe
+            # post‑process & dedupe
             row: Dict[str, str] = {}
             for col in COLS:
+                uniq: List[str] = []
                 seen: set[str] = set()
-                unique = []
-                for item in values[col]:
-                    if item not in seen:
-                        unique.append(item)
-                        seen.add(item)
-                if col == "Confidence Score" and unique:
-                    nums = re.findall(r"\d+\.\d+", unique[-1])
-                    row[col] = nums[-1] if nums else unique[-1]
+                for val in values[col]:
+                    if val not in seen:
+                        uniq.append(val)
+                        seen.add(val)
+                if col == "Confidence Score" and uniq:
+                    m = re.findall(r"\d+\.\d+", " ".join(uniq))
+                    row[col] = m[-1] if m else "; ".join(uniq)
                 else:
-                    row[col] = "; ".join(unique)
+                    row[col] = "; ".join(uniq)
             rows.append(row)
 
     with open(csv_path, "w", newline="", encoding="utf-8") as cf:
@@ -206,9 +187,10 @@ def extract_to_csv(jsonl_path: str, csv_path: str, item_sep_regex: str = r"''|;|
         writer.writerows(rows)
 
 # -----------------------------------------------------------------------------
+# CLI
+# -----------------------------------------------------------------------------
 if __name__ == "__main__":
     extract_to_csv(
         jsonl_path="anthropic_outputs\claude-3-5-haiku_output_v2.jsonl",
         csv_path="parsed_output.csv",
     )
-    print("Done → parsed_output.csv")

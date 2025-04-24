@@ -24,6 +24,6 @@ df_all = pd.concat(dataframes, ignore_index=True)
 cols = ["Model"] + [c for c in df_all.columns if c != "Model"]
 df_all = df_all[cols]
 
-out_path = "combined_llm_results.csv"
+out_path = "cum.csv"
 df_all.to_csv(out_path, index=False)
 print(f"Combined file written to: {out_path}")
