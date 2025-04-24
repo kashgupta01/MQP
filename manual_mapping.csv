@@ -1,0 +1,215 @@
+Complex Name,Organism,Complex Function ,Proteins,Genes,Accession_Mapped
+ATP4A-ATP4B complex,Homo Sapiens,"The gastric H+ , K+ - ATPase is an integral membrane protein which derives energy from the hydrolysis of ATP to transport H+ ions from the parietal cells of the gastric mucosa into the stomach in exchange for K+ ions. It is responsible for the acidic environment of the stomach, which is essential for digestion. Acid secretion is regulated by the recruitment of the H+ , K+ - ATPase from intracellular stores into the plasma membrane on the ingestion of food",Potassium-transporting ATPase alpha chain 1 ; Potassium-transporting ATPase subunit beta ,"ATP4A - human 
+ATP4B - human ",P20648; A6NGH2
+Cytochrome bc1 Complex (Complex III),Mus Musculus,"Transfers electrons from ubiquinol to cytochrome c in the mitochondrial electron transport chain, aiding ATP production.",Cytochrome b; Rieske iron-sulfur protein; Cytochrome c1,"Cybb
+Uqcrfs1
+Cyp11b1",A0A075DCW5; Q9CR68; Q9D0M3
+Synaptonemal Complex,Caenorhabditis Elegans,TBD need to do more accurate research,Nan,,Not Found
+GNA12-GPR55-RGS2 complex,Homo Sapiens,"G-protein coupled receptor 55 (GPR55) is one of GPCRs and activated by endogenous cannabinoids. A family of regulators of G-protein signaling (RGS) stimulates GTP hydrolysis of alpha subunit of G-protein (Galpha) and inhibits GPCR/Galpha-mediated signaling. RGS2 is member of R4 RGS family and mainly attenuates GPCR/G(alpha)q signaling. GPR55 interacted with RGS2 alone and also formed a ternary complex with RGS2 and either G(alpha)q or G(alpha)12. In the presence of GPR55 alone and together with G(alpha)q or G(alpha)12, RGS2 translocated from the cytoplasm to plasma membrane while RGS1 remained in the cytoplasm. GPR55 activation significantly induced ERK phosphorylation and intracellular calcium mobilization, which were markedly inhibited by RGS2 in HCT116 colon cancer cell line. Furthermore, GPR55-mediated cell proliferation and migration of HCT116 cells, was significantly attenuated by RGS2 (PMID: 33092790).","Guanine nucleotide-binding protein subunit alpha-12 ; G-protein coupled receptor 55 ; Regulator of G-protein signaling 2	","GNA12
+GPR55",Q03113; C9J1P7; P41220
+Melanocortin receptor 3,Homo Sapiens,"Melanocortin receptors 1 (MC1) and MC3 form homo- and heterodimers, when expressed in Cos-7 cells. Treatment with agonist, partial agonist or antagonists did not modify the BRET(2) signal for any of the receptor pairs studied, suggesting that the dimerization is not regulated by ligand binding. Rather the results indicate that melanocortin receptors exist as constitutively pre-formed dimers (PMID: 15582585). Melanocortin 3 and 4 receptors (MC3R and MC4R) are known to play an essential role in hypothalamic weight regulation (PMID: 20054210).",Melanocortin receptor 3,,P41968
+ATP1A1-TSHR complex,Homo Sapiens,"Thyroid stimulating hormone (TSH) binds to a specific TSH receptor (TSHR) which activates adenylate cyclase and increases cAMP levels in thyroidal cells. Studies have reported the presence of TSH receptor in several extra-thyroidal cell types, including erythrocytes. TSH induces co-localization of TSH receptor and Na/K-ATPase in human erythrocytes (PMID: 19466745).",Sodium/potassium-transporting ATPase subunit alpha-1; Thyrotropin receptor,,B7Z1N5; A0A1B0GUJ5
+ADRA1B-CXCR4 complex,Homo Sapiens,Disruption of alpha-1A/B-adrenergic receptor-CXCR4 heteromeric complexes inhibits alpha1-ARmediated functions in vascular smooth muscle cells and treatment with CXCR4 agonists enhances the potency of the alpha-1-AR agonist phenylephrine to increase blood pressure.,Alpha-1B adrenergic receptor; C-X-C chemokine receptor type 4,,P35368; A0A0U3GXA9
+Bdkrb2-Tbxa2r complex,Mus Musculus,"Bradykinin (BK) and thromboxane-A2 (TX-A2) are two vasoactive mediators that modulate vascular tone and inflammation via binding to their cognate ""class A"" G-protein coupled receptors (GPCRs), BK-B2 receptors (B2R) and TX-prostanoid receptors (TP), respectively. The findings revealed synergistically activated ERK1/2 following co-stimulation of rat VSMC with a subthreshold dose of BK and effective doses of the TP stable agonist, IBOP, possibly involving biased agonist signaling. Inspection of B2R-TP PLA signals in VSMC revealed agonist-modulated nuclear and extranuclear proximity between B2R and TP, whose quantification varied substantially following single versus dual agonist stimulations (PMID: 31086419)",B2 bradykinin receptor; Thromboxane A2 receptor,,B2RQ47; Q712P5
+Drd3-Ednrb complex,Mus Musculus,"The dopaminergic and endothelin systems, by regulating sodium transport in the renal proximal tubule (RPT), participate in the control of blood pressure. The D3 and ETB receptors are expressed in RPTs, and D3 receptor function in RPTs is impaired in spontaneously hypertensive rats (SHRs). D3 receptors regulate ETB receptors by physical receptor interaction and govern receptor expression and function (PMID: 19390510).",D dopamine receptor; Endothelin receptor type B,,Not Found; Q8K1V9
+Egflam-Gpr179 complex,Mus Musculus,The transsynaptic binding of the orphan receptor GPR179 to the dystroglycan-pikachurin complex Is essential for the synaptic organization of photoreceptors (PMID: 30282023).,Pikachurin; G-protein coupled receptor 179,,Q4VBE4; E9PY61
+Ceacam1-4L-Syk-Tlr4 complex,Mus Musculus,"LPS treatment of neutrophils triggers formation of the Ceacam1-Syk-Tlr4 complex, which in turn, recruits the inhibitory phosphatase SHP-1 to CEACAM1 to inhibit IL-1beta production by the NLRP3 inflammasome. This indicates, that the complex is necessary to fine-tune IL-1beta production in LPS treated neutrophils to prevent hyper-inflammation. It also explains, that the IL-1beta production is blunted by binding of Neisseria pathogens to the neutrophil receptor CEACAM1 to suppress inflammation, favouring the infectious process. (PMID:22496641)",Cell adhesion molecule; Tyrosine-protein kinase; Toll-like receptor 4,,E9QA28; P55144; L0CMZ8
+KDR-NRP1-VEGF165 complex,Homo Sapiens,"A ternary complex containing NRP1, VEGF165, and KDR is formed both, on the surface of endothelial cells or between tumor cells and endothelial cells, leading to enhanced VEGFR2 signaling (PMID: 11948691). VEGF121 does not promote VEGFR2-NRP1 complex formation (PMID: 17575273). VEGF binding to NRP1 is essential for complex formation between NRP1 and VEGFR2 (PMID: 21653826).","Vascular endothelial growth factor receptor 2; Neuropilin-1; Vascular endothelial growth factor A, long form",,A0A0H4A7S4; Q5JWQ4; P15692
+NRP1-VEGF121 complex,Homo Sapiens,"In contrast to former publications (PMID:10991952), both isoforms of VEGFA, VEGF(165) and VEGF(121), bind to NRP1. However, only VEGF165 is sufficient to promote complex formation between VEGFR2 and NRP1, suggesting that VEGF121 may signal through NRP1 independently of VEGFR2.","Neuropilin-1; Vascular endothelial growth factor A, long form",,Q5JWQ4; P15692
+KDR-VEGF165 complex,Homo Sapiens,"VEGF-A binding to VEGFR2 triggers distinct patterns of ubiquitylation, proteolysis and clearance within the endosome-lysosome system. VEGF-A isoforms had distinct properties in regulating VEGFR2 endocytosis at the plasma membrane, it was predicted that VEGF-A-stimulated VEGFR2 degradation was isoform-specific. It was confirmed that this was indeed true: VEGF-A121 showed negligible effects on VEGFR2 degradation; however, VEGF-A165 or VEGF-A145 showed a similar 30% reduction in total VEGFR2 levels after 120 min (PMID:7044325).","Vascular endothelial growth factor receptor 2; Vascular endothelial growth factor A, long form",,A0A0H4A7S4; P15692
+FLT4-VEGFC complex,Homo Sapiens,"The lymphangiogenic ligand VEGFC binds to KDR (VEGFR2) and FLT4 (VEGFR3), respectively (PMID: 9751730). In human lymphatic endothelial cells binding of VEGFC to VEGFR-3 (FLT4) promotes cell proliferation and migration and plays a critical role in lymphatic sprout formation (PMID: 11532940).",Vascular endothelial growth factor receptor 3; Vascular endothelial growth factor C,,A0A0A7DZ60; P49767
+ITGA3-ITGB1 complex,Homo Sapiens,cell adhesion,Integrin alpha-3; Integrin beta-1,,Q59F03; Q5T3E6
+ Golgi-associated retrograde protein complex ,Caenorhabditis Elegans, tethering of endosome-derived transport vesicles to the late Golgi,"Vps51p, Vps52p, Vps53p, and Vps54p",,Not Found
+ Transmembrane channel-like (TMC) 2 complex ,Caenorhabditis Elegans,pore-forming subunits of the mechanoelectrical transduction complexes that are located in auditory and vestibular hair cells of the inner ear,"CALM-1, TMIE",,Not Found
+13 subunit eukaryotic initiation factor 3 (eIF3) complex,Caenorhabditis Elegans,,"elf3k, elf3l, elf3e, elf3c, elf3a, elf3m, elf3h, elf3f, elf3b, elf3g, elf3I, elf3d",,Not Found
+Tip60 chromatin-remodeling complex ,Drosophila Melanogaster,"Enables euchromatin binding activity and histone acetyltransferase activity. Involved in several processes, including DNA repair-dependent chromatin remodeling; negative regulation of neuron apoptotic process; and regulation of terminal button organization. Located in nucleus and polytene chromosome interband. Part of NuA4 histone acetyltransferase complex. Is expressed in NMJ bouton; embryonic/larval neuromuscular junction; organism; and yolk nucleus. Orthologous to human KAT5 (lysine acetyltransferase 5)
+","Histone acetyltransferase Tip60, Domino, Tra1, Brd8, E, DMAP1, Pontin, Reptin, Ing3, Act87E, BAP55, Mrg15, MrgBP, Gas41 and YL-1; ",,Not Found
+COP9 Signalosome ,Drosophila Melanogaster,"Largely unknown in mammals but thought to be related to multi-cellular differentiation
+",Dch1-8,,Not Found
+20S proteosome ,Drosophila Melanogaster,,"Alpha1, Alpha2, Alpha3, Alpha4, Alpha5, Alpha6, Alpha7, Alpha8, Beta1, Beta2, Beta3, Beta4, Beta5, Beta6, Beta7",,Not Found
+HCN1-HCN4 complex,Homo Sapiens,"CN channel subunits assemble to a variety of different heteromers. Only one pair of channel subunits, HCN2 and HCN3, makes an exception and does not form a functional heteromer. Although HCN2 and HCN3 subunits could be easily detected in the plasma membrane, there was no obvious colocalization of the two proteins. In accordance with this finding HCN2 and HCN3 are not coimmunoprecipitated by specific antibodies. Interestingly, cells coexpressing HCN2 and HCN3 exhibited a significantly reduced current density compared with cells expressing HCN2 alone. One explanation for this result is that in the presence of HCN3 less functional HCN2 channel protein is inserted into the plasma membrane. Homomeric HCN3 channels can probably not compensate for the resulting reduction in current amplitude because for unknown reasons HCN3 produces notoriously small currents.
+",Potassium/sodium hyperpolarization-activated cyclic nucleotide-gated channel 1; Potassium/sodium hyperpolarization-activated cyclic nucleotide-gated channel 4,"HCN1
+HCN4",O60741; Q9Y3Q4
+GRIN1-P2RY4 complex ,Homo Sapiens,"The P2Y4 receptor and the NMDAR1 subunit are inversely modulated in cerebellar granule neurons under glucose starvation (P2Y4 is upregulated and restored to basal levels by the neuroprotective P2 and NMDA antagonists, whereas NMDAR1 undergoes protein down-regulation again counteracted by the same antagonists). The upregulation of the P2Y4 in SH-SY5Y cells by transfection causes an inhibitory expression of the NMDAR1. Both P2Y4 and NMDAR1 actively participate to the metabolic impairment and the consequent cell death, although the elevated expression of the P2Y4 in SH-SY5Y cells by transfection is sufficient to cause hypoglycemic cell death. The purinergic metabotropic P2Y4 and the glutamatergic ionotropic NMDAR1 display strict co-localization and direct molecular association. P2Y4 is the first purinergic metabotropic receptor to be causal to cell death under conditions of metabolism impairment (PMID: 15383322).
+","Glutamate receptor ionotropic, NMDA 1	; P2Y purinoceptor 4	","GRIN1
+P2RY4",Q05586; C6G7W4
+ LY96-TLR4 complex ,Homo Sapiens,"LPS is transferred to the TLR4-MD-2 complex by two accessory proteins, LPS-binding protein (LBP) and CD14.(PMID:16953972). Selected N-linked glycosylation sites of both MD-2 and TLR4 play key roles in the maintenance of the ability of the LPS receptor to recognize LPS (PMID:11706042).
+","Lymphocyte antigen 96; Toll-like receptor 4	","LY96
+TLR4",Q9Y6Y9; D0EWT9
+RAD6-RAD18 ubiquitin ligase complex,Saccharomyces cerevisiae,"Ubiquitin ligase complex invovled in post-replicative repair of damaged DNA. Mono-ubiquitinates PCNA at a highly conserved lysine, lys-164, in response to replication-stalling DNA damage. This promotes the recruitment of a class of specialized polymerases capable of using damaged DNA as a template for trans-lesion synthesis. Also plays a role in the prevention of spontaneous mutations caused by oxidation of guanine to 7,8-dihydo-8-oxoguanine, caused by free radicals and reactive oxygen species.",    E2 ubiquitin-conjugating protein ;     E3 ubiquitin-protein ligase ,"RAD6
+RAD18",A0A6C1DR19; A0A142F3P2
+PHO85-PHO80 CDK-cyclin complex,Saccharomyces cerevisiae,"The PHO80-PHO85 cyclin-CDK holoenzyme phosphorylates and inactivates the transcription factor PHO4, by preventing its association with the transcription factor PHO2 and the nuclear import receptor PSE1, and by promoting association with the nuclear export receptor MSN5, excluding PHO4 from the nucleus. PHO80-PHO85 phosphorylates and inactivates protein kinase RIM15 by retaining it in the cytoplasm, antagonizing RIM15-induced entry into stationary phase. PHO80-PHO85 also phosphorylates and inactivates the calcineurin-responsive transcription factor CRZ1, linking PHO85 to calcium signaling",Cyclin-dependent protein kinase PHO85; Cyclin PHO80,"PHO85
+PHO80",P17157; P20052
+DNA polymerase (Pol) episolon (?),Saccharomyces cerevisiae,"Believed to play a role in the elongation of both leading and lagging strands of chromosomal DNA in eukaryotic cells. Required for DNA replication, DNA repair, transcriptional silencing and sister-chromatid cohesion.",DNA Polymerase II B subunit; DNA Polymerase II B subunit; DNA Polymerase II B subunit; DNA polymerase epsilon catalytic subunit,"DPB2
+DPB3
+DPB4
+POL2",Not Found; Not Found; Not Found; A6ZRI1
+Golgi transport complex,Saccharomyces cerevisiae,"Peripheral membrane oligomeric protein complex which acts as a retrograde vesicle tethering factor in intra-Golgi protein trafficking, bringing cargo vesicles in close proximity to their target compartment. May play a role in protein glycosylation by directly or indirectly effecting transport, retention, or retrieval to appropriate cisternae of resident Golgi glycosylation enzymes.",        Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit;         Golgi transport complex subunit,"COG6
+COG1
+COG5
+COG8
+COG7
+COG4
+COG2
+COG3",A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8; A0A6C1DRK8
+GPI-anchor transamidase complex,Saccharomyces cerevisiae,"Transamidase enzyme complex that transfers the glycosylphosphatidylinositol (GPI) lipid to the newly made GPI protein in the endoplasmic reticulum, replacing the C-terminal GPI attachment signal peptide of a protein with the lipid. GPI is a complex glycolipid with a core structure, phosphoethanolamine-6-mannose-alpha1,2-mannose-alpha1,6-mannose-alpha1,4-glucosamine-alpha1,6-inositol-phospholipid that functions as a membrane anchor for many cell surface proteins.","	Subunit of the glycosylphosphatidylinositol transamidase complex	; 	Subunit of the glycosylphosphatidylinositol transamidase complex; 	Subunit of the glycosylphosphatidylinositol transamidase complex	; 	Transmembrane protein	; 	Catalytic subunit of the ER membrane GPI transamidase complex	","GAA1
+GAB1
+GPI16
+GPI17
+GPI8",A0A6C1DTV3; A0A6C1DTV3; A0A6C1DTV3; B5VGK6; Not Found
+Glycosylphosphatidylinositol-mannosyltransferase I complex,Saccharomyces cerevisiae,"Mannosyltransferase complex responsible for the transfer of the first alpha-1,4-mannose to the glycosylphosphatidylinositol (GPI) during GPI precursor assembly. GPI is a complex glycolipid with a core structure, phosphoethanolamine-6-mannose-alpha1,2-mannose-alpha1,6-mannose-alpha1,4-glucosamine-alpha1,6-inositol-phospholipid that functions as a membrane anchor for many cell surface proteins.",Protease B Non-derepressible; GlycosylPhosphatidylInositol anchor biosynthesis,"PBN1
+GPI14 ",P25580; A6ZS40
+Dsl1 tethering complex,Saccharomyces cerevisiae,"Multisubunit tethering complex essential for the retrograde traffic of COPI-coated vesicles from the Golgi to the ER. Binds to individual SNAREs via their N-terminal regulatory domains and also to assembled SNARE complexes, and is capable of accelerating SNARE complex assembly. SNARE binding mediates fusion of COPI vesicles with the endoplasmic reticulum.","	Peripheral membrane protein needed for Golgi-to-ER retrograde traffic	; 	Component of the Dsl1p tethering complex	; 	Peripheral membrane protein required for COPI vesicle fusion to the ER	","DSL1
+SEC39 (DSL3)
+TIP20",Not Found; Not Found; Not Found
+"AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",Saccharomyces cerevisiae,,Beta-adaptin subunit of the clathrin-associated protein complex; Small subunit of the clathrin-associated adaptor complex AP-1; Mu1-like medium subunit of the AP-1 complex; large subunit of the clathrin-associated protein complex,"APL2	
+APS1	
+APM1	
+APL4",Not Found; Not Found; Not Found; Not Found
+PAN1 actin cytoskeleton-regulatory complex,Saccharomyces cerevisiae,"Believed to be required for the internalization of endosomes during actin-coupled endocytosis. The complex links the site of endocytosis to the cell membrane-associated actin cytoskeleton, coordinating ARP2/3 stimulation at the later stages of endocytosis. Present in the late endocytic coat","	EH domain-containing protein involved in endocytosis	; 	Poly-binding protein-dependent poly riboNuclease; 	Cytoskeletal protein binding protein","END3
+PAN1
+SLA1",Not Found; Not Found; Not Found
+AMPK complex,Drosophila Melanogaster,"Energy sensor serine/threonine kinase that plays a key role in regulating cellular energy metabolism. Energy stress manifests as a drop in the ratio of adenosine triphosphate (ATP) to AMP/ADP, which activates AMPK's kinase activity, allowing it to upregulate ATP-generating catabolic pathways and to reduce energy-consuming catabolic pathways and cellular programs: inhibits protein, carbohydrate and lipid biosynthesis, as well as cell growth and proliferation. AMPK acts via direct phosphorylation of metabolic enzymes, and by longer-term effects via phosphorylation of transcription regulators.
+",5'-AMP-activated protein kinase subunit beta-1; non-specific serine/threonine protein kinase; FI14001p1,"alc	
+AMPK?	
+SNF4A?",Q95SG9; A0A0B4K7C4; Q7JQX9
+Augmin complex,Drosophila Melanogaster,"The augmin complex (known as homologous to augmin subunits (HAUS) complex in vertebrates) is an eight-subunit protein complex involved in the mitotic spindle assembly. The augmin complex acts as an adaptor, recruiting the gamma-tubulin ring complex (?-TuRC) to existing spindle microtubules to nucleate branching to increase spindle density.","	dim ?-tubulin 2	; 	dim ?-tubulin 3		; 	dim ?-tubulin 4	; 	dim ?-tubulin 5		; 	dim ?-tubulin 6		; 	mitotic spindle density 1		; 	mitotic spindle density 5		; 	wee Augmin	","dgt2
+dgt3
+dgt4
+dgt5
+dgt6
+msd1
+msd5
+wac
+",Q9VKD6; Q9W2P0; Q9W4M8; Q7K4B4; Q9VAP2; Not Found; Not Found; Q9W0S8
+Myb-MuvB transcriptional activation complex,Drosophila Melanogaster,"Transcriptional activation complex which forms in the S phase and transactivates cell-cycle genes related to the S/G2/M phase. Genes activated by Myb-MuvB contain a cell-cycle homology region (CHR) DNA element in their promoters which is bound by mip120.
+","Lin-52, isoform A; Chromatin assembly factor 1 p55 subunit; Myb protein; LD07342p; Protein lin-54 homolog; LD06557p","lin-52
+Caf1-55
+Myb
+mip130
+mip120
+mip40",Q9W482; E1JIL4; P04197; Q9W542; A1Z9E2; Q7K159
+CORVET tethering complex,Drosophila Melanogaster,"Multisubunit tethering complex involved in early endosomal fusions by cross-linking two membranes, and facilitating the formation of a SNARE complex during fusion. Interacts with Rab GTPase RAB5 (Q9V3I2).",Vacuolar protein sorting-associated protein 16 homolog; Vacuolar protein sorting-associated protein 8 homolog; Vacuolar protein sorting-associated protein 18 homolog; Vacuolar protein sorting-associated protein 33A,"Vps16A
+Vps8
+dor
+car",A0A2Z1YTP5; Q9VRX2; B5RJG2; Q9Y1I2
+Sodium leak channel complex,Drosophila Melanogaster,"Voltage-gated ion channel responsible for the depolarizing sodium (Na+) leak currents that determine resting Na(+) permeability and control neuronal excitability. Functions downstream of the molecular circadian clock in pacemaker neurons to promote behavioral rhythmicity.
+","Protein unc-80 homolog; Narrow abdomen, isoform F; Uncoordinated 79, isoform B","unc80
+na
+unc79",Q9VB11; A8JUW5; E1JIP9
+ATG1 protein kinase complex,Drosophila Melanogaster,"Central regulator of autophagy initiation. Essential for recruitment of Atg proteins to the pre-autophagosomal structure, the putative site for autophagosome formation, under starvation condition, resulting in the sequestration of cytoplasmic proteins and organelles for bulk degradation.
+","Autophagy-related protein 101; Autophagy-related 17, isoform B; Autophagy-related protein 13 homolog; Autophagy-related 1, isoform B","Atg101
+Atg17
+Atg13
+Atg1",Q9VWQ1; Q7KTS2; Q9VHR6; Q8MQJ7
+NXF1-NXT1 mRNA nuclear export factor complex,Drosophila Melanogaster,Mediates the export of bulk mRNA through direct interactions with both the mRNA cargo and nuclear pore proteins that contain characteristic phenylalanine-glycine repeating sequence motifs (FG-nucleoporins).,NTF2-related export protein; Nuclear RNA export factor 1,"Nxt1
+sbr",Q9VRD6; Q9U1H9
+MON1-CCZ1 guanyl-nucleotide exchange factor complex,Drosophila Melanogaster,"Guanyl-nucleotide exchange factor complex with a critical role in maintaining proper vacuole morphology in vacuole delivery pathways by regulating fusion of vesicles with the vacuole at the tethering/docking stage. The complex is activated by membrane-bound Rab5 (Q9V3I2) to facilitate nucleotide exchange of Rab7 (O76742) on membranes. Bulli appears to extend the ability of Mon1-Ccz1 to coordinate the Rab5 to Rab7 transition at endosomes potentially by may providing a docking platform for additional regulators of endosomal trafficking.
+",Vacuolar fusion protein MON1 homolog; Vacuolar fusion protein CCZ1 homolog; Regulator of MON1-CCZ1 complex,"Mon1
+Ccz1
+Bulli",Q8MRZ0; Q9VZL5; Q9VRX1
+HipHop-HOAP telomere-capping complex,Drosophila Melanogaster,"Binds to the double stranded portion of telomeric chromatin and recruits Su(var)205/Heterochromatin Protein 1 (P05205), a structural component of heterochromatin involved in gene repression, to telomeres. Also recruits the MTV complex (CPX-8944) to form the terminin telomere-capping complex, which binds to chromosome ends in a sequence-independent manner and prevents telomere fusion.
+",HP1-HOAP-interacting protein; Telomere-binding protein cav,"HipHop
+cav",Q7JWP6; Q95RV2
+ZFP-1(AF10)/DOT-1 complex,Caenorhabditis Elegans,Histone methylation complex which preferentially methylates 'Lys-79' of histone H3 to modulate transcription. Part of a negative feedback mechanism opposing H2B ubiquitination and contributing to the pausing of transcription elongation by RNA polymerase II that occurs on essential genes widely expressed during development.,"Zinc finger protein zfp-1; Histone-lysine N-methyltransferase, H3 lysine-79 specific","zfp-1
+dot-1.1",P34447; Q23200
+ced-3-ced-4-mac-1 complex,Caenorhabditis Elegans,"Complex plays a role in programmed cell death (apoptosis), preventing ced-4 and caspase ced-3-mediated apoptosis.",Protein mac-1; Cell death protein 4; Cell death protein 3,"mac-1
+ced-4
+ced-3",Q9NAG4; P30429; P42573
+Nuclear mitotic cohesin complex,Caenorhabditis Elegans,"Required for sister chromatid cohesion during cell division, which enables cells to attach sister kinetochores to microtubules with opposing polarity (bi-orientation) and subsequently resists the tendency of these microtubules to pull chromatids toward opposite spindle poles. Before the commencement of replication, the cohesin complex is loaded onto DNA. The arms of the him-1 and smc-3 molecules embrace the DNA, thereby forming a ring. The head domains of him-1 and smc-3 are locked together by scc-1. Cohesion might be generated as the replication fork passes through the ring, entrapping both sister chromatids inside. At the metaphase to anaphase transition, scc-1 is cleaved by separase, thereby opening the lock of the him-1 and smc-3 head domains. The ring opens and sister chromatids can be pulled to opposite spindle poles.",Structural maintenance of chromosomes protein 1; Structural maintenance of chromosomes protein 3; Sister chromatid cohesion protein 1; Cohesin subunit scc-3,"him-1
+smc-3
+scc-1
+scc-3",O01789; B2FDA8; Q19325; Q19555
+Atk-1/Akt-2/Sgk-1 protein kinase complex,Caenorhabditis Elegans,"Serine/threonine protein kinase complex. Component of the daf-2 insulin receptor-like signalling cascade that controls daf-16-mediated gene expression. The forkhead transcription factor daf-16 regulates the expression of genes involved in metabolism, development, dauer formation, longevity and the response to stress. The complex functions downstream of pkd-1 in the signalling cascade to antagonize daf-16 by phosphorylation. The complex is activated by pdk-1 phosphorylation. The activated complex then controls the intracellular localisation and activation of daf-16.
+",Serine/threonine-protein kinase akt-1; Serine/threonine-protein kinase sgk-1; Serine/threonine-protein kinase akt-2,"akt-1
+sgk-1
+akt-2",Q17941; Q2PJ68; Q9XTG7
+RB1-E2F1-TFDP1 transcription repressor complex,Caenorhabditis Elegans,"Transcriptional repressor complex involved in the regulation of intestinal cell division during postembryonic development. lin-35 negatively regulates the G1-S transition by binding to the E2F1-DP1 transcription factor complex (CPX-965) and blocking the transactivation domain of efl-1. lin-35 dissociates from the complex following hyperphosphorylation by cyclin-dependent kinases.
+",Retinoblastoma-like protein homolog lin-35; Transcription factor dpl-1; E2F/DP family winged-helix DNA-binding domain-containing protein,"lin-35
+dpl-1
+efl-1",G5EDT1; Q22703; G5EF11
+"PETISCO, pid-1 variant",Caenorhabditis Elegans,"Involved in the processing of substrate RNAs in the gene silencing pathway. When bound to pid-1, it is specifically required for the biogenesis of 21U RNAs, which are a class of 21 nucleotide piRNAs that possess a uracil residue at the 5-prime end. pid-1 is required for stabilising 21U precursor RNA molecules, whilst ife-3 is required for the interaction with capped 21U precursor RNA molecules.
+",Embryonic developmental protein tofu-6; Enhancer of rudimentary homolog 2; Protein pid-1; Protein pid-3; Eukaryotic translation initiation factor 4E-3,"tofu-6
+erh-2
+pid-1
+pid-3
+ife-3",Q09293; Q20057; Q19541; O76616; O61955
+"PETISCO, tost-1 variant",Caenorhabditis Elegans,"Involved in the processing of substrate RNAs. When bound to tost-1, it binds to splice leader SL1 RNA fragments. SL1 fragments are trans-spliced to the 5-prime ends of a large fraction of all mRNAs. Ife-3 is required for the interaction with capped RNA molecules. In contrast to the PETISCO, pid-1 variant complex (CPX-4306), the complex has a minor role in 21U RNA biogenesis, but is essential for embryogenesis.",Embryonic developmental protein tofu-6; Enhancer of rudimentary homolog 2; Protein tost-1; Protein pid-3; Eukaryotic translation initiation factor 4E-3,"tofu-6
+erh-2
+tost-1
+pid-3
+ife-3",Q09293; Q20057; Q18490; O76616; O61955
+Ndc80 complex,Caenorhabditis Elegans,"Crucial for the stable kinetochore-microtubule attachments that are needed to sustain the centromere tensions involved in achieving proper chromosome alignment in eukaryotic cells. Plays a role in chromosome alignment and microtubule-dependent control of Mad-1/Mad-2 (CPX-402) and dynein complexes at kinetochores, and also chromosome segregation in mitosis and meiosis and spindle checkpoint activity. The complex is recruited...",Kinetochore-binding protein 3; KNL Binding Protein; Kinetochore protein ndc-80; Kinetochore protein Nuf2 homolog,"kbp-3
+kbp-4
+ndc-80
+him-10",O45406; Not Found; Q17635; Q21952
+Kinetochore Mis12 complex,Caenorhabditis Elegans,"Required for normal chromosome alignment and segregation, kinetochore formation during mitosis, proper kinetochore microtubule attachments and for the spindle assembly checkpoint. The complex plays a role in establishing a bipolar spindle-kinetochore interaction by joining kinetochore subunits contacting DNA...",Kinetochore NuLl; Human/fission yeast MIS homolog; KNL Binding Protein; Mediator of RNA polymerase II transcription subunit 21,"knl-3
+mis-12
+kbp-1
+kbp-2",O76406; Not Found; Not Found; A0A0M7REA1
+THO complex,Saccharomyces cerevisiae,Functions in the formation and nuclear export of translation-competent messenger ribonucleoprotein particles. Functions at the interface between transcription and mRNA export via its interaction with SUB2 in the TREX complex (CPX-1793). Recruited to transcribed...,THO complex subunit MFT1; THO complex subunit 2; Protein TEX1; THO complex subunit THP2; THO complex subunit HPR1,"MFT1
+THO2
+TEX1
+THP2
+HPR1",P33441; A6ZRU3; A0A6C1DYB8; O13539; P17629
+Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2,Saccharomyces cerevisiae,SNARE complex required for the fusion of endosomal vesicles with the trans-Golgi network. Mediates membrane fusion through the spontaneous assembly of four complementary,Synaptobrevin homolog 2; t-SNARE affecting a late Golgi compartment protein 2; t-SNARE VTI1; t-SNARE affecting a late Golgi compartment protein 1,"SNC2
+TLG2
+VTI1
+TLG1",P33328; B3LJ39; B3LM85; B3LFJ7
+Ste12/Dig1/Dig2 transcription regulation complex,Saccharomyces cerevisiae,"Translational repressor complex which binds to the pheromone response elements (PREs; TGAAACR) in mating gene promoters. Upon pheromone stimulation, Fus3",Protein STE12; Down-regulator of invasive growth 1; Down-regulator of invasive growth 2,"STE12
+DIG1
+DIG2",B3LSK1; Q03063; Q03373
+TRAPP II complex ,Mus Musculus,Multimeric vesicle tethering complex involved in vesicle transport between endoplasmic reticulum and Golgi compartments and in the regulation of COPI vesicle coating. Acts as guanine exchange factors towards RAB1 (P62821) and RabE/Rab11 (P62492).,"Trappc3, Trappc6b, Trappc1, Trappc4, Trappc5, Trappc9, Trappc10,Trappc13,Trappc21","Trappc3, Trappc6b, Trappc1, Trappc4, Trappc5, Trappc9, Trappc10,Trappc13,Trappc21",Not Found
+CCM complex ,Mus Musculus,"Forms a signalling platform, responsible for maintaining integrity of endothelial permeability. Plays a key role in the integrity of the endothelial tubule networks at the initial stages of vasculogenesis. Appears to act primarily by inhibiting RhoA-associated kinase (ROCK) activation and thus regulating Rhoa (Q9QUI0) signaling however distinct patterns of interacting proteins for each CCM protein has been observed.
+",Ccm2; Pdcd10; Knt1,"Ccm2
+Pdcd10
+Knt1",Q8VCC6; Q99K99; Not Found
+mu-Calpain complex ,Mus Musculus,"A calcium-dependent protease complex that processes the substrate by limited proteolysis rather than degrading it. In some cases the proteolytic action activates the substrate, for example, it cleaves Cdk5r1/p35 (P61809) into its p25 form that is associated with Alzheimer's disease in human. Involved in cytoskeletal remodeling, signal transduction and implicated in cell cycle regulation and apoptosis. Finely-balanced calpain homeostasis is required as both over and under-activation causes disease. Calpain complexes recognise their substrates based on a short peptide sequence. Inhibited by the intrinsically-unstructured calpastatin (P51125) by its tight binding to the calpain catalytic subunit.",Capn1; Capns1,Capn1,Not Found; Not Found
+GINS complex ,Mus Musculus,"Required for the initiation of replication and for replication fork progression, mediating interactions with replication factors. Binds to and enhances the enzymatic function of the MCM helicase (CPX-2941) during the initiation and elongation stages of replication. Core component of the replicative helicase CMG (CPX-4541) complex that serves as the replicative helicase unwinding duplex DNA ahead of moving replication fork during chromosome duplication. Also appears to interact with and stimulate the polymerase activities of DNA polymerase epsilon complex (CPX-2109) and the DNA polymerase alpha:primase complex (CPX-2088).",Gins3; Gins1; Gins4; Gins2,"Gins3
+Gins1
+Gins4
+Gins2",Not Found; Not Found; Not Found; Not Found
+CMG helicase complex ,Mus Musculus,"DNA helicase that unwinds or rearranges duplex DNA during replication, recombination and repair. Surrounds the leading strand during DNA replication and recruits the DNA polymerase epsilon complex (CPX-2109) for leading-strand synthesis. CDC45 adds the GINS complex (CPX-4502) onto each MCM complex (CPX-2941) to form two active CMG helicases that surround each strand of parental DNA. CMG then translocates along single-strand DNA in the 3-prime to 5-prime direction for bidirectional replication.The complex unwinds duplex regions up to 500 bp.",Mcm4; Mcm6; Mcm2; Mcm5; Mcm3; Mcm7; Gins3; Gins1; Gins4; Gins2; Cdc45,"Mcm4
+Mcm6
+Mcm2
+Mcm5
+Mcm3
+Mcm7
+Gins3
+Gins1
+Gins4
+Gins2
+Cdc45",Q76NI2; Q3ULG5; Q3UK39; Q8BQ03; Q3ULD6; Q3UDI8; Not Found; Not Found; Not Found; Not Found; Not Found
+20S mitochondrial small ribosomal subunit ,Mus Musculus,"Component of the ribosome, the site of protein biosynthesis resulting from translation of messenger RNA (mRNA). Responsible for the catalytic activity of the ribosome, the peptidyltransferase activity required to catalyze peptide bond formation. The mitochondrial ribosome (mitoribosome) is responsible for the synthesis of mitochondrial genome-encoded proteins, including at least some of the essential transmembrane subunits of the mitochondrial respiratory chain. All proteins synthesized by mouse mitoribosomes are hydrophobic, integral membrane proteins and some require prosthetic groups for folding and functioning. The mitoribosomes are tethered to the mitochondrial inner membrane and translation products are cotranslationally integrated into the membrane. The inner membrane protein Mrpl45 aligns the mitochondrial peptide exit tunnel with the membrane insertion machinery and supports the transfer of the mitochondrial nascent peptides towards the membrane. The mt-SSU binds mRNA, is involved in accurate initiation and decoding, and undergoes large-scale conformational changes during the elongation cycle.",Mrps27; Mrps18b; Mrps22; Dap3; Aurkaip1; Mrps15; Mrps18c; Mrps23; Mrps26; Mrps33; Mrps6; Chchd1; Mrps12; Mrps16; Mrps2; Mrps24; Mrps28; Mrps34; Mrps7; Mrps14; Mrps17; Mrps21; Mrps25; Mrps31; Mrps5; Mrps9; Ptcd3; ,"Mrps27
+Mrps18b
+Mrps22
+Mrps35
+Dap3
+Aurkaip1
+Mrps11
+Mrps15
+Mrps18c
+Mrps23
+Mrps26
+Mrps33
+Mrps6
+Chchd1
+Mrps12
+Mrps16
+Mrps2
+Mrps24
+Mrps28
+Mrps34
+Mrps7
+Mrps10
+Mrps14
+Mrps17
+Mrps21
+Mrps25
+Mrps31
+Mrps5
+Mrps9
+Ptcd3",Q80ZI4; Not Found; Not Found; A0A494BAL2; Q91X73; Not Found; Not Found; Q99LZ4; Not Found; Not Found; Not Found; Q05BF0; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Not Found; Q5XJX8; Q6NV85
+Cardiac troponin complex ,Mus Musculus,"Regulates contraction-relaxation cycles in response to changes in intracellular calcium. Together with tropomyosin, cTn is generally located along polymerised actin, which forms the backbone of the cardiomyocyte thin filament. At resting levels of intracellular calcium, the cTn complex keeps tropomyosin in a position that prevents force-producing interactions between myosin heads and actin. When the muscle cell is stimulated to contract by an action potential, calcium channels open in the sarcoplasmic membrane and release calcium into the sarcoplasm. Some of this calcium binds to specific sites in the N-domain of TnC, triggering a series of protein structural changes and tropomyosin is rolled away from myosin-binding sites on actin, allowing myosin to attach to the thin filament and produce force and/or shorten the sarcomere of the cardiomyocyte.",Tnnt2; Tnni3; Tnnc1,"Tnnt2
+Tnni3
+Tnnc1",Not Found; Q5GIG6; Not Found

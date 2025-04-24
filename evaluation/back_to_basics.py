@@ -11,6 +11,10 @@ gpt41_df = pd.read_csv("all_62_complexes\gpt-4-1_v2_parsed.csv")
 manual_df["Proteins"] = manual_df["Proteins"].fillna("").apply(lambda x: x.replace("\n", "; ").replace("\r", ""))
 manual_df["Proteins"] = manual_df["Proteins"].apply(lambda x: re.sub(r"\s*\(.*?\)", "", x))
 
+gpt41_df["Proteins"] = gpt41_df["Proteins"].apply(lambda x: re.sub(r"\s*[\(\[].*?[\)\]]", "", x))
+
+
+
 def standardize_organism(org):
     if isinstance(org, str):
         org = org.lower()
@@ -47,8 +51,16 @@ def query_uniprot(protein, organism):
             data = response.json()
             if data.get("results"):
                 return data["results"][0]["primaryAccession"]
-            else:
-                return "Not Found"
+            # Fallback to gene_exact if protein_name fails
+            fallback_query = f'gene_exact:{protein} AND organism_name:"{organism}"'
+            params["query"] = fallback_query
+            response = requests.get(url, params=params, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                if data.get("results"):
+                    return data["results"][0]["primaryAccession"]
+                else:
+                    return "Not Found"
         else:
             print(f"Request failed: {response.status_code}")
             return "Error"
@@ -65,7 +77,7 @@ def map_proteins_to_uniprot(row):
     for protein in proteins:
         acc = query_uniprot(protein, organism)
         if acc in ["Error", "Not Found"]: 
-            failed_queries.append(proteins)
+            failed_queries.append((proteins, organism))
         accessions.append(acc)
         time.sleep(0.5)  # Be respectful to UniProt API
     return "; ".join(accessions)

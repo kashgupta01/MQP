@@ -39,9 +39,9 @@ ITGA3-ITGB1 complex,Human,cell adhesion,"Integrin alpha-3
 Integrin beta-1",
  Golgi-associated retrograde protein complex ,C. elegans, tethering of endosome-derived transport vesicles to the late Golgi,"Vps51p, Vps52p, Vps53p, and Vps54p",
  Transmembrane channel-like (TMC) 2 complex ,C. elegans,pore-forming subunits of the mechanoelectrical transduction complexes that are located in auditory and vestibular hair cells of the inner ear,"CALM-1, TMIE",
-13 subunit eukaryotic initiation factor 3 (eIF3) complex,C. elegans,,"elf-k, l, e, c, a, m, h, f, b, g, I, d",
+13 subunit eukaryotic initiation factor 3 (eIF3) complex,C. elegans,,"elf3k, elf3l, elf3e, elf3c, elf3a, elf3m, elf3h, elf3f, elf3b, elf3g, elf3I, elf3d",
 Tip60 chromatin-remodeling complex ,D. melanogaster,"Enables euchromatin binding activity and histone acetyltransferase activity. Involved in several processes, including DNA repair-dependent chromatin remodeling; negative regulation of neuron apoptotic process; and regulation of terminal button organization. Located in nucleus and polytene chromosome interband. Part of NuA4 histone acetyltransferase complex. Is expressed in NMJ bouton; embryonic/larval neuromuscular junction; organism; and yolk nucleus. Orthologous to human KAT5 (lysine acetyltransferase 5)
-","Histone acetyltransferase Tip60, Domino, Tra1, Brd8, E(Pc), DMAP1, Pontin, Reptin, Ing3, Act87E, BAP55, Mrg15, MrgBP, Gas41 and YL-1
+","Histone acetyltransferase Tip60; Domino; Tra1; Brd8; E(Pc); DMAP1; Pontin; Reptin; Ing3; Act87E; BAP55; Mrg15; MrgBP; Gas41; YL-1
 ",
 COP9 Signalosome ,D. melanogaster,"Largely unknown in mammals but thought to be related to multi-cellular differentiation
 ",Dch1-8,
@@ -98,21 +98,16 @@ GPI8"
 Glycosylphosphatidylinositol-mannosyltransferase I complex,Saccharomyces cerevisiae,"Mannosyltransferase complex responsible for the transfer of the first alpha-1,4-mannose to the glycosylphosphatidylinositol (GPI) during GPI precursor assembly. GPI is a complex glycolipid with a core structure, phosphoethanolamine-6-mannose-alpha1,2-mannose-alpha1,6-mannose-alpha1,4-glucosamine-alpha1,6-inositol-phospholipid that functions as a membrane anchor for many cell surface proteins.","Protease B Non-derepressible (PBN1)
 GlycosylPhosphatidylInositol anchor biosynthesis (GPI14)","PBN1
 GPI14 "
-Dsl1 tethering complex,Saccharomyces cerevisiae,"Multisubunit tethering complex essential for the retrograde traffic of COPI-coated vesicles from the Golgi to the ER. Binds to individual SNAREs via their N-terminal regulatory domains and also to assembled SNARE complexes, and is capable of accelerating SNARE complex assembly. SNARE binding mediates fusion of COPI vesicles with the endoplasmic reticulum.","	Peripheral membrane protein needed for Golgi-to-ER retrograde traffic	
-	Component of the Dsl1p tethering complex	
-	Peripheral membrane protein required for COPI vesicle fusion to the ER	","DSL1
+Dsl1 tethering complex,Saccharomyces cerevisiae,"Multisubunit tethering complex essential for the retrograde traffic of COPI-coated vesicles from the Golgi to the ER. Binds to individual SNAREs via their N-terminal regulatory domains and also to assembled SNARE complexes, and is capable of accelerating SNARE complex assembly. SNARE binding mediates fusion of COPI vesicles with the endoplasmic reticulum.","	DSL1; SEC39; DSL3;TIP20	
+	","DSL1
 SEC39 (DSL3)
 TIP20"
-"AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",Saccharomyces cerevisiae,,"Beta-adaptin subunit of the clathrin-associated protein (AP-1) complex
-Small subunit of the clathrin-associated adaptor complex AP-1
-Mu1-like medium subunit of the AP-1 complex
-large subunit of the clathrin-associated protein (AP-1) complex","APL2	
+"AP-1 adaptor cpmplex (HA1, HA1 clathrin adaptor)",Saccharomyces cerevisiae,,"APL2; DPS1; APM1; APL4
+","APL2	
 APS1	
 APM1	
 APL4"
-PAN1 actin cytoskeleton-regulatory complex,Saccharomyces cerevisiae,"Believed to be required for the internalization of endosomes during actin-coupled endocytosis. The complex links the site of endocytosis to the cell membrane-associated actin cytoskeleton, coordinating ARP2/3 stimulation at the later stages of endocytosis. Present in the late endocytic coat","	EH domain-containing protein involved in endocytosis	
-	Poly(A)-binding protein-dependent poly(A) riboNuclease
-	Cytoskeletal protein binding protein","END3
+PAN1 actin cytoskeleton-regulatory complex,Saccharomyces cerevisiae,"Believed to be required for the internalization of endosomes during actin-coupled endocytosis. The complex links the site of endocytosis to the cell membrane-associated actin cytoskeleton, coordinating ARP2/3 stimulation at the later stages of endocytosis. Present in the late endocytic coat","	END3; PAN1; SLA1","END3
 PAN1
 SLA1"
 AMPK complex,D. melanogaster,"Energy sensor serine/threonine kinase that plays a key role in regulating cellular energy metabolism. Energy stress manifests as a drop in the ratio of adenosine triphosphate (ATP) to AMP/ADP, which activates AMPK's kinase activity, allowing it to upregulate ATP-generating catabolic pathways and to reduce energy-consuming catabolic pathways and cellular programs: inhibits protein, carbohydrate and lipid biosynthesis, as well as cell growth and proliferation. AMPK acts via direct phosphorylation of metabolic enzymes, and by longer-term effects via phosphorylation of transcription regulators.
@@ -264,7 +259,7 @@ Down-regulator of invasive growth 1
 Down-regulator of invasive growth 2","STE12
 DIG1
 DIG2"
-TRAPP II complex ,Mouse ,Multimeric vesicle tethering complex involved in vesicle transport between endoplasmic reticulum and Golgi compartments and in the regulation of COPI vesicle coating. Acts as guanine exchange factors towards RAB1 (P62821) and RabE/Rab11 (P62492).,"Trappc3, Trappc6b, Trappc1, Trappc4, Trappc5, Trappc9, Trappc10,Trappc13,Trappc21","Trappc3, Trappc6b, Trappc1, Trappc4, Trappc5, Trappc9, Trappc10,Trappc13,Trappc21"
+TRAPP II complex ,Mouse ,Multimeric vesicle tethering complex involved in vesicle transport between endoplasmic reticulum and Golgi compartments and in the regulation of COPI vesicle coating. Acts as guanine exchange factors towards RAB1 (P62821) and RabE/Rab11 (P62492).,Trappc3; Trappc6b; Trappc1; Trappc4; Trappc5; Trappc9; Trappc10; Trappc13; Trappc21,"Trappc3, Trappc6b, Trappc1, Trappc4, Trappc5, Trappc9, Trappc10,Trappc13,Trappc21"
 CCM complex ,Mouse ,"Forms a signalling platform, responsible for maintaining integrity of endothelial permeability. Plays a key role in the integrity of the endothelial tubule networks at the initial stages of vasculogenesis. Appears to act primarily by inhibiting RhoA-associated kinase (ROCK) activation and thus regulating Rhoa (Q9QUI0) signaling however distinct patterns of interacting proteins for each CCM protein has been observed.
 ","Ccm2
 Pdcd10
