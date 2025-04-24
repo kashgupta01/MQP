@@ -5,13 +5,13 @@ import requests
 import time 
 import urllib.parse
 
-manual_df = pd.read_csv("manual_curation.csv", encoding = "ISO-8859-1")
-gpt41_df = pd.read_csv("all_62_complexes\gpt-4-1_v2_parsed.csv")
+#manual_df = pd.read_csv("manual_curation.csv", encoding = "ISO-8859-1")
+gpt4o_df = pd.read_csv("all_62_complexes\gpt-4o_v2_parsed.csv")
 
-manual_df["Proteins"] = manual_df["Proteins"].fillna("").apply(lambda x: x.replace("\n", "; ").replace("\r", ""))
-manual_df["Proteins"] = manual_df["Proteins"].apply(lambda x: re.sub(r"\s*\(.*?\)", "", x))
+#manual_df["Proteins"] = manual_df["Proteins"].fillna("").apply(lambda x: x.replace("\n", "; ").replace("\r", ""))
+#manual_df["Proteins"] = manual_df["Proteins"].apply(lambda x: re.sub(r"\s*\(.*?\)", "", x))
 
-gpt41_df["Proteins"] = gpt41_df["Proteins"].apply(lambda x: re.sub(r"\s*[\(\[].*?[\)\]]", "", x))
+gpt4o_df["Proteins"] = gpt4o_df["Proteins"].apply(lambda x: re.sub(r"\s*[\(\[].*?[\)\]]", "", x))
 
 
 
@@ -31,8 +31,8 @@ def standardize_organism(org):
         return org.strip()
     return org
 
-manual_df['Organism'] = manual_df['Organism'].apply(standardize_organism)
-gpt41_df['Organism'] = gpt41_df['Organism'].apply(standardize_organism)
+#manual_df['Organism'] = manual_df['Organism'].apply(standardize_organism)
+gpt4o_df['Organism'] = gpt4o_df['Organism'].apply(standardize_organism)
 
 def query_uniprot(protein, organism):
     url = "https://rest.uniprot.org/uniprotkb/search"
@@ -85,19 +85,19 @@ def map_proteins_to_uniprot(row):
     return "; ".join(accessions)
 
 # Map both dataframes
-print("Mapping proteins in manual_df...")
-manual_df['Accession_Mapped'] = manual_df.apply(map_proteins_to_uniprot, axis=1)
+#print("Mapping proteins in manual_df...")
+#manual_df['Accession_Mapped'] = manual_df.apply(map_proteins_to_uniprot, axis=1)
 
-print("Mapping proteins in gpt41_df...")
-gpt41_df['Accession_Mapped'] = gpt41_df.apply(map_proteins_to_uniprot, axis=1)
+print("Mapping proteins in gpt4o_df...")
+gpt4o_df['Accession_Mapped'] = gpt4o_df.apply(map_proteins_to_uniprot, axis=1)
 
 # Save output
-manual_df.to_csv("manual_mapping2.csv", index=False)
-gpt41_df.to_csv("gpt41_mapping2.csv", index=False)
+#manual_df.to_csv("manual_mapping2.csv", index=False)
+gpt4o_df.to_csv("gpt4o_mapping.csv", index=False)
 print("Mapping completed and files saved.")
 
 if failed_queries:
-    pd.DataFrame(failed_queries, columns=["Protein", "Organism"]).to_csv("failed_queries.csv", index=False)
+    pd.DataFrame(failed_queries, columns=["Protein", "Organism"]).to_csv("failed_queries_4o.csv", index=False)
     print(f"{len(failed_queries)} queries failed. Saved to 'failed_queries.csv'.")
 else:
     print("All queries succeeded!")
