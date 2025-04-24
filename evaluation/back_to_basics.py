@@ -65,7 +65,7 @@ def map_proteins_to_uniprot(row):
     for protein in proteins:
         acc = query_uniprot(protein, organism)
         if acc in ["Error", "Not Found"]: 
-            failed_queries.append(proteins, organism)
+            failed_queries.append(proteins)
         accessions.append(acc)
         time.sleep(0.5)  # Be respectful to UniProt API
     return "; ".join(accessions)
@@ -78,8 +78,8 @@ print("Mapping proteins in gpt41_df...")
 gpt41_df['Accession_Mapped'] = gpt41_df.apply(map_proteins_to_uniprot, axis=1)
 
 # Save output
-manual_df.to_csv("manual_with_uniprot_mapping.csv", index=False)
-gpt41_df.to_csv("gpt41_with_uniprot_mapping.csv", index=False)
+manual_df.to_csv("manual_mapping.csv", index=False)
+gpt41_df.to_csv("gpt41_mapping.csv", index=False)
 print("Mapping completed and files saved.")
 
 if failed_queries:
