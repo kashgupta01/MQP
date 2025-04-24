@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-combined_csv = ("all_62_complexes\combined_llm_results.csv")
+combined_csv = ("all_62_complexes\combined_llms_results.csv")
 
 df = pd.read_csv(combined_csv)
 
@@ -105,10 +105,11 @@ for index, col in df.loc[:, ['Model', 'Technique', 'Confidence Score']].iterrows
                 print("o4-mini technique not found")
 
 
-for key, series in claude_dfs.items():
+for key, series in chat_dfs.items():
     convert_to_num = pd.to_numeric(series, errors="coerce")
+    num_count = (convert_to_num[~np.isnan(convert_to_num)]).size
     mean = np.nanmean(convert_to_num)
     non_num_count = pd.isna(convert_to_num).sum()
-    print(f"\n{key}: \nScore Mean: {mean}\nUndefined Values: {non_num_count}")
+    print(f"\n{key}: \nScore Mean: {mean}\nUndefined Values: {non_num_count}\nFloats: {num_count}")
 
 
