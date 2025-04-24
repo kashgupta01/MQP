@@ -90,8 +90,8 @@ print("Mapping proteins in gpt41_df...")
 gpt41_df['Accession_Mapped'] = gpt41_df.apply(map_proteins_to_uniprot, axis=1)
 
 # Save output
-manual_df.to_csv("manual_mapping.csv", index=False)
-gpt41_df.to_csv("gpt41_mapping.csv", index=False)
+manual_df.to_csv("manual_mapping2.csv", index=False)
+gpt41_df.to_csv("gpt41_mapping2.csv", index=False)
 print("Mapping completed and files saved.")
 
 if failed_queries:
