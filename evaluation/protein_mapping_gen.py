@@ -37,7 +37,7 @@ def get_uniprot_data(protein, organism):
             gene_name = result.get("genes", [{}])[0].get("geneName", {}).get("value")
             accession = result.get("primaryAccession")
             return gene_name if gene_name else "Only accession ID found", accession
-    return "Not found", "Not found"
+    # return "Not found", "Not found"
 
 def process_csv(input_path, output_path):
     df = pd.read_csv(input_path)
@@ -71,4 +71,4 @@ def process_csv(input_path, output_path):
     print(f"Updated file saved to: {output_path}")
 
 # Example usage:
-process_csv("all_62_complexes\combined_llm_results.csv", "combined_llm_results_with_mappings.csv")
+process_csv("PARSR.csv", "test.csv")

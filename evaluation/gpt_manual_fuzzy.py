@@ -64,5 +64,5 @@ def compare_proteins_organisms(llm_path, manual_path):
 
 # Example usage
 if __name__ == "__main__":
-    result = compare_proteins_organisms("all_62_complexes\gpt-4-1_v2_parsed.csv", "manual_curation.csv")
+    result = compare_proteins_organisms("PARSR.csv", "manual_curation.csv")
     print(result)
