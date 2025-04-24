@@ -6,12 +6,12 @@ import time
 import urllib.parse
 
 #manual_df = pd.read_csv("manual_curation.csv", encoding = "ISO-8859-1")
-claude_sonnet_df = pd.read_csv("all_62_complexes\claude-3-7-sonnet_v2_parsed.csv")
+claude_opus_df = pd.read_csv("all_62_complexes\claude-3-opus_v2_parsed.csv")
 
 #manual_df["Proteins"] = manual_df["Proteins"].fillna("").apply(lambda x: x.replace("\n", "; ").replace("\r", ""))
 #manual_df["Proteins"] = manual_df["Proteins"].apply(lambda x: re.sub(r"\s*\(.*?\)", "", x))
 
-claude_sonnet_df["Proteins"] = claude_sonnet_df["Proteins"].apply(lambda x: re.sub(r"\s*[\(\[].*?[\)\]]", "", x))
+claude_opus_df["Proteins"] = claude_opus_df["Proteins"].apply(lambda x: re.sub(r"\s*[\(\[].*?[\)\]]", "", x))
 
 
 
@@ -32,7 +32,7 @@ def standardize_organism(org):
     return org
 
 #manual_df['Organism'] = manual_df['Organism'].apply(standardize_organism)
-claude_sonnet_df['Organism'] = claude_sonnet_df['Organism'].apply(standardize_organism)
+claude_opus_df['Organism'] = claude_opus_df['Organism'].apply(standardize_organism)
 
 def query_uniprot(protein, organism):
     url = "https://rest.uniprot.org/uniprotkb/search"
@@ -88,16 +88,16 @@ def map_proteins_to_uniprot(row):
 #print("Mapping proteins in manual_df...")
 #manual_df['Accession_Mapped'] = manual_df.apply(map_proteins_to_uniprot, axis=1)
 
-print("Mapping proteins in claude_sonnet_df...")
-claude_sonnet_df['Accession_Mapped'] = claude_sonnet_df.apply(map_proteins_to_uniprot, axis=1)
+print("Mapping proteins in claude_opus_df...")
+claude_opus_df['Accession_Mapped'] = claude_opus_df.apply(map_proteins_to_uniprot, axis=1)
 
 # Save output
 #manual_df.to_csv("manual_mapping2.csv", index=False)
-claude_sonnet_df.to_csv("claude_sonnet_mapping.csv", index=False)
+claude_opus_df.to_csv("claude_opus_mapping.csv", index=False)
 print("Mapping completed and files saved.")
 
 if failed_queries:
-    pd.DataFrame(failed_queries, columns=["Protein", "Organism"]).to_csv("failed_queries_sonnet.csv", index=False)
-    print(f"{len(failed_queries)} queries failed. Saved to 'failed_queries_sonnet.csv'.")
+    pd.DataFrame(failed_queries, columns=["Protein", "Organism"]).to_csv("failed_queries_opus.csv", index=False)
+    print(f"{len(failed_queries)} queries failed. Saved to 'failed_queries_opus.csv'.")
 else:
     print("All queries succeeded!")
