@@ -15,15 +15,15 @@ def standardize_organism(org):
     if isinstance(org, str):
         org = org.lower()
         if 'human' in org or 'human (homo sapiens)' in org or 'Human (Homo sapiens) – the 13 subunit eIF3 complex is most prominent in humans.' in org or 'homo sapiens (human)' in org:
-            return 'Homo Sapiens (Human)'
+            return 'Homo Sapiens'
         elif 'mouse' in org:
-            return 'Mus Musculus (Mouse)'
+            return 'Mus Musculus'
         elif 'c. elegans' in org or 'caenorhabditis' in org or 'caenorhabditis elegans (c. elegans)' in org:
             return 'Caenorhabditis Elegans'
         elif 'drosophila' in org or 'd. melanogaster' in org:
-            return 'Drosophila Melanogaster (Fruit Fly)'
+            return 'Drosophila Melanogaster'
         elif 'yeast' in org or 'saccharomyces' in org or 'saccharomyces cerevisiae (budding yeast)':
-            return "Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)"
+            return "Saccharomyces cerevisiae"
         return org.strip()
     return org
 
@@ -32,7 +32,7 @@ gpt41_df['Organism'] = gpt41_df['Organism'].apply(standardize_organism)
 
 def query_uniprot(protein, organism):
     url = "https://rest.uniprot.org/uniprotkb/search"
-    query = f'{protein} AND organism_name:"{organism}"'
+    query = f'protein_name:"{protein}" AND organism_name:"{organism}"'
     params = {
         "query": query,
         "fields": "accession",
@@ -44,10 +44,14 @@ def query_uniprot(protein, organism):
     try:
         response = requests.get(url, params=params)
         if response.status_code == 200:
-            lines = response.text.strip().split("\n")
-            if len(lines) > 1:
-                return lines[1].split("\t")[0]
-        return "Not Found"
+            data = response.json()
+            if data.get("results"):
+                return data["results"][0]["primaryAccession"]
+            else:
+                return "Not Found"
+        else:
+            print(f"Request failed: {response.status_code}")
+            return "Error"
     except Exception as e:
         print(f"Error querying {protein} from {organism}: {e}")
         return "Error"
@@ -75,3 +79,5 @@ manual_df.to_csv("manual_with_uniprot_mapping.csv", index=False)
 gpt41_df.to_csv("gpt41_with_uniprot_mapping.csv", index=False)
 print("Mapping completed and files saved.")
 
+#https://rest.uniprot.org/uniprotkb/search?query=protein_name:"Potassium-transporting ATPase alpha chain 1" AND organism_name:"Homo sapiens"&fields=accession&format=json&size=1
+#https://rest.uniprot.org/uniprotkb/search?query=Potassium-transporting+ATPase+alpha+chain+1+AND+organism_name%3A%22Homo+Sapiens%22&fields=accession&format=json&size=1
