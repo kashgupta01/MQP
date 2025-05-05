@@ -1,49 +1,41 @@
 """
-protein_complex_visualisation.py
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Generate two images from a CSV of protein-complex data:
+scatter_split.py
+────────────────
+Visualise a benchmark CSV as scatter plots (zero-shot / few-shot / contextual)
+and generate a whitespace-free legend image.
 
-1.  A scatter/bubble plot (`complex_scatter.png`)
-    • x-axis      – hidden (organisms are only implicit clusters)
-    • y-axis      – number of protein subunits
-    • bubble area – proportional to subunit count
-    • colour      – one hue per organism
+Outputs
+-------
+complex_scatter.png   three aligned scatter plots
+legend.png            tightly cropped legend
 
-2.  A standalone legend image (`legend.png`)
-    • same colours and labels as the plot
------------------------------------------------------------------
-Required columns in the CSV
------------------------------------------------------------------
-Organism           name of the model organism (categorical)
-Accession_Mapped   semicolon-delimited list of protein accessions;
-                   may contain blanks or the literal “Not Found”
+CSV requirements
+----------------
+Technique          (“zero-shot”, “few-shot”, or “contextual” – case-insensitive)
+Organism
+Accession_Mapped   semicolon-separated accession list
 """
-
-import pandas as pd
+from pathlib import Path
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from pathlib import Path
 
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Helper: count valid subunits in “Accession_Mapped”
-# ───────────────────────────────────────────────────────────────────────────────
-def count_subunits(cell: str | float) -> int:
-    """
-    Return the number of real protein accessions in a semicolon-delimited cell.
-    Ignores blanks and the string 'Not Found' (case-insensitive).
-    """
-    if pd.isna(cell):
+# ──────────────────────────────────────────────────────────────────────────────
+# Helpers
+# ──────────────────────────────────────────────────────────────────────────────
+def count_subunits(field: str | float) -> int:
+    """Return the number of protein accessions in a semicolon-delimited field."""
+    if pd.isna(field):
         return 0
-    parts = [p.strip() for p in str(cell).split(";")]
-    parts = [p for p in parts if p and p.lower() != "not found"]
+    parts = [p for p in str(field).split(";") if p and p.strip().lower() != "not found"]
     return len(parts)
 
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Main visualisation routine
-# ───────────────────────────────────────────────────────────────────────────────
+# ──────────────────────────────────────────────────────────────────────────────
+# Main routine
+# ──────────────────────────────────────────────────────────────────────────────
 def make_complex_plots(
     csv_path: str | Path,
     *,
@@ -55,85 +47,102 @@ def make_complex_plots(
     seed: int = 42,
     cmap: str = "tab10",
 ) -> None:
-    """
-    Read `csv_path`, create a bubble scatter plot **without x-axis labels**
-    and a separate legend image.  Images are saved as PNG to the supplied paths.
-    """
+    """Read *csv_path* and write both PNGs."""
+    # ─── load & augment data ──────────────────────────────────────────────────
     df = pd.read_csv(csv_path)
     df["subunit_count"] = df["Accession_Mapped"].apply(count_subunits)
 
-    # --- assign positions, colours, and marker sizes -------------------------
+    # Organism order & colour mapping
     orgs = sorted(df["Organism"].dropna().unique())
-    org_to_center = {org: i for i, org in enumerate(orgs)}
+    org_to_center = {o: i for i, o in enumerate(orgs)}
 
     cm = mpl.colormaps.get_cmap(cmap)
-    org_to_color = {
-        org: cm(i / max(1, len(orgs) - 1)) for i, org in enumerate(orgs)
-    }
+    org_to_color = {o: cm(i / max(1, len(orgs) - 1)) for i, o in enumerate(orgs)}
 
+    # Identical x-coords & colours for every subplot
     rng = np.random.default_rng(seed)
-    df["x"] = (
-        df["Organism"].map(org_to_center) + rng.uniform(-jitter, jitter, len(df))
-    )
-    df["size"] = base_size + size_scale * df["subunit_count"]
+    df["x"] = df["Organism"].map(org_to_center) + rng.uniform(-jitter, jitter, len(df))
+    df["area"] = base_size + size_scale * df["subunit_count"]
     df["color"] = df["Organism"].map(org_to_color)
 
-    # --- scatter plot (no x-labels) ------------------------------------------
-    fig_scatter, ax = plt.subplots(figsize=(6, 6))
-    ax.scatter(
-        df["x"],
-        df["subunit_count"],
-        s=df["size"],
-        c=df["color"],
-        alpha=0.8,
-        edgecolors="k",
-        linewidths=0.4,
-        marker="o",
+    # ─── three technique-specific panels ──────────────────────────────────────
+    techniques = ["zero-shot", "few-shot", "contextual"]
+    ncols = len(techniques)
+
+    fig_scatter, axes = plt.subplots(
+        1,
+        ncols,
+        figsize=(6 * ncols, 6),
+        sharey=True,
     )
-    ax.set_xticks([])       # remove tick marks
-    ax.set_xlabel("")       # no x-axis label
-    ax.set_ylabel("Number of protein subunits")
-    ax.set_title("Benchmarch Dataset")
-    ax.margins(x=0.05)
+
+    for ax, tech in zip(axes, techniques):
+        mask = df["Technique"].str.contains(tech, case=False, na=False)
+
+        ax.scatter(
+            df.loc[mask, "x"],
+            df.loc[mask, "subunit_count"],
+            s=df.loc[mask, "area"],
+            c=df.loc[mask, "color"],
+            alpha=0.8,
+            edgecolors="k",
+            linewidths=0.4,
+            marker="o",
+        )
+
+        ax.set_xticks([])
+        ax.set_xlabel("")
+        ax.set_title(tech.capitalize(), pad=10, weight="bold")
+
+    axes[0].set_ylabel("Number of protein sub-units")
+    fig_scatter.suptitle("GPT-4o Data Spread", weight="bold", y=0.98)
     fig_scatter.tight_layout()
     fig_scatter.savefig(scatter_png, dpi=300, bbox_inches="tight")
     plt.close(fig_scatter)
 
-    # --- standalone legend ----------------------------------------------------
-    fig_leg, ax_leg = plt.subplots(figsize=(3, 0.8 * len(orgs)))
+    # ─── tight-cropped legend ─────────────────────────────────────────────────
     handles = [
         mpl.lines.Line2D(
-            [],
-            [],
-            marker="o",
-            linestyle="",
-            markersize=8,
-            markerfacecolor=org_to_color[o],
-            markeredgecolor="k",
-            label=o,
+            [], [], marker="o", linestyle="", markersize=8,
+            markerfacecolor=org_to_color[o], markeredgecolor="k", label=o,
         )
         for o in orgs
     ]
-    ax_leg.legend(handles=handles, frameon=False, loc="center")
-    ax_leg.axis("off")
-    fig_leg.savefig(legend_png, dpi=300, bbox_inches="tight")
+
+    fig_leg = plt.figure(figsize=(2.0, 0.36 * len(orgs)))
+    legend = fig_leg.legend(
+        handles=handles,
+        loc="center left",
+        frameon=False,
+        borderaxespad=0,
+        labelspacing=0.35,
+        handletextpad=0.4,
+    )
+
+    fig_leg.canvas.draw()
+    bbox = legend.get_window_extent().transformed(fig_leg.dpi_scale_trans.inverted())
+    fig_leg.savefig(legend_png, dpi=300, bbox_inches=bbox, pad_inches=0)
     plt.close(fig_leg)
 
+    # ─── console summary: totals per technique *and* organism ────────────────
+    print("\nSub-unit totals per organism, split by prompt technique:")
     summary = (
-    df.groupby("Organism")["subunit_count"]
+        df.groupby(["Technique", "Organism"])["subunit_count"]
         .sum()
-        .sort_values(ascending=False)
+        .sort_index(level=0)
     )
-    print("\nSubunit count per organism (total across all complexes):")
-    for org, total in summary.items():
-        print(f"  {org}: {total}")
+    for tech in techniques:
+        print(f"\n  {tech.capitalize()}:")
+        subtot = summary.loc[summary.index.get_level_values("Technique").str.contains(tech, case=False)]
+        for org, total in subtot.items():
+            print(f"    {org}: {total}")
 
-    print(f"Saved scatter plot  → {Path(scatter_png).resolve()}")
-    print(f"Saved legend image → {Path(legend_png).resolve()}")
+    print(f"\nSaved scatter → {Path(scatter_png).resolve()}")
+    print(f"Saved legend  → {Path(legend_png).resolve()}")
 
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Example usage (uncomment to run directly)
-# ───────────────────────────────────────────────────────────────────────────────
+# ──────────────────────────────────────────────────────────────────────────────
+# Run directly
+# ──────────────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    make_complex_plots("manual_mapping2.csv")
+    make_complex_plots("manual_mapping2.csv")  # adjust path as needed
