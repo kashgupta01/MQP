@@ -1,0 +1,170 @@
+Protein,Organism
+['Nan'],Caenorhabditis Elegans
+"['D dopamine receptor', 'Endothelin receptor type B']",Mus Musculus
+"['Vps51p, Vps52p, Vps53p, and Vps54p']",Caenorhabditis Elegans
+"['CALM-1, TMIE']",Caenorhabditis Elegans
+"['elf3k, elf3l, elf3e, elf3c, elf3a, elf3m, elf3h, elf3f, elf3b, elf3g, elf3I, elf3d']",Caenorhabditis Elegans
+['Dch1-8'],Drosophila Melanogaster
+"['Alpha1, Alpha2, Alpha3, Alpha4, Alpha5, Alpha6, Alpha7, Alpha8, Beta1, Beta2, Beta3, Beta4, Beta5, Beta6, Beta7']",Drosophila Melanogaster
+"['DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA polymerase epsilon catalytic subunit']",Saccharomyces cerevisiae
+"['DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA polymerase epsilon catalytic subunit']",Saccharomyces cerevisiae
+"['DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA Polymerase II B subunit', 'DNA polymerase epsilon catalytic subunit']",Saccharomyces cerevisiae
+"['Subunit of the glycosylphosphatidylinositol transamidase complex', 'Subunit of the glycosylphosphatidylinositol transamidase complex', 'Subunit of the glycosylphosphatidylinositol transamidase complex', 'Transmembrane protein', 'Catalytic subunit of the ER membrane GPI transamidase complex']",Saccharomyces cerevisiae
+"['dim ?-tubulin 2', 'dim ?-tubulin 3', 'dim ?-tubulin 4', 'dim ?-tubulin 5', 'dim ?-tubulin 6', 'mitotic spindle density 1', 'mitotic spindle density 5', 'wee Augmin']",Drosophila Melanogaster
+"['dim ?-tubulin 2', 'dim ?-tubulin 3', 'dim ?-tubulin 4', 'dim ?-tubulin 5', 'dim ?-tubulin 6', 'mitotic spindle density 1', 'mitotic spindle density 5', 'wee Augmin']",Drosophila Melanogaster
+"['Kinetochore-binding protein 3', 'KNL Binding Protein', 'Kinetochore protein ndc-80', 'Kinetochore protein Nuf2 homolog']",Caenorhabditis Elegans
+"['Kinetochore NuLl', 'Human/fission yeast MIS homolog', 'KNL Binding Protein', 'Mediator of RNA polymerase II transcription subunit 21']",Caenorhabditis Elegans
+"['Kinetochore NuLl', 'Human/fission yeast MIS homolog', 'KNL Binding Protein', 'Mediator of RNA polymerase II transcription subunit 21']",Caenorhabditis Elegans
+"['Trappc3', 'Trappc6b', 'Trappc1', 'Trappc4', 'Trappc5', 'Trappc9', 'Trappc10', 'Trappc13', 'Trappc21']",Mus Musculus
+"['Ccm2', 'Pdcd10', 'Knt1']",Mus Musculus
+"['Ubiquinol-cytochrome c reductase core protein 1', 'Ubiquinol-cytochrome c reductase core protein 2', 'Cytochrome b', 'Cytochrome c1', 'Rieske iron-sulfur protein', 'and additional smaller subunits including UQCRH', 'UQCRB', 'UQCRQ', 'UQCR10', 'UQCR11']",Homo Sapiens
+"['Guanine nucleotide-binding protein G12', 'G-protein coupled receptor 55', 'Regulator of G-protein signaling 2']",Homo Sapiens
+"['Adrenergic receptor alpha-1B', 'C-X-C chemokine receptor type 4']",Homo Sapiens
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Homo Sapiens
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Homo Sapiens
+"['Bradykinin receptor B2', 'Thromboxane A2 receptor']",Homo Sapiens
+"['Dopamine receptor D3', 'Endothelin receptor type B']",Mus Musculus
+"['CEACAM1-4L', 'SYK', 'TLR4']",Mus Musculus
+"['CEACAM1-4L', 'Syk', 'Tlr4']",Mus Musculus
+"['Carcinoembryonic antigen-related cell adhesion molecule 1 long isoform', 'Spleen tyrosine kinase', 'Toll-like receptor 4']",Mus Musculus
+"['Kinase insert domain receptor', 'Neuropilin-1', 'Vascular endothelial growth factor A', 'VEGFA165']",Homo Sapiens
+"['Vascular endothelial growth factor receptor 2', 'Neuropilin-1', 'VEGFA-165']",Homo Sapiens
+"['Vascular endothelial growth factor receptor 2', 'Neuropilin-1', 'VEGFA165']",Homo Sapiens
+"['Neuropilin-1', 'Vascular Endothelial Growth Factor 121']",Homo Sapiens
+"['Neuropilin-1', 'Vascular Endothelial Growth Factor 121 isoform']",Homo Sapiens
+"['KDR/VEGFR2', 'VEGFA165']",Homo Sapiens
+"['KDR/VEGFR2', 'VEGFA165']",Homo Sapiens
+"['Vascular endothelial growth factor receptor 2', 'Vascular endothelial growth factor A isoform 165']",Homo Sapiens
+"['Vascular endothelial growth factor receptor 2', 'Vascular endothelial growth factor A isoform 165']",Homo Sapiens
+"['TMC2', 'potential association with TMIE', 'LHFPL5', 'and PCDH15']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['eIF3 subunit A', 'eIF3 subunit B', 'eIF3 subunit C', 'eIF3 subunit D', 'eIF3 subunit E', 'eIF3 subunit F', 'eIF3 subunit G', 'eIF3 subunit H', 'eIF3 subunit I', 'eIF3 subunit J', 'eIF3 subunit K', 'eIF3 subunit L', 'eIF3 subunit M']",Homo Sapiens
+"['Tip60/KAT5', 'TRRAP', 'EPC1', 'EPC2', 'ING3', 'MRGBP', 'BRD8', 'DMAP1', 'RUVBL1', 'RUVBL2', 'YEATS4', 'ACTL6A']",Homo Sapiens
+"['Tip60', 'Domino', 'E', 'Nipped-A', 'Drosophila homolog of Gas41', 'MRG15', 'Eaf6', 'DMAP1', 'Drosophila homolog of ING3', 'YL-1', 'Drosophila homolog of TRRAP', 'Drosophila homolog of BAF53']",Drosophila Melanogaster
+"['Tip60', 'Domino', 'E', 'Nipped-A', 'Drosophila homolog of Gas41', 'MRG15', 'Eaf6', 'DMAP1', 'Drosophila homolog of ING3', 'YL-1', 'Drosophila homolog of TRRAP', 'Drosophila homolog of BAF53']",Drosophila Melanogaster
+"['Tip60', 'Domino', 'E', 'Nipped-A', 'Drosophila homolog of Gas41', 'MRG15', 'Eaf6', 'DMAP1', 'Drosophila homolog of ING3', 'YL-1', 'Drosophila homolog of TRRAP', 'Drosophila homolog of BAF53']",Drosophila Melanogaster
+"['Tip60', 'Domino', 'E', 'Nipped-A', 'Drosophila homolog of Gas41', 'MRG15', 'Eaf6', 'DMAP1', 'Drosophila homolog of ING3', 'YL-1', 'Drosophila homolog of TRRAP', 'Drosophila homolog of BAF53']",Drosophila Melanogaster
+"['CSN1', 'CSN2', 'CSN3', 'CSN4', 'CSN5', 'CSN6', 'CSN7A/B', 'CSN8']",Homo Sapiens
+"['COP9 signalosome complex subunit 1', 'COP9 signalosome complex subunit 2', 'COP9 signalosome complex subunit 3', 'COP9 signalosome complex subunit 4', 'COP9 signalosome complex subunit 5', 'COP9 signalosome complex subunit 6', 'COP9 signalosome complex subunit 7A/7B', 'COP9 signalosome complex subunit 8']",Homo Sapiens
+"['COP9 signalosome complex subunit 1', 'COP9 signalosome complex subunit 2', 'COP9 signalosome complex subunit 3', 'COP9 signalosome complex subunit 4', 'COP9 signalosome complex subunit 5', 'COP9 signalosome complex subunit 6', 'COP9 signalosome complex subunit 7A or 7B', 'COP9 signalosome complex subunit 8']",Homo Sapiens
+['The human 20S proteasome is composed of 28 subunits arranged in four stacked rings: two outer rings of seven α subunits and two inner rings of seven β subunits. Subunit composition:'],Homo Sapiens
+"['Glutamate receptor ionotropic', 'NMDA 1', 'Purinergic receptor P2Y4']",Homo Sapiens
+"['Rad6p', 'Rad18p']",Saccharomyces cerevisiae
+"['Ubiquitin-conjugating enzyme RAD6', 'E3 ubiquitin-protein ligase RAD18']",Saccharomyces cerevisiae
+"['Ubiquitin-conjugating enzyme RAD6', 'E3 ubiquitin-protein ligase RAD18']",Saccharomyces cerevisiae
+"['Cyclin-dependent kinase PHO85', 'Cyclin PHO80']",Saccharomyces cerevisiae
+"['Cyclin-dependent kinase Pho85p', 'Cyclin Pho80p']",Saccharomyces cerevisiae
+"['Cyclin-dependent kinase Pho85p', 'Cyclin Pho80p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Cog1p', 'Cog2p', 'Cog3p', 'Cog4p', 'Cog5p', 'Cog6p', 'Cog7p', 'Cog8p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs31p', 'Trs20p', 'Trs33p', 'Trs85p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs31p', 'Trs20p', 'Trs33p', 'Trs85p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs31p', 'Trs20p', 'Trs33p', 'Trs85p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs31p', 'Trs20p', 'Trs33p', 'Trs85p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs85p', 'Trs120p', 'Trs130p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs85p', 'Trs120p', 'Trs130p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs85p', 'Trs120p', 'Trs130p']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs85p', 'Trs120p', 'Trs130p']",Saccharomyces cerevisiae
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit GPAA1', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit GPAA1', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit GPAA1', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit GPAA1', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit GPAA1', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U', 'GPI transamidase subunit GPAA1']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U', 'GPI transamidase subunit GPAA1']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U', 'GPI transamidase subunit GPAA1']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U', 'GPI transamidase subunit GPAA1']",Homo Sapiens
+"['GPI transamidase subunit PIG-K', 'GPI transamidase subunit PIG-S', 'GPI transamidase subunit PIG-T', 'GPI transamidase subunit PIG-U', 'GPI transamidase subunit GPAA1']",Homo Sapiens
+"['Gpi14p', 'Gpi18p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Gpi18p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Gpi15p', 'Pbn1p', 'Gpi19p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Gpi15p', 'Pbn1p', 'Gpi19p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Gpi15p', 'Pbn1p', 'Gpi19p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Pbn1p']",Saccharomyces cerevisiae
+"['Gpi14p', 'Pbn1p']",Saccharomyces cerevisiae
+"['Adaptor-related protein complex 1 beta 1 subunit', 'Adaptor-related protein complex 1 gamma 1 subunit', 'Adaptor-related protein complex 1 mu 1 subunit', 'Adaptor-related protein complex 1 sigma 1 subunit']",Homo Sapiens
+"['Adaptor-related protein complex 1 beta 1 subunit', 'Adaptor-related protein complex 1 gamma 1 subunit', 'Adaptor-related protein complex 1 mu 1 subunit', 'Adaptor-related protein complex 1 sigma 1 subunit']",Homo Sapiens
+"['Adaptor-related protein complex 1 beta 1 subunit', 'Adaptor-related protein complex 1 gamma 1 subunit', 'Adaptor-related protein complex 1 mu 1 subunit', 'Adaptor-related protein complex 1 sigma 1 subunit']",Homo Sapiens
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['Pan1p', 'End3p', 'Sla1p']",Saccharomyces cerevisiae
+"['AMPK α subunit: PRKAA1 or PRKAA2', 'AMPK β subunit: PRKAB1 or PRKAB2', 'AMPK γ subunit: PRKAG1', 'PRKAG2', 'or PRKAG3']",Homo Sapiens
+"['AMPK α subunit: PRKAA1 or PRKAA2', 'AMPK β subunit: PRKAB1 or PRKAB2', 'AMPK γ subunit: PRKAG1', 'PRKAG2', 'or PRKAG3']",Homo Sapiens
+"['AMPK α subunit: PRKAA1 or PRKAA2', 'AMPK β subunit: PRKAB1 or PRKAB2', 'AMPK γ subunit: PRKAG1', 'PRKAG2', 'or PRKAG3']",Homo Sapiens
+"[""5'-AMP-activated protein kinase catalytic subunit alpha-1 or alpha-2"", ""5'-AMP-activated protein kinase beta-1 or beta-2 subunit"", ""5'-AMP-activated protein kinase gamma-1"", 'gamma-2', 'or gamma-3 subunit']",Homo Sapiens
+"[""5'-AMP-activated protein kinase catalytic subunit alpha-1 or alpha-2"", ""5'-AMP-activated protein kinase beta-1 or beta-2 subunit"", ""5'-AMP-activated protein kinase gamma-1"", 'gamma-2', 'or gamma-3 subunit']",Homo Sapiens
+"[""5'-AMP-activated protein kinase catalytic subunit alpha-1 or alpha-2"", ""5'-AMP-activated protein kinase beta-1 or beta-2 subunit"", ""5'-AMP-activated protein kinase gamma-1"", 'gamma-2', 'or gamma-3 subunit']",Homo Sapiens
+"['dMyb', 'Mip130', 'Mip120', 'Mip40', 'Lin-52', 'Lin-9', 'Caf1/p55']",Drosophila Melanogaster
+"['Sodium leak channel non-selective protein', 'UNC79 homolog', 'UNC80 homolog', 'Family with sequence similarity 155 member A']",Homo Sapiens
+"['Nuclear RNA export factor 1', 'Nuclear transport factor 2-like export factor 1']",Homo Sapiens
+"['Nuclear RNA export factor 1', 'Nuclear transport factor 2-like export factor 1']",Homo Sapiens
+"['Monensin sensitivity protein 1 homolog', 'CCZ1 homolog']",Homo Sapiens
+"['Zinc finger protein 1', 'DOT-1 histone methyltransferase']",Caenorhabditis Elegans
+"['CED-3 caspase', 'CED-4 apoptotic protease-activating factor homolog', 'MAC-1 protein']",Caenorhabditis Elegans
+"['Apoptotic protease CED-3', 'Apoptotic protease activating factor CED-4', 'MAC-1 protein']",Caenorhabditis Elegans
+"['Apoptotic protease CED-3', 'Apoptotic protease activating factor CED-4', 'MAC-1 protein']",Caenorhabditis Elegans
+"['Structural maintenance of chromosomes proteins 1A and 3', 'RAD21', 'Stromal antigen 1 and 2']",Homo Sapiens
+"['Structural maintenance of chromosomes proteins 1A and 3', 'RAD21', 'Stromal antigen 1 and 2']",Homo Sapiens
+"['Structural maintenance of chromosomes protein 1A', 'Structural maintenance of chromosomes protein 3', 'RAD21 cohesin complex component', 'Stromal antigen 1 or Stromal antigen 2']",Homo Sapiens
+"['Atk-1', 'Akt-2', 'Sgk-1']",Caenorhabditis Elegans
+"['Protein kinase B', 'Protein kinase B2', 'Serum- and glucocorticoid-inducible kinase homolog']",Caenorhabditis Elegans
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['Ndc80p', 'Nuf2p', 'Spc24p', 'Spc25p']",Saccharomyces cerevisiae
+"['Kinetochore protein NDC80 homolog', 'Kinetochore protein NUF2 homolog', 'Kinetochore protein SPC24', 'Kinetochore protein SPC25']",Homo Sapiens
+"['Target membrane SNARE protein Tlg2p', 'vesicle transport v-SNARE Vti1p', 'syntaxin-like t-SNARE Tlg1p', 'synaptobrevin-like SNARE SNC2p']",Saccharomyces cerevisiae
+"['Target membrane SNARE protein Tlg2p', 'vesicle transport v-SNARE Vti1p', 'syntaxin-like t-SNARE Tlg1p', 'synaptobrevin-like SNARE SNC2p']",Saccharomyces cerevisiae
+"['Target membrane SNARE protein Tlg2p', 'vesicle transport v-SNARE Vti1p', 'syntaxin-like t-SNARE Tlg1p', 'synaptobrevin-like SNARE SNC2p']",Saccharomyces cerevisiae
+"['Target membrane SNARE protein Tlg2p', 'vesicle transport v-SNARE Vti1p', 'syntaxin-like t-SNARE Tlg1p', 'synaptobrevin-like SNARE SNC2p']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Trs120p', 'Trs130p', 'Trs65p', 'Trs33p', 'Bet3p', 'Bet5p', 'Trs20p', 'Trs23p', 'Trs31p', 'Trs85p', 'TRAPP II is defined by the presence of Trs120p', 'Trs130p', 'and Trs65p', 'which distinguish it from TRAPP I.*']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs20p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs120p', 'Trs130p', 'Trs85p.']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs20p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs120p', 'Trs130p', 'Trs85p.']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs20p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs120p', 'Trs130p', 'Trs85p.']",Saccharomyces cerevisiae
+"['Bet3p', 'Bet5p', 'Trs23p', 'Trs20p', 'Trs31p', 'Trs33p', 'Trs65p', 'Trs120p', 'Trs130p', 'Trs85p.']",Saccharomyces cerevisiae
+"['CCM1', 'CCM2', 'and CCM3)']",Homo Sapiens
+"['m-calpain catalytic subunit', 'calpain small regulatory subunit']",Homo Sapiens
+"['m-calpain catalytic subunit', 'calpain small regulatory subunit']",Homo Sapiens
+"['MRPS1', 'MRPS2', 'MRPS3', 'MRPS5', 'MRPS6', 'MRPS7', 'MRPS9', 'MRPS10', 'MRPS11', 'MRPS12', 'MRPS14', 'MRPS15', 'MRPS16', 'MRPS17', 'MRPS18A', 'MRPS18B', 'MRPS18C', 'MRPS21', 'MRPS22', 'MRPS23', 'MRPS24', 'MRPS25', 'MRPS26', 'MRPS27', 'MRPS28', 'MRPS30', 'MRPS31', 'MRPS33', 'MRPS34', 'MRPS35', 'MRPS36', 'MRPS37', 'MRPS38', 'PTCD3', 'DAP3', 'METTL17', 'CHCHD1', 'ENSA', 'C1orf203']",Homo Sapiens
+"['MRPS1', 'MRPS2', 'MRPS3', 'MRPS5', 'MRPS6', 'MRPS7', 'MRPS9', 'MRPS10', 'MRPS11', 'MRPS12', 'MRPS14', 'MRPS15', 'MRPS16', 'MRPS17', 'MRPS18A', 'MRPS18B', 'MRPS18C', 'MRPS21', 'MRPS22', 'MRPS23', 'MRPS24', 'MRPS25', 'MRPS26', 'MRPS27', 'MRPS28', 'MRPS30', 'MRPS31', 'MRPS33', 'MRPS34', 'MRPS35', 'MRPS36', 'MRPS37', 'MRPS38', 'PTCD3', 'DAP3', 'METTL17', 'CHCHD1', 'ENSA', 'C1orf203']",Homo Sapiens
+"['Mitochondrial ribosomal proteins of the small subunit', 'including but not limited to MRPS2', 'MRPS5', 'MRPS7', 'MRPS9', 'MRPS10', 'MRPS11', 'MRPS12', 'MRPS14', 'MRPS15', 'MRPS16', 'MRPS17', 'MRPS18A-C', 'MRPS21', 'MRPS22', 'MRPS23', 'MRPS24', 'MRPS25', 'MRPS26', 'MRPS27', 'MRPS28', 'MRPS29', 'MRPS30', 'MRPS31', 'MRPS33', 'MRPS34', 'MRPS35', 'MRPS36', 'as well as the mitochondrial 12S rRNA.']",Homo Sapiens
+"['Mitochondrial ribosomal proteins of the small subunit', 'including but not limited to MRPS2', 'MRPS5', 'MRPS7', 'MRPS9', 'MRPS10', 'MRPS11', 'MRPS12', 'MRPS14', 'MRPS15', 'MRPS16', 'MRPS17', 'MRPS18A-C', 'MRPS21', 'MRPS22', 'MRPS23', 'MRPS24', 'MRPS25', 'MRPS26', 'MRPS27', 'MRPS28', 'MRPS29', 'MRPS30', 'MRPS31', 'MRPS33', 'MRPS34', 'MRPS35', 'MRPS36', 'as well as the mitochondrial 12S rRNA.']",Homo Sapiens
+"['Mitochondrial ribosomal proteins of the small subunit', 'including but not limited to MRPS2', 'MRPS5', 'MRPS7', 'MRPS9', 'MRPS10', 'MRPS11', 'MRPS12', 'MRPS14', 'MRPS15', 'MRPS16', 'MRPS17', 'MRPS18A-C', 'MRPS21', 'MRPS22', 'MRPS23', 'MRPS24', 'MRPS25', 'MRPS26', 'MRPS27', 'MRPS28', 'MRPS29', 'MRPS30', 'MRPS31', 'MRPS33', 'MRPS34', 'MRPS35', 'MRPS36', 'as well as the mitochondrial 12S rRNA.']",Homo Sapiens
+"['Cardiac Troponin C', 'Cardiac Troponin I', 'Cardiac Troponin T']",Homo Sapiens
+"['Troponin C type 1', 'Troponin I type 3', 'Troponin T type 2']",Homo Sapiens
+"['Troponin C', 'cTnC', 'Troponin I', 'cardiac muscle isoform cTnI', 'Troponin T', 'cTnT']",Homo Sapiens
+"['Troponin C', 'cTnC', 'Troponin I', 'cardiac muscle isoform cTnI', 'Troponin T', 'cTnT']",Homo Sapiens
