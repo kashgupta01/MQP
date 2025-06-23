@@ -15,7 +15,7 @@ GPR55"
 Melanocortin receptor 3,Human,"Melanocortin receptors 1 (MC1) and MC3 form homo- and heterodimers, when expressed in Cos-7 cells. Treatment with agonist, partial agonist or antagonists did not modify the BRET(2) signal for any of the receptor pairs studied, suggesting that the dimerization is not regulated by ligand binding. Rather the results indicate that melanocortin receptors exist as constitutively pre-formed dimers (PMID: 15582585). Melanocortin 3 and 4 receptors (MC3R and MC4R) are known to play an essential role in hypothalamic weight regulation (PMID: 20054210).",Melanocortin receptor 3 (MC3R),
 ATP1A1-TSHR complex,Human,"Thyroid stimulating hormone (TSH) binds to a specific TSH receptor (TSHR) which activates adenylate cyclase and increases cAMP levels in thyroidal cells. Studies have reported the presence of TSH receptor in several extra-thyroidal cell types, including erythrocytes. TSH induces co-localization of TSH receptor and Na/K-ATPase in human erythrocytes (PMID: 19466745).","Sodium/potassium-transporting ATPase subunit alpha-1 (ATP1A1)
 Thyrotropin receptor (TSHR, LGR3)",
-ADRA1B-CXCR4 complex,Human,Disruption of alpha-1A/B-adrenergic receptor-CXCR4 heteromeric complexes inhibits alpha1-AR–mediated functions in vascular smooth muscle cells and treatment with CXCR4 agonists enhances the potency of the alpha-1-AR agonist phenylephrine to increase blood pressure.,"Alpha-1B adrenergic receptor	(ADRA1B)
+ADRA1B-CXCR4 complex,Human,Disruption of alpha-1A/B-adrenergic receptor-CXCR4 heteromeric complexes inhibits alpha1-ARâ€“mediated functions in vascular smooth muscle cells and treatment with CXCR4 agonists enhances the potency of the alpha-1-AR agonist phenylephrine to increase blood pressure.,"Alpha-1B adrenergic receptor	(ADRA1B)
 C-X-C chemokine receptor type 4 (CXCR4)",
 Bdkrb2-Tbxa2r complex,Mouse,"Bradykinin (BK) and thromboxane-A2 (TX-A2) are two vasoactive mediators that modulate vascular tone and inflammation via binding to their cognate ""class A"" G-protein coupled receptors (GPCRs), BK-B2 receptors (B2R) and TX-prostanoid receptors (TP), respectively. The findings revealed synergistically activated ERK1/2 following co-stimulation of rat VSMC with a subthreshold dose of BK and effective doses of the TP stable agonist, IBOP, possibly involving biased agonist signaling. Inspection of B2R-TP PLA signals in VSMC revealed agonist-modulated nuclear and extranuclear proximity between B2R and TP, whose quantification varied substantially following single versus dual agonist stimulations (PMID: 31086419)","B2 bradykinin receptor (Bdkrb2)
 Thromboxane A2 receptor (Tbxa2r)",
@@ -37,10 +37,10 @@ FLT4-VEGFC complex,Human,"The lymphangiogenic ligand VEGFC binds to KDR (VEGFR2)
 Vascular endothelial growth factor C",
 ITGA3-ITGB1 complex,Human,cell adhesion,"Integrin alpha-3
 Integrin beta-1",
- Golgi-associated retrograde protein complex ,C. elegans, tethering of endosome-derived transport vesicles to the late Golgi,"Vps51p, Vps52p, Vps53p, and Vps54p",
- Transmembrane channel-like (TMC) 2 complex ,C. elegans,pore-forming subunits of the mechanoelectrical transduction complexes that are located in auditory and vestibular hair cells of the inner ear,"CALM-1, TMIE",
+Â Golgi-associated retrograde protein complex ,C. elegans,Â tethering of endosome-derived transport vesicles to the late Golgi,"Vps51p, Vps52p, Vps53p, and Vps54p",
+Â Transmembrane channel-like (TMC) 2 complex ,C. elegans,pore-forming subunits of the mechanoelectrical transduction complexes that are located in auditory and vestibular hair cells of the inner ear,"CALM-1, TMIE",
 13 subunit eukaryotic initiation factor 3 (eIF3) complex,C. elegans,,"elf3k, elf3l, elf3e, elf3c, elf3a, elf3m, elf3h, elf3f, elf3b, elf3g, elf3I, elf3d",
-Tip60 chromatin-remodeling complex ,D. melanogaster,"Enables euchromatin binding activity and histone acetyltransferase activity. Involved in several processes, including DNA repair-dependent chromatin remodeling; negative regulation of neuron apoptotic process; and regulation of terminal button organization. Located in nucleus and polytene chromosome interband. Part of NuA4 histone acetyltransferase complex. Is expressed in NMJ bouton; embryonic/larval neuromuscular junction; organism; and yolk nucleus. Orthologous to human KAT5 (lysine acetyltransferase 5)
+Tip60 chromatin-remodeling complexÂ ,D. melanogaster,"Enables euchromatin binding activity and histone acetyltransferase activity. Involved in several processes, including DNA repair-dependent chromatin remodeling; negative regulation of neuron apoptotic process; and regulation of terminal button organization. Located in nucleus and polytene chromosome interband. Part of NuA4 histone acetyltransferase complex. Is expressed in NMJ bouton; embryonic/larval neuromuscular junction; organism; and yolk nucleus. Orthologous to human KAT5 (lysine acetyltransferase 5)
 ","Histone acetyltransferase Tip60; Domino; Tra1; Brd8; E(Pc); DMAP1; Pontin; Reptin; Ing3; Act87E; BAP55; Mrg15; MrgBP; Gas41; YL-1
 ",
 COP9 Signalosome ,D. melanogaster,"Largely unknown in mammals but thought to be related to multi-cellular differentiation
@@ -54,7 +54,7 @@ GRIN1-P2RY4 complex ,Human,"The P2Y4 receptor and the NMDAR1 subunit are inverse
 ","Glutamate receptor ionotropic, NMDA 1	
 P2Y purinoceptor 4	","GRIN1
 P2RY4"
- LY96-TLR4 complex ,Human,"LPS is transferred to the TLR4-MD-2 complex by two accessory proteins, LPS-binding protein (LBP) and CD14.(PMID:16953972). Selected N-linked glycosylation sites of both MD-2 and TLR4 play key roles in the maintenance of the ability of the LPS receptor to recognize LPS (PMID:11706042).
+Â LY96-TLR4 complexÂ ,Human,"LPS is transferred to the TLR4-MD-2 complex by two accessory proteins, LPS-binding protein (LBP) and CD14.(PMID:16953972). Selected N-linked glycosylation sites of both MD-2 and TLR4 play key roles in the maintenance of the ability of the LPS receptor to recognize LPS (PMID:11706042).
 ","Lymphocyte antigen 96
 Toll-like receptor 4	","LY96
 TLR4"
@@ -247,14 +247,14 @@ THO2
 TEX1
 THP2
 HPR1"
-Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2,Saccharomyces cerevisiae,SNARE complex required for the fusion of endosomal vesicles with the trans-Golgi network. Mediates membrane fusion through the spontaneous assembly of four complementary…,"Synaptobrevin homolog 2
+Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2,Saccharomyces cerevisiae,SNARE complex required for the fusion of endosomal vesicles with the trans-Golgi network. Mediates membrane fusion through the spontaneous assembly of four complementaryâ€¦,"Synaptobrevin homolog 2
 t-SNARE affecting a late Golgi compartment protein 2
 t-SNARE VTI1
 t-SNARE affecting a late Golgi compartment protein 1","SNC2
 TLG2
 VTI1
 TLG1"
-Ste12/Dig1/Dig2 transcription regulation complex,Saccharomyces cerevisiae,"Translational repressor complex which binds to the pheromone response elements (PREs; TGAAACR) in mating gene promoters. Upon pheromone stimulation, Fus3…","Protein STE12
+Ste12/Dig1/Dig2 transcription regulation complex,Saccharomyces cerevisiae,"Translational repressor complex which binds to the pheromone response elements (PREs; TGAAACR) in mating gene promoters. Upon pheromone stimulation, Fus3â€¦","Protein STE12
 Down-regulator of invasive growth 1
 Down-regulator of invasive growth 2","STE12
 DIG1
