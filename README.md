@@ -11,4 +11,7 @@ into a singular dataset for widespread scientific use. By using models from Open
 workflow, we aim to formulate a pipeline to generate protein composition of the
 queried proteins. 
 
+Please read this research paper for more details on the entirety of the project: https://lnkd.in/eZJGUA_V
+
+
 
